@@ -165,7 +165,7 @@ Units that fire heavy weapons in the Shooting phase may not assault into close�
       <description>All pistols are effectively Assault 1 weapons with a range of 12&quot; (unless differently specified in their profile). In addition a pistol counts as a close combat weapon in the Assault phase.</description>
     </rule>
     <rule name="Ordnance" id="6427-975f-8a30-cc4f" hidden="false" publicationId="ad9c-8597-0188-2ba0">
-      <description>No other weapons may be fired by the bearer this turn. Unless stated otherwise, Ordinance weapons use the Large Blast marker. Additionally, When you roll to penetrate a vehicle&apos;s armour, roll two dice and pick the highest result. </description>
+      <description>No other weapons may be fired by the bearer this turn. Unless stated otherwise, Ordinance weapons use the Large Blast marker. Additionally, When you roll to penetrate a vehicle&apos;s armour, roll two dice and pick the highest result.</description>
     </rule>
     <rule name="Template" id="4cb0-165c-9898-b8c2" hidden="false" publicationId="ad9c-8597-0188-2ba0">
       <description>Instead of rolling to hit, simply place the template so that its narrow end is touching the base of the model firing it and the rest of the template covers as many models as possible in the target unit without touching any friendly models. Against vehicles, the template must be placed to cover as much of the vehicle as possible without also touching a friendly model. Any models fully or partially under the template are hit. Against vehicles, use the direction of the firer to determine which armour facing is attacked. 
@@ -800,7 +800,7 @@ If a destroyer weapon hits a non-vehicle model, there is no need to roll to woun
         <characteristic name="Str." typeId="1ebc-896c-43de-904a">8</characteristic>
         <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
         <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, One Shot</characteristic>
-        <characteristic typeId="45fd-0f50-e1d0-907c" name="Notes"/>
+        <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">This weapon is fired at BS 4.</characteristic>
       </characteristics>
     </profile>
     <profile name="Heavy Flamer" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="f83b-3e9d-4395-7a68">
