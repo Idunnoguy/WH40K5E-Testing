@@ -6081,9 +6081,9 @@ If the model that is possessed by the Greater Daemon is inside a transport, the 
           <characteristics>
             <characteristic name="WS" typeId="0b22-562d-304f-708a">4</characteristic>
             <characteristic name="BS" typeId="5ac3-7cf1-7a4b-0bdc">3</characteristic>
-            <characteristic name="S" typeId="b80b-7f3f-9d69-7f75">13</characteristic>
+            <characteristic name="S" typeId="b80b-7f3f-9d69-7f75"/>
             <characteristic name="F" typeId="22f8-d228-3d58-0d92">13</characteristic>
-            <characteristic name="S" typeId="82d2-1b71-b01a-7615">13</characteristic>
+            <characteristic name="S" typeId="82d2-1b71-b01a-7615"/>
             <characteristic name="R" typeId="58d5-2599-2a90-7cbc">11</characteristic>
             <characteristic name="I" typeId="12b2-2bea-bc7f-ac88">3</characteristic>
             <characteristic name="A" typeId="e212-98ab-8660-eeab">4</characteristic>

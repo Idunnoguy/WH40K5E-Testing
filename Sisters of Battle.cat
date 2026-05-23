@@ -59,7 +59,7 @@
     </profile>
     <profile name="Neural Whip" typeId="1d88-1369-f0ed-b39c" typeName="Melee Weapons" hidden="false" id="fb23-2b1f-b006-af56">
       <characteristics>
-        <characteristic name="Ability" typeId="2113-98a2-4376-a94c">Neural whips follow the rules for power weapons. In addition, Hits caused by a neural whip against non-vehicle units strike at Strength 8 and roll To Wound against the opponent’s unmodified Leadership characteristic instead of their Toughness. </characteristic>
+        <characteristic name="Ability" typeId="2113-98a2-4376-a94c">Neural whips follow the rules for power weapons. In addition, Hits caused by a neural whip against non-vehicle units strike at Strength 8 and roll To Wound against the opponent’s unmodified Leadership characteristic instead of their Toughness.</characteristic>
       </characteristics>
     </profile>
     <profile name="Simulacrum Imperialis" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="ca16-7a34-302f-75c9">
@@ -82,7 +82,7 @@
     <rule name="Psi-shock" id="0c9e-6d60-b658-487e" hidden="false">
       <description>Any psyker that takes an unsaved wound from the stake-crossbow shot suffers the Perils of the Warp in addition to any other effects.</description>
     </rule>
-    <rule name="Acts of Faith" id="2d2c-92e4-6ee5-21ad" hidden="false">
+    <rule name="Act of Faith" id="2d2c-92e4-6ee5-21ad" hidden="false">
       <description>An Act of Faith can be attempted immediately before a Sisters of Battle unit acts during a phase; e.g. immediately before the unit moves in the Movement phase, shoots (or runs) in the Shooting phase, or strikes blows in the Assault phase. To attempt an Act of Faith, select the unit and reduce your Faith Point total by 1, then roll a D6 and add the following:
 
 
@@ -227,7 +227,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         </profile>
         <profile name="Repair" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="c688-8bd9-7ce9-d7a1">
           <characteristics>
-            <characteristic name="Description" typeId="e24a-6018-20cf-d76c"> If a Rhino is immobilised for any reason, then in subsequent turns the crew can attempt to repair the vehicle instead of the shooting the vehicle’s weaponry. Roll a D6 in the Shooting phase – on a 6 the vehicle is no longer immobilised.</characteristic>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">If a Rhino is immobilised for any reason, then in subsequent turns the crew can attempt to repair the vehicle instead of the shooting the vehicle’s weaponry. Roll a D6 in the Shooting phase – on a 6 the vehicle is no longer immobilised.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -500,6 +500,9 @@ For example, if a Canoness joins a unit of Celestians then you would require two
           <attributes>
             <attribute name="Ability" typeId="e6f8-e3ed-4aba-5db7">This Act of Faith is used in the Assault phase. If successful, the Canoness and her unit receive +1 Initiative and the Preferred Enemy special rule until the end of the Assault phase.</attribute>
           </attributes>
+          <characteristics>
+            <characteristic name="Ability" typeId="8973-fda0-fb3b-ebce">This Act of Faith is used in the Assault phase. If successful, the Canoness and her unit receive +1 Initiative and the Preferred Enemy special rule until the end of the Assault phase.</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <infoLinks>
@@ -508,6 +511,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <infoLink name="Independent Character" id="bf5a-9685-3ccc-47ef" hidden="false" type="profile" targetId="db9c-91d8-5b8a-ee16"/>
         <infoLink name="Shield of Faith" id="37cd-b156-d856-8a19" hidden="false" type="profile" targetId="35d8-dd34-a92a-42f4"/>
         <infoLink name="Stubborn" id="17d1-a41c-9a1e-6c60" hidden="false" type="profile" targetId="5493-e844-f447-39ae"/>
+        <infoLink name="Act of Faith" id="cb26-f61f-71b1-bfd7" hidden="false" type="rule" targetId="2d2c-92e4-6ee5-21ad"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Loadout" id="d5c4-4ce5-f26b-ae3f" hidden="false">
@@ -605,7 +609,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
               </costs>
               <infoLinks>
-                <infoLink name="Condemnor Boltgun" id="4f58-32a0-06b9-4473" hidden="false" type="profile" targetId="9281-b46c-f38a-734b"/>
+                <infoLink name="Condemnor Boltgun (Boltgun)" id="4f58-32a0-06b9-4473" hidden="false" type="profile" targetId="9281-b46c-f38a-734b"/>
                 <infoLink name="Condemnor Boltgun (Stake)" id="025a-84e9-90b4-8b4e" hidden="false" type="profile" targetId="49df-6f91-aae0-a618"/>
               </infoLinks>
               <constraints>
@@ -879,12 +883,16 @@ For example, if a Canoness joins a unit of Celestians then you would require two
             <infoLink name="Frag Grenades" id="c631-f606-7345-0c74" hidden="false" type="profile" targetId="6e7c-a63e-3bc6-5bc9"/>
             <infoLink name="Krak Grenades" id="3607-910b-fcbf-77f8" hidden="false" type="profile" targetId="0a12-b99c-7d80-2ab6"/>
             <infoLink name="Shield of Faith" id="f402-c290-4adc-f910" hidden="false" type="profile" targetId="35d8-dd34-a92a-42f4"/>
+            <infoLink name="Act of Faith" id="d546-c8ba-2457-cd1b" hidden="false" type="rule" targetId="2d2c-92e4-6ee5-21ad"/>
           </infoLinks>
           <profiles>
             <profile name="Endless Crusade" typeId="0fe1-877f-d5ab-dcc5" typeName="Act of Faith" hidden="false" id="f1fe-0b5d-18aa-9b35">
               <attributes>
                 <attribute name="Ability" typeId="e6f8-e3ed-4aba-5db7">This Act of Faith is used in the Movement phase. If successful the unit gains the Relentless and Move Through Cover special rules until the end of the turn.</attribute>
               </attributes>
+              <characteristics>
+                <characteristic name="Ability" typeId="8973-fda0-fb3b-ebce">This Act of Faith is used in the Movement phase. If successful the unit gains the Relentless and Move Through Cover special rules until the end of the turn.</characteristic>
+              </characteristics>
             </profile>
           </profiles>
           <entryLinks>
@@ -916,12 +924,12 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         </profile>
         <profile name="Mace of Valaan" typeId="1d88-1369-f0ed-b39c" typeName="Melee Weapons" hidden="false" id="c520-a1e1-a0aa-806b">
           <characteristics>
-            <characteristic name="Ability" typeId="2113-98a2-4376-a94c"> The Mace of Valaan is a power weapon. In addition, any model that suffers an unsaved Wound from the Mace of Valaan is reduced to Initiative 1 until the end of the following player turn.</characteristic>
+            <characteristic name="Ability" typeId="2113-98a2-4376-a94c">The Mace of Valaan is a power weapon. In addition, any model that suffers an unsaved Wound from the Mace of Valaan is reduced to Initiative 1 until the end of the following player turn.</characteristic>
           </characteristics>
         </profile>
         <profile name="Icon of Chiros" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="56e1-f7f0-6a20-ec20">
           <characteristics>
-            <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">All friendly units within 6&quot; of Kyrinov have the Fearless special rule. </characteristic>
+            <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">All friendly units within 6&quot; of Kyrinov have the Fearless special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1578,7 +1586,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Celestian Heavy Gunner" hidden="false" id="e8c2-5d64-29b4-231b" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Celestian Heavy Gunner" hidden="false" id="e8c2-5d64-29b4-231b">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
               </costs>
@@ -1680,7 +1688,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="814d-70e3-be57-639e" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Celestian Gunner" hidden="false" id="27d7-64cc-6be2-4d60" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Celestian Gunner" hidden="false" id="27d7-64cc-6be2-4d60">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
               </costs>
@@ -1749,7 +1757,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdaa-5d92-8f9b-e731" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Celestian Relic Holder" hidden="false" id="1571-c7e6-366a-59a6" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Celestian Relic Holder" hidden="false" id="1571-c7e6-366a-59a6">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="35"/>
               </costs>
@@ -1788,12 +1796,16 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <infoLink name="Frag Grenades" id="8244-6fb0-8c3b-1843" hidden="false" type="profile" targetId="6e7c-a63e-3bc6-5bc9"/>
         <infoLink name="Krak Grenades" id="3bc7-3b33-6b12-c34e" hidden="false" type="profile" targetId="0a12-b99c-7d80-2ab6"/>
         <infoLink name="Shield of Faith" id="4b90-9c14-3858-638e" hidden="false" type="profile" targetId="35d8-dd34-a92a-42f4"/>
+        <infoLink name="Act of Faith" id="16b6-00e3-1adc-db62" hidden="false" type="rule" targetId="2d2c-92e4-6ee5-21ad"/>
       </infoLinks>
       <profiles>
         <profile name="Hand of the Emperor" typeId="0fe1-877f-d5ab-dcc5" typeName="Act of Faith" hidden="false" id="f3e2-a480-b51f-36dd">
           <attributes>
             <attribute name="Ability" typeId="e6f8-e3ed-4aba-5db7">This Act of Faith is used in the Assault phase. If successful, the unit gains +1 Strength and the Fearless special rule until the end of the phase.</attribute>
           </attributes>
+          <characteristics>
+            <characteristic name="Ability" typeId="8973-fda0-fb3b-ebce">This Act of Faith is used in the Assault phase. If successful, the unit gains +1 Strength and the Fearless special rule until the end of the phase.</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
@@ -1886,12 +1898,16 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <infoLink name="Fleet" id="5eaa-52cd-3ea0-a54c" hidden="false" type="profile" targetId="3748-79f1-e937-8650"/>
         <infoLink name="Rage" id="8323-b82b-e46d-cfb4" hidden="false" type="profile" targetId="4548-d7d5-3a03-36c2"/>
         <infoLink name="Shield of Faith" id="6407-fff7-fae8-a966" hidden="false" type="profile" targetId="35d8-dd34-a92a-42f4"/>
+        <infoLink name="Act of Faith" id="a525-75ce-3f1c-aa1a" hidden="false" type="rule" targetId="2d2c-92e4-6ee5-21ad"/>
       </infoLinks>
       <profiles>
         <profile name="Spirit of the Martyr" typeId="0fe1-877f-d5ab-dcc5" typeName="Act of Faith" hidden="false" id="1092-f933-a0f5-81fd">
           <attributes>
-            <attribute name="Ability" typeId="e6f8-e3ed-4aba-5db7">This Act of Faith is used in the Assault phase. If successful, do not remove any models in the unit if they are killed before they have attacked. Instead, place them on their side. After all other models involved in the assault have made their attacks, any mortally injured model placed on its side gets to make a single attack. After these attacks have been made, any models on their side are removed as casualties. </attribute>
+            <attribute name="Ability" typeId="e6f8-e3ed-4aba-5db7">This Act of Faith is used in the Assault phase. If successful, do not remove any models in the unit if they are killed before they have attacked. Instead, place them on their side. After all other models involved in the assault have made their attacks, any mortally injured model placed on its side gets to make a single attack. After these attacks have been made, any models on their side are removed as casualties.</attribute>
           </attributes>
+          <characteristics>
+            <characteristic name="Ability" typeId="8973-fda0-fb3b-ebce">This Act of Faith is used in the Assault phase. If successful, do not remove any models in the unit if they are killed before they have attacked. Instead, place them on their side. After all other models involved in the assault have made their attacks, any mortally injured model placed on its side gets to make a single attack. After these attacks have been made, any models on their side are removed as casualties.</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
@@ -2077,7 +2093,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Battle Sister Heavy Gunner" hidden="false" id="4672-bed1-1b61-7e3b" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Battle Sister Heavy Gunner" hidden="false" id="4672-bed1-1b61-7e3b">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="12"/>
               </costs>
@@ -2179,7 +2195,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90da-2a4f-6de3-bc55" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Battle Sister Gunner" hidden="false" id="a22a-44e8-5fda-520f" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Battle Sister Gunner" hidden="false" id="a22a-44e8-5fda-520f">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="12"/>
               </costs>
@@ -2248,7 +2264,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb47-3b96-94f4-8d7e" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Battle Sister Relic Holder" hidden="false" id="3bf3-22e9-c0cc-eed9" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Battle Sister Relic Holder" hidden="false" id="3bf3-22e9-c0cc-eed9">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="32"/>
               </costs>
@@ -2287,12 +2303,16 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <infoLink name="Frag Grenades" id="1b70-8d1a-ef82-89e4" hidden="false" type="profile" targetId="6e7c-a63e-3bc6-5bc9"/>
         <infoLink name="Krak Grenades" id="bfb0-29a6-0f42-46ff" hidden="false" type="profile" targetId="0a12-b99c-7d80-2ab6"/>
         <infoLink name="Shield of Faith" id="2bf8-3288-77eb-2416" hidden="false" type="profile" targetId="35d8-dd34-a92a-42f4"/>
+        <infoLink name="Act of Faith" id="9b93-96d2-e8e1-7ab3" hidden="false" type="rule" targetId="2d2c-92e4-6ee5-21ad"/>
       </infoLinks>
       <profiles>
         <profile name="Light of the Emperor" typeId="0fe1-877f-d5ab-dcc5" typeName="Act of Faith" hidden="false" id="1f64-5d33-0ded-0d2e">
           <attributes>
             <attribute name="Ability" typeId="e6f8-e3ed-4aba-5db7">This Act of Faith can be used in the Movement phase, the Shooting phase or the Assault phase. If used in the Movement phase when the Battle Sisters squad are falling back, the unit immediately regroups, despite any normal restrictions. If used in the Shooting or Assault phase, the unit rerolls any failed To Hit rolls of a 1 until the end of that phase. Note that the same squad can use Light of the Emperor in two or more phases if you choose, but a separate Faith Point and Act of Faith test are required in each phase.</attribute>
           </attributes>
+          <characteristics>
+            <characteristic name="Ability" typeId="8973-fda0-fb3b-ebce">This Act of Faith can be used in the Movement phase, the Shooting phase or the Assault phase. If used in the Movement phase when the Battle Sisters squad are falling back, the unit immediately regroups, despite any normal restrictions. If used in the Shooting or Assault phase, the unit rerolls any failed To Hit rolls of a 1 until the end of that phase. Note that the same squad can use Light of the Emperor in two or more phases if you choose, but a separate Faith Point and Act of Faith test are required in each phase.</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
@@ -2509,12 +2529,16 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <infoLink name="Jump Infantry" id="a580-004d-a14a-520a" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
         <infoLink name="Hit and Run" id="ce51-c1f4-86ab-6151" hidden="false" type="profile" targetId="17a2-9db7-3461-361c"/>
         <infoLink name="Shield of Faith" id="847d-ffda-0caf-e277" hidden="false" type="profile" targetId="35d8-dd34-a92a-42f4"/>
+        <infoLink name="Act of Faith" id="f6ed-0342-0781-3b5a" hidden="false" type="rule" targetId="2d2c-92e4-6ee5-21ad"/>
       </infoLinks>
       <profiles>
         <profile name="The Emperor&apos;s Deliverance" typeId="0fe1-877f-d5ab-dcc5" typeName="Act of Faith" hidden="false" id="4da6-8747-e9d8-10b1">
           <attributes>
             <attribute name="Ability" typeId="e6f8-e3ed-4aba-5db7">This Act of Faith is used in the Shooting phase. If successful, the unit’s Shooting attacks re-roll any failed To Wound rolls until the end of the phase.</attribute>
           </attributes>
+          <characteristics>
+            <characteristic name="Ability" typeId="8973-fda0-fb3b-ebce">This Act of Faith is used in the Shooting phase. If successful, the unit’s Shooting attacks re-roll any failed To Wound rolls until the end of the phase.</characteristic>
+          </characteristics>
         </profile>
         <profile name="Seraphim Pistols" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="e3c5-1757-a939-3f01">
           <characteristics>
@@ -2707,7 +2731,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Dominion Gunner" hidden="false" id="77cb-0d1d-6bf8-f454" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Dominion Gunner" hidden="false" id="77cb-0d1d-6bf8-f454">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="13"/>
               </costs>
@@ -2776,7 +2800,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c918-5c2f-7e32-7d5b" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Dominion Relic Holder" hidden="false" id="eda3-b539-3b7b-d37c" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Dominion Relic Holder" hidden="false" id="eda3-b539-3b7b-d37c">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="33"/>
               </costs>
@@ -2816,12 +2840,16 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <infoLink name="Krak Grenades" id="09d9-0d96-b9e0-170b" hidden="false" type="profile" targetId="0a12-b99c-7d80-2ab6"/>
         <infoLink name="Shield of Faith" id="bc1e-b40f-8c16-2fd3" hidden="false" type="profile" targetId="35d8-dd34-a92a-42f4"/>
         <infoLink name="Scouts" id="b974-8d19-33c9-9b64" hidden="false" type="profile" targetId="e289-1576-b63b-c142"/>
+        <infoLink name="Act of Faith" id="19ab-b8b6-7e17-5e34" hidden="false" type="rule" targetId="2d2c-92e4-6ee5-21ad"/>
       </infoLinks>
       <profiles>
         <profile name="Holy Fusillade" typeId="0fe1-877f-d5ab-dcc5" typeName="Act of Faith" hidden="false" id="0df5-89f7-ffa7-1847">
           <attributes>
             <attribute name="Ability" typeId="e6f8-e3ed-4aba-5db7">This Act of Faith is used in the Shooting phase. If successful, the unit’s weapons count as being twin-linked until the end of the phase.</attribute>
           </attributes>
+          <characteristics>
+            <characteristic name="Ability" typeId="8973-fda0-fb3b-ebce">This Act of Faith is used in the Shooting phase. If successful, the unit’s weapons count as being twin-linked until the end of the phase.</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
@@ -2835,7 +2863,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
       <selectionEntryGroups>
         <selectionEntryGroup name="Squad" id="34b6-ed24-486e-930d" hidden="false">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Retributor" hidden="false" id="40a1-1c23-0d25-89bb" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Retributor" hidden="false" id="40a1-1c23-0d25-89bb">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="12"/>
               </costs>
@@ -3076,7 +3104,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c875-8230-88d9-5871" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Retributor Relic Holder" hidden="false" id="4dca-5859-910a-71ea" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Retributor Relic Holder" hidden="false" id="4dca-5859-910a-71ea">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="32"/>
               </costs>
@@ -3115,12 +3143,16 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <infoLink name="Frag Grenades" id="043d-e75e-3bec-28d8" hidden="false" type="profile" targetId="6e7c-a63e-3bc6-5bc9"/>
         <infoLink name="Krak Grenades" id="8577-c54f-a3bd-0e9a" hidden="false" type="profile" targetId="0a12-b99c-7d80-2ab6"/>
         <infoLink name="Shield of Faith" id="cdb2-4d5e-f762-85fb" hidden="false" type="profile" targetId="35d8-dd34-a92a-42f4"/>
+        <infoLink name="Act of Faith" id="ca5c-b078-100d-cc8a" hidden="false" type="rule" targetId="2d2c-92e4-6ee5-21ad"/>
       </infoLinks>
       <profiles>
         <profile name="Divine Guidance" typeId="0fe1-877f-d5ab-dcc5" typeName="Act of Faith" hidden="false" id="e938-4427-a3c7-a0b9">
           <attributes>
             <attribute name="Ability" typeId="e6f8-e3ed-4aba-5db7">This Act of Faith is used in the Shooting phase. If successful, the unit’s weapons gain Rending until the end of the phase.</attribute>
           </attributes>
+          <characteristics>
+            <characteristic name="Ability" typeId="8973-fda0-fb3b-ebce">This Act of Faith is used in the Shooting phase. If successful, the unit’s weapons gain Rending until the end of the phase.</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
@@ -3282,10 +3314,10 @@ For example, if a Canoness joins a unit of Celestians then you would require two
     <infoLink name="Act of Faith" id="0db5-b951-f949-e577" hidden="false" type="rule" targetId="2d2c-92e4-6ee5-21ad"/>
   </infoLinks>
   <profileTypes>
-    <profileType name="Act of Faith" id="0fe1-877f-d5ab-dcc5" hidden="false">
-      <attributeTypes>
-        <attributeType name="Ability" id="e6f8-e3ed-4aba-5db7"/>
-      </attributeTypes>
+    <profileType name="Act of Faith" id="0fe1-877f-d5ab-dcc5" hidden="false" kind="ability">
+      <characteristicTypes>
+        <characteristicType name="Ability" id="8973-fda0-fb3b-ebce"/>
+      </characteristicTypes>
     </profileType>
   </profileTypes>
   <sharedSelectionEntryGroups>
