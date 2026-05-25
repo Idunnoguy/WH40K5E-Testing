@@ -202,9 +202,6 @@ Blast weapons do not roll to hit, so you must always roll a D6 before firing a 
 
 Twin-linked template weapons are fired just like a single weapon, but they can re-roll the dice to wound. When fired against a vehicle, you may re-roll the armour penetration dice instead.</description>
     </rule>
-    <rule name="Rending" id="6109-071e-11b4-47d1" hidden="false">
-      <description>Any roll to wound of 6 with a rending weapon automatically causes a wound, regardless of the target’s Toughness, and counts as AP2. Against vehicles, an armour penetration roll of 6 allows a further D3 to be rolled, with the result added to the total score.</description>
-    </rule>
     <rule name="Sniper" id="1637-6707-7dd4-c55b" hidden="false">
       <description>Sniper hits wound on a roll of 4+, regardless of the victim’s Toughness. In addition, all sniper weapons are also rending and pinning weapons.
 
