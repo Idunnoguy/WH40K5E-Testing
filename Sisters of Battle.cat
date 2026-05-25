@@ -1570,6 +1570,10 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                       </constraints>
                     </selectionEntry>
                   </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="self" shared="true" id="8ed3-d79c-e24e-d78f-min"/>
+                    <constraint type="max" value="2" field="selections" scope="self" shared="true" id="8ed3-d79c-e24e-d78f-max"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <selectionEntries>
@@ -2077,6 +2081,10 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                       </constraints>
                     </selectionEntry>
                   </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="self" shared="true" id="ee72-9137-12a9-0701-min"/>
+                    <constraint type="max" value="2" field="selections" scope="self" shared="true" id="ee72-9137-12a9-0701-max"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <selectionEntries>
@@ -2715,6 +2723,10 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                       </constraints>
                     </selectionEntry>
                   </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="self" shared="true" id="65e4-bef8-b70b-1a92-min"/>
+                    <constraint type="max" value="2" field="selections" scope="self" shared="true" id="65e4-bef8-b70b-1a92-max"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <selectionEntries>
@@ -3019,6 +3031,10 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                       </constraints>
                     </selectionEntry>
                   </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="self" shared="true" id="ca26-206f-5194-b906-min"/>
+                    <constraint type="max" value="2" field="selections" scope="self" shared="true" id="ca26-206f-5194-b906-max"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <selectionEntries>
@@ -3303,6 +3319,9 @@ For example, if a Canoness joins a unit of Celestians then you would require two
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="94b2-b907-a317-7776" primary="true" name="Heavy Support"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

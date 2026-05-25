@@ -3361,7 +3361,7 @@ Once the Drop Pod has landed, all passengers must immediately disembark, as norm
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon" id="83d0-bca4-b642-af66" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="5c86-b487-3446-6b17">
+            <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="5c86-b487-3446-6b17" defaultAmount="1">
               <infoLinks>
                 <infoLink name="Storm Bolter" id="ebd1-cc78-7187-8fcc" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
               </infoLinks>
