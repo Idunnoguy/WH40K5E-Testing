@@ -5290,7 +5290,7 @@ Walkers make sweeping advances, pile-in moves and consolidations unless they ar
                         <infoLink name="Lightning Claws" id="3a07-dd9c-3f32-c196" hidden="false" type="profile" targetId="5f25-fc3f-2fbd-1d75"/>
                       </infoLinks>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b33c-bba0-a3d7-c47f"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b33c-bba0-a3d7-c47f"/>
                       </constraints>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="dcd3-887f-7e63-ad39" sortIndex="5">
@@ -5391,7 +5391,7 @@ Walkers make sweeping advances, pile-in moves and consolidations unless they ar
                         <infoLink name="Lightning Claws" id="7285-53ee-705a-7db0" hidden="false" type="profile" targetId="5f25-fc3f-2fbd-1d75"/>
                       </infoLinks>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d1a-2150-72c0-8c1d"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0d1a-2150-72c0-8c1d"/>
                       </constraints>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="7b25-1bc7-ea73-d084">

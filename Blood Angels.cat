@@ -6216,59 +6216,83 @@ The target does not change facing and will stop if it comes within 1&quot; or di
             <constraint type="max" value="2" field="selections" scope="self" shared="true" id="a46e-9739-230e-2902"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Dedicated Transport" id="807c-1a69-114d-93e8" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Drop Pod" hidden="false" id="5efa-1864-d5a2-d97e" type="selectionEntry" targetId="57d0-d692-2492-52c0">
+        <selectionEntryGroup name="Configuration" id="c6b6-3f84-6cfe-0ba5" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Jump Packs" hidden="false" id="39d5-3612-0562-0300" defaultAmount="1">
+              <infoLinks>
+                <infoLink name="Jump Pack" id="b325-518b-1248-036c" hidden="false" type="profile" targetId="9fdf-bc3e-5c20-fe0c"/>
+                <infoLink name="Jump Infantry" id="44b2-a5c0-6c60-5525" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
+              </infoLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f829-7be2-cb5d-75ff" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4622-88ed-4dc4-3c90" includeChildSelections="false"/>
               </constraints>
-              <costs>
-                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="0"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Land Raider" hidden="false" id="1512-b2c7-9320-ae91" type="selectionEntry" targetId="4960-81b0-2a4d-29ff">
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Transported" hidden="false" id="6f3e-8bfc-0658-fd88">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Dedicated Transport" id="807c-1a69-114d-93e8" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Drop Pod" hidden="false" id="5efa-1864-d5a2-d97e" type="selectionEntry" targetId="57d0-d692-2492-52c0">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f829-7be2-cb5d-75ff" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Land Raider" hidden="false" id="1512-b2c7-9320-ae91" type="selectionEntry" targetId="4960-81b0-2a4d-29ff">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80af-2597-8ea0-cdc0" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="215"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Land Raider Crusader" hidden="false" id="42e6-dd80-6a25-fb73" type="selectionEntry" targetId="99ba-d906-b347-e4e3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04e8-3d12-6a0e-37c1" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="215"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Land Raider Redeemer" hidden="false" id="540d-3f30-2a79-498b" type="selectionEntry" targetId="8cc0-a205-f73d-4ff9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90ad-a27a-562d-a1b7" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="205"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Razorback" hidden="false" id="d1fc-86bc-98ff-6070" type="selectionEntry" targetId="5abf-2c54-24ab-27ec">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9982-d492-4edc-79d0" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Rhino" hidden="false" id="c91c-39f0-53ee-ed2c" type="selectionEntry" targetId="0761-9e60-dce9-7b3d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8a6-db51-f22c-cce6" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="2362-59bf-335c-a489"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80af-2597-8ea0-cdc0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cac-b085-34c0-8754" includeChildSelections="false"/>
               </constraints>
-              <costs>
-                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="215"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Land Raider Crusader" hidden="false" id="42e6-dd80-6a25-fb73" type="selectionEntry" targetId="99ba-d906-b347-e4e3">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04e8-3d12-6a0e-37c1" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="215"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Land Raider Redeemer" hidden="false" id="540d-3f30-2a79-498b" type="selectionEntry" targetId="8cc0-a205-f73d-4ff9">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90ad-a27a-562d-a1b7" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="215"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Razorback" hidden="false" id="d1fc-86bc-98ff-6070" type="selectionEntry" targetId="5abf-2c54-24ab-27ec">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9982-d492-4edc-79d0" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Rhino" hidden="false" id="c91c-39f0-53ee-ed2c" type="selectionEntry" targetId="0761-9e60-dce9-7b3d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8a6-db51-f22c-cce6" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="2362-59bf-335c-a489"/>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="cb0c-96dd-45f2-c83c-min"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="cb0c-96dd-45f2-c83c-max"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
