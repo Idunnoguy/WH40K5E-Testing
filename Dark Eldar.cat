@@ -2387,9 +2387,6 @@ If a Dark Eldar unit is joined by one or more characters with pain tokens, all t
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Haemonculus" hidden="false" id="51db-3ac5-de8a-bd3d">
-      <costs>
-        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="80"/>
-      </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="You may include up to three Haemonculus in one HQ choice" id="23ab-9a15-c7a0-c52a" hidden="false" defaultSelectionEntryId="116e-4b4e-eaac-cfb1">
           <selectionEntries>
