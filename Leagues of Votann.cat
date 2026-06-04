@@ -60,7 +60,7 @@ When a Votann unit makes an attack against a unit with one or more Judgement tok
     <profile name="Bolt Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="ca1a-f91e-8744-7b75">
       <characteristics>
         <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
-        <characteristic name="Str." typeId="1ebc-896c-43de-904a">6</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
         <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">4</characteristic>
         <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 3</characteristic>
         <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
@@ -68,8 +68,8 @@ When a Votann unit makes an attack against a unit with one or more Judgement tok
     </profile>
     <profile name="Bolt Revolver" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="5070-fc49-3c52-1a5c">
       <characteristics>
-        <characteristic name="Range" typeId="9b9e-0c24-e409-a801">9&quot;</characteristic>
-        <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
+        <characteristic name="Range" typeId="9b9e-0c24-e409-a801">12&quot;</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
         <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
         <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Pistol</characteristic>
         <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
@@ -87,7 +87,7 @@ When a Votann unit makes an attack against a unit with one or more Judgement tok
     <profile name="EtaCarn Plasma Beamer" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="1a81-90bf-bb73-4cb5">
       <characteristics>
         <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
-        <characteristic name="Str." typeId="1ebc-896c-43de-904a">8</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">7</characteristic>
         <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
         <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 1, Beam, Gets Hot!</characteristic>
         <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
@@ -168,17 +168,17 @@ When a Votann unit makes an attack against a unit with one or more Judgement tok
     <profile name="Ion Beamer" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="867c-b969-8c18-28cc">
       <characteristics>
         <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
-        <characteristic name="Str." typeId="1ebc-896c-43de-904a">6</characteristic>
-        <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">4</characteristic>
-        <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 2, Beam</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+        <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
+        <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 1, Beam</characteristic>
         <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
       </characteristics>
     </profile>
     <profile name="Ion Blaster" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="f858-1c73-2b5a-f1b4">
       <characteristics>
         <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
-        <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
-        <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">4</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+        <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
         <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 1</characteristic>
         <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
       </characteristics>
@@ -332,7 +332,7 @@ When a Votann unit makes an attack against a unit with one or more Judgement tok
     <profile name="Twin-linked Bolt Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="68de-321a-3dda-acf8">
       <characteristics>
         <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
-        <characteristic name="Str." typeId="1ebc-896c-43de-904a">6</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
         <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">4</characteristic>
         <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 3, Twin-linked</characteristic>
         <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
@@ -662,7 +662,7 @@ Each E-COG model adds +1 to the repair roll.</characteristic>
             <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">5</characteristic>
             <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">5</characteristic>
             <characteristic name="S" typeId="09af-e927-0c3c-9d88">4</characteristic>
-            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">5</characteristic>
+            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">4</characteristic>
             <characteristic name="W" typeId="4a81-ac45-a71c-c71e">4</characteristic>
             <characteristic name="I" typeId="8517-a46c-d6df-9c75">4</characteristic>
             <characteristic name="A" typeId="a535-0722-3bc1-4d3c">3</characteristic>
@@ -940,8 +940,8 @@ Each E-COG model adds +1 to the repair roll.</characteristic>
                   <characteristics>
                     <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">4</characteristic>
                     <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">4</characteristic>
-                    <characteristic name="S" typeId="09af-e927-0c3c-9d88">5</characteristic>
-                    <characteristic name="T" typeId="ff29-f8b2-5b20-b686">5</characteristic>
+                    <characteristic name="S" typeId="09af-e927-0c3c-9d88">4</characteristic>
+                    <characteristic name="T" typeId="ff29-f8b2-5b20-b686">4</characteristic>
                     <characteristic name="W" typeId="4a81-ac45-a71c-c71e">1</characteristic>
                     <characteristic name="I" typeId="8517-a46c-d6df-9c75">3</characteristic>
                     <characteristic name="A" typeId="a535-0722-3bc1-4d3c">2</characteristic>
@@ -1010,9 +1010,9 @@ Each E-COG model adds +1 to the repair roll.</characteristic>
                   <characteristics>
                     <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">4</characteristic>
                     <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">4</characteristic>
-                    <characteristic name="S" typeId="09af-e927-0c3c-9d88">5</characteristic>
-                    <characteristic name="T" typeId="ff29-f8b2-5b20-b686">5</characteristic>
-                    <characteristic name="W" typeId="4a81-ac45-a71c-c71e">2</characteristic>
+                    <characteristic name="S" typeId="09af-e927-0c3c-9d88">4</characteristic>
+                    <characteristic name="T" typeId="ff29-f8b2-5b20-b686">4</characteristic>
+                    <characteristic name="W" typeId="4a81-ac45-a71c-c71e">1</characteristic>
                     <characteristic name="I" typeId="8517-a46c-d6df-9c75">3</characteristic>
                     <characteristic name="A" typeId="a535-0722-3bc1-4d3c">3</characteristic>
                     <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">9</characteristic>
@@ -1974,6 +1974,7 @@ Each E-COG model adds +1 to the repair roll.</characteristic>
       <infoLinks>
         <infoLink name="HYLas Rotary Cannon" id="801a-bde4-3ce3-f3c8" hidden="false" type="profile" targetId="1474-05be-4e89-5b56"/>
         <infoLink name="Searchlight" id="5ac5-b1a7-81db-58a3" hidden="false" type="profile" targetId="589c-c16c-2ed7-61f9"/>
+        <infoLink name="Extra Armour" id="3c60-937e-d6b3-5a92" hidden="false" type="profile" targetId="ec58-94f7-12e5-a9b9"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="f660-a3bf-268f-92fa" primary="true" name="Heavy Support"/>
