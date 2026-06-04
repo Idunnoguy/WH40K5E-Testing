@@ -10946,7 +10946,7 @@ A single Cyclops and its operator may be transported inside a Chimera. They coun
     <profile name="Castigator Gatling Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="9df4-217d-2533-3726">
       <characteristics>
         <characteristic name="Range" typeId="9b9e-0c24-e409-a801">24&quot;</characteristic>
-        <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
         <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">-</characteristic>
         <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 12</characteristic>
         <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>

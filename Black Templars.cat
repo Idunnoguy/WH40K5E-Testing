@@ -751,6 +751,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9926-7089-a4db-6a4e" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="eece-0af0-a339-b012" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="1efa-244c-0f7f-5fb1"/>
@@ -2165,6 +2166,7 @@ In addition, any Psychic powers targeted against Black Templar units or characte
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4818-53f3-56ef-1e42" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="c4e6-23cd-a0ed-f0f5" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="f3e3-f5e9-ecbf-9651"/>
@@ -2896,6 +2898,7 @@ In addition, any Psychic powers targeted against Black Templar units or characte
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0386-4c97-6ad9-fb7f" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="b766-fc7c-2a33-82c6" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="de9e-ab62-d83d-5793"/>
@@ -3566,6 +3569,16 @@ In addition, any Psychic powers targeted against Black Templar units or characte
     <entryLink import="true" name="Land Raider Crusader" hidden="false" id="be77-76f1-6af0-6efc" type="selectionEntry" targetId="99ba-d906-b347-e4e3">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="f861-bae6-57cd-59ae" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Repulsor" hidden="false" id="5b99-57fe-d926-33ea" type="selectionEntry" targetId="b556-6668-cc88-ab99">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="8597-1dae-e53d-55b0" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Gladiator" hidden="false" id="46f3-6951-f34e-63e0" type="selectionEntry" targetId="b8fb-3d05-1547-38bc">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="8404-01dd-24b5-5406" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

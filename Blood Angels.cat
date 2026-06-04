@@ -4794,7 +4794,11 @@ The target does not change facing and will stop if it comes within 1&quot; or di
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="eeea-9c7a-7a29-9fd6" primary="true" name="Elites"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Dedicated Transport" hidden="false" id="5ed7-6bff-6b03-73f7" type="selectionEntryGroup" targetId="3ab8-c436-db26-0e4f"/>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="5ed7-6bff-6b03-73f7" type="selectionEntryGroup" targetId="3ab8-c436-db26-0e4f">
+          <entryLinks>
+            <entryLink import="true" name="Impulsor" hidden="false" id="3abe-dad9-b65f-e24a" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sanguinary Priest" hidden="false" id="c8fa-caef-5e52-e205">
@@ -5412,7 +5416,11 @@ The target does not change facing and will stop if it comes within 1&quot; or di
         <categoryLink targetId="default-category" id="26b2-6900-0dba-25e1" primary="true" name="Troops"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Dedicated Transport" hidden="false" id="d0e4-2322-fc40-7dc3" type="selectionEntryGroup" targetId="3ab8-c436-db26-0e4f"/>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="d0e4-2322-fc40-7dc3" type="selectionEntryGroup" targetId="3ab8-c436-db26-0e4f">
+          <entryLinks>
+            <entryLink import="true" name="Impulsor" hidden="false" id="b2bf-688c-c3c4-d692" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Death Company" hidden="false" id="286f-b885-8f05-8553">
@@ -5536,7 +5544,11 @@ The target does not change facing and will stop if it comes within 1&quot; or di
         <infoLink name="Krak Grenades" id="86fd-39ac-3027-7c68" hidden="false" type="profile" targetId="0a12-b99c-7d80-2ab6"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Dedicated Transport" hidden="false" id="2827-390a-c1e7-b0e2" type="selectionEntryGroup" targetId="3ab8-c436-db26-0e4f"/>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="2827-390a-c1e7-b0e2" type="selectionEntryGroup" targetId="3ab8-c436-db26-0e4f">
+          <entryLinks>
+            <entryLink import="true" name="Impulsor" hidden="false" id="8cec-7dff-f96c-02d4" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="default-category" id="9dc4-ea42-e467-8b82" primary="true" name="Troops"/>
@@ -6261,7 +6273,7 @@ The target does not change facing and will stop if it comes within 1&quot; or di
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Space Marine Gunner" hidden="false" id="bb5d-c66f-2373-7134" collective="false" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Space Marine Gunner" hidden="false" id="bb5d-c66f-2373-7134" collective="false">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="18"/>
               </costs>
@@ -6430,6 +6442,11 @@ The target does not change facing and will stop if it comes within 1&quot; or di
                       </constraints>
                       <costs>
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Impulsor" hidden="false" id="53cb-c9e2-f13c-2af9" type="selectionEntry" targetId="029f-8e03-0080-1cf7">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -6760,7 +6777,11 @@ The target does not change facing and will stop if it comes within 1&quot; or di
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Dedicated Transport" hidden="false" id="24e0-9253-8274-f25f" type="selectionEntryGroup" targetId="3ab8-c436-db26-0e4f"/>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="24e0-9253-8274-f25f" type="selectionEntryGroup" targetId="3ab8-c436-db26-0e4f">
+          <entryLinks>
+            <entryLink import="true" name="Impulsor" hidden="false" id="0f52-748b-ac3f-bf1e" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="2328-a39d-a3a7-cf50" primary="true" name="Fast Attack"/>
@@ -7355,6 +7376,7 @@ Therefore, a Land Raider that has moved at combat speed can fire two weapons, an
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0235-65db-5649-d445"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="3151-ca03-f092-c872" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="be56-e20a-aa47-5a62"/>
@@ -7725,6 +7747,16 @@ Therefore, a Land Raider that has moved at combat speed can fire two weapons, an
     <entryLink import="true" name="Whirlwind" hidden="false" id="261e-4d04-4bd0-f857" type="selectionEntry" targetId="b31b-afe0-7c98-d3e1">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="cdb5-39b7-767f-c2c6" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Gladiator" hidden="false" id="c5f9-7eb0-8387-749a" type="selectionEntry" targetId="b8fb-3d05-1547-38bc">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="6e91-16ec-5023-d723" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Repulsor" hidden="false" id="7d27-9808-e9b1-2542" type="selectionEntry" targetId="b556-6668-cc88-ab99">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="1f2c-3d5f-f86d-2dff" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

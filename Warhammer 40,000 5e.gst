@@ -2019,6 +2019,24 @@ Each player then rolls a D6 and adds their model&apos;s leadership value to the 
         <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">3+</characteristic>
       </characteristics>
     </profile>
+    <profile name="Fragstorm Grenade Launcher" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="aa50-62f2-6fea-fdef">
+      <characteristics>
+        <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+        <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">6</characteristic>
+        <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 1, Blast</characteristic>
+        <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+      </characteristics>
+    </profile>
+    <profile name="Twin-linked Heavy Stubber" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="561d-cb4b-b0d6-833d">
+      <characteristics>
+        <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+        <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">6</characteristic>
+        <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 3, Twin-linked</characteristic>
+        <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Combi-weapon" hidden="false" id="d720-24d4-d7f1-df20" defaultAmount="0">
@@ -3808,6 +3826,416 @@ Once the Drop Pod has landed, all passengers must immediately disembark, as norm
         <infoLink name="And They Shall Know No Fear" id="1125-b47e-47b3-ba9f" hidden="false" type="rule" targetId="73f8-658e-9da5-beba"/>
         <infoLink name="Bike" id="c329-3fef-bd1f-95cb" hidden="false" type="rule" targetId="3326-67e1-a5e9-b3e7"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Repulsor" hidden="false" id="b556-6668-cc88-ab99">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="250"/>
+      </costs>
+      <profiles>
+        <profile name="Repulsor Executioner" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="ec81-5bb5-109f-eb45">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">14</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">13</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">11</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fragstorm Grenade Launcher" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="0247-d1b6-29e0-020d">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">6</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 1, Blast</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Fragstorm Grenade Launcher" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="17e0-db77-790e-576c">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">6</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 1, Blast</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Heavy Onslaught Gatling Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="0d61-13d4-a7b2-205e">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">30&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">-</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 12</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Repulsor Executioner" typeId="9a37-e4d2-11fe-9e81" typeName="Transport" hidden="false" id="6921-748b-1cdd-63da">
+          <characteristics>
+            <characteristic name="Capacity" typeId="7cdf-4c80-a83d-200c">6 Models</characteristic>
+            <characteristic name="Access Points" typeId="6e42-3bd5-70a6-724f">One on each side, one on rear.</characteristic>
+            <characteristic name="Fire Points" typeId="aa94-ae0c-98e7-5923"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Turret" id="3a95-49c5-9d04-f20c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Laser Destroyer" hidden="false" id="cb76-dbe4-6c7b-d54b">
+              <profiles>
+                <profile name="Heavy Laser Destroyer" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="4d85-6f30-2433-f85c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">72&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">9</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 2</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c3a-908d-c0e1-87bb" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Macro Plasma Incinerator" hidden="false" id="f78d-4b7d-391f-9c2c" defaultAmount="1">
+              <profiles>
+                <profile name="Macro Plasma Incinerator" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="887b-e9ab-0bee-e979">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">7</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, Blast, Gets Hot!</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b29a-6a70-f8fc-edd5" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="c632-fe8d-590b-1ba0-min"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c632-fe8d-590b-1ba0-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Storm Bolter" id="57e0-9a5e-17df-0a18" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+        <infoLink name="Storm Bolter" id="6615-a99d-297f-cbce" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+        <infoLink name="Twin-linked Heavy Bolter" id="c746-7cfa-e98d-1290" hidden="false" type="profile" targetId="684d-431d-f854-d4fd"/>
+        <infoLink targetId="561d-cb4b-b0d6-833d" id="cd32-5869-6f2e-4e9e" type="profile" name="Twin-linked Heavy Stubber" hidden="false"/>
+        <infoLink name="Skimmer" id="4e28-f05f-560b-08f8" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+        <infoLink name="Tank" id="9ab3-90a4-ce77-ea42" hidden="false" type="rule" targetId="3475-46b4-28e6-8fb0"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="0d52-29d1-f91c-323b" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Icarus Rocket Pods" hidden="false" id="0d21-1009-b16e-a692">
+          <profiles>
+            <profile name="Icarus Rocket Pods" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="2813-ff97-84a9-023c">
+              <characteristics>
+                <characteristic name="Range" typeId="9b9e-0c24-e409-a801">24&quot;</characteristic>
+                <characteristic name="Str." typeId="1ebc-896c-43de-904a">7</characteristic>
+                <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
+                <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, Blast</characteristic>
+                <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">Counts at Twin-linked when targeting skimmers or Jump infantry.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ab5-be5b-88dc-24cc" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Stubber" hidden="false" id="d2e4-24b6-00df-14c3">
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Heavy Stubber" id="0218-e9d8-145e-45c8" hidden="false" type="profile" targetId="18dc-70dc-46bc-2834"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1887-8287-7882-6c7d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Impulsor" hidden="false" id="029f-8e03-0080-1cf7">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="40"/>
+      </costs>
+      <profiles>
+        <profile name="Impulsor" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="2de9-e54b-6063-a598">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">13</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">11</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Impulsor" typeId="9a37-e4d2-11fe-9e81" typeName="Transport" hidden="false" id="be8e-6db8-f278-3b57">
+          <characteristics>
+            <characteristic name="Capacity" typeId="7cdf-4c80-a83d-200c">6 Models</characteristic>
+            <characteristic name="Access Points" typeId="6e42-3bd5-70a6-724f">one at Rear</characteristic>
+            <characteristic name="Fire Points" typeId="aa94-ae0c-98e7-5923">6 models may fire from the rear hold.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Exposed Rear" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="1c56-6508-4074-729f">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Attacks made against the rear of an Impulsor count as Open-topped. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Sponsons" id="ecea-1e2f-67aa-3c0b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Stormbolters" hidden="false" id="c2ce-df3b-174f-23e6" defaultAmount="1">
+              <infoLinks>
+                <infoLink name="Storm Bolter" id="a074-2197-ba73-6cc9" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+                <infoLink name="Storm Bolter" id="f0c1-d663-0716-57f0" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43d8-ea48-6406-c9c8" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fragstorm Grenade Launchers" hidden="false" id="d71d-8005-ce81-ad19">
+              <infoLinks>
+                <infoLink name="Fragstorm Grenade Launcher" id="661e-92ae-5c85-3fe7" hidden="false" type="profile" targetId="aa50-62f2-6fea-fdef"/>
+                <infoLink name="Fragstorm Grenade Launcher" id="1f82-5199-53f7-2c4a" hidden="false" type="profile" targetId="aa50-62f2-6fea-fdef"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31d2-25cd-9283-1a25" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="f6d3-a4a3-af62-016e-min"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="f6d3-a4a3-af62-016e-max"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Turret" id="1069-7892-7d75-5169" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Heavy Stubber" hidden="false" id="9d76-64ff-7e45-1b09">
+              <infoLinks>
+                <infoLink name="Twin-linked Heavy Stubber" id="6910-a5cf-2156-7a7d" hidden="false" type="profile" targetId="561d-cb4b-b0d6-833d"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="307f-c960-fd37-f74f" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="7232-847d-59a0-7a4d">
+              <infoLinks>
+                <infoLink name="Missile Launcher (Krak)" id="b32b-ccba-f300-2533" hidden="false" type="profile" targetId="c290-fc2b-c332-8290"/>
+                <infoLink name="Missile Launcher (Frag)" id="8c80-0417-63c1-a6ac" hidden="false" type="profile" targetId="5c9b-64b6-6546-fc94"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4677-05f6-6f60-7048" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="074f-8216-7d8c-00dd"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Skimmer" id="fea0-caa6-1ab8-16c4" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+        <infoLink name="Tank" id="0d37-a745-cca6-609e" hidden="false" type="rule" targetId="3475-46b4-28e6-8fb0"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gladiator" hidden="false" id="b8fb-3d05-1547-38bc">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="100"/>
+      </costs>
+      <profiles>
+        <profile name="Gladiator" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="8b2b-b0c8-4020-5972">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">13</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">11</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Turret" id="d2c4-457a-18f6-9bc3" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Lascannons" hidden="false" id="ecf5-0244-5154-0b01">
+              <infoLinks>
+                <infoLink name="Twin-linked Lascannons" id="a086-b6ef-5497-67ba" hidden="false" type="profile" targetId="0652-8647-3961-0d47"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b5f-2d99-6a5f-49be" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Gatling Cannons" hidden="false" id="b616-428b-4fc7-c64f" defaultAmount="1">
+              <profiles>
+                <profile name="Twin-linked Gatling Cannons" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="c388-222b-bf65-5aee">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">30&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">-</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 12, Twin-linked</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4de9-6fcb-b52c-d870" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73e7-fdc8-d1b8-f83b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lancer Laser Destroyer" hidden="false" id="dc2f-c5cf-bee1-5e8d">
+              <profiles>
+                <profile name="Lancer Laser Destroyer" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="43a4-2112-06a0-6545">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">72&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">10</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">1</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1383-f26a-aa8e-8154" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="301a-178a-2863-86a0-min"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="301a-178a-2863-86a0-max"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Sponsons" id="3cd4-fd9b-41d8-855c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Multi-meltas" hidden="false" id="212e-94fe-159f-b6e1">
+              <infoLinks>
+                <infoLink name="Multi-melta" id="8013-a251-e035-8d84" hidden="false" type="profile" targetId="0b59-dfc6-9696-0b99"/>
+                <infoLink name="Multi-melta" id="9d96-2df2-3671-6dc3" hidden="false" type="profile" targetId="0b59-dfc6-9696-0b99"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81e7-836e-ed33-a1b7" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tempest Bolters" hidden="false" id="5f28-b564-7d39-33b7">
+              <profiles>
+                <profile name="Tempest Bolters" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="15e0-bc09-22ec-0350">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">24&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Rapid Fire, Twin-linked</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">Counts as two twin-linked boltguns</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Tempest Bolters" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="5a91-692d-e89a-c785">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">24&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Rapid Fire, Twin-linked</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">Counts as two twin-linked boltguns</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfaf-dd71-7865-c307" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Storm Bolters" hidden="false" id="0995-adb7-18b1-7ae6" defaultAmount="1">
+              <infoLinks>
+                <infoLink name="Storm Bolter" id="53c1-32d1-4caf-5b80" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+                <infoLink name="Storm Bolter" id="3c37-235e-a939-ad42" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="886c-2c9d-2610-d014" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fragstorm Grenade Launchers" hidden="false" id="1790-223c-26a0-32ef">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Fragstorm Grenade Launcher" id="c02d-4634-479c-6125" hidden="false" type="profile" targetId="aa50-62f2-6fea-fdef"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb48-55c8-60b4-7230" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="835f-de51-b00d-f3c8-min"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="835f-de51-b00d-f3c8-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Smoke Launchers" id="5f9e-3974-381f-7ca4" hidden="false" type="profile" targetId="180e-ad4b-4df0-81ae"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy Stubber" hidden="false" id="70ea-6a2f-95d6-8e67">
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Heavy Stubber" id="cbed-94e5-53c6-2667" hidden="false" type="profile" targetId="18dc-70dc-46bc-2834"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4292-3598-02eb-015e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Icarus Rocket Pods" hidden="false" id="3701-30a4-b6ed-2c7b">
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Icarus Rocket Pods" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="9970-5b29-1eec-9146">
+              <characteristics>
+                <characteristic name="Range" typeId="9b9e-0c24-e409-a801">24&quot;</characteristic>
+                <characteristic name="Str." typeId="1ebc-896c-43de-904a">7</characteristic>
+                <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
+                <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, Blast</characteristic>
+                <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">Counts at Twin-linked when targeting skimmers or Jump infantry.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="011d-53cf-e2d7-5093" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="24c5-a830-40d8-e88a" primary="true" name="Heavy Support"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </gameSystem>

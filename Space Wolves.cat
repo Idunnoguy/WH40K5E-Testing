@@ -391,7 +391,7 @@
                     <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Thunder Hammers" id="dc84-10b3-0d94-432e" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                    <infoLink name="Thunder Hammer" id="dc84-10b3-0d94-432e" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7104-3594-a730-7728"/>
@@ -837,7 +837,7 @@
                     <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Thunder Hammers" id="87f6-46c4-b98f-acb1" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                    <infoLink name="Thunder Hammer" id="87f6-46c4-b98f-acb1" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b386-923b-c76e-29a7" includeChildSelections="false"/>
@@ -918,7 +918,7 @@
                     <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Thunder Hammers" id="37b1-d937-b83a-ea9b" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                    <infoLink name="Thunder Hammer" id="37b1-d937-b83a-ea9b" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a7d-88d6-4c51-b9cf" includeChildSelections="false"/>
@@ -1797,7 +1797,7 @@
                     <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Thunder Hammers" id="fa79-e707-049c-dd06" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                    <infoLink name="Thunder Hammer" id="fa79-e707-049c-dd06" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e328-43f0-5a57-466a"/>
@@ -2195,7 +2195,7 @@
                     <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Thunder Hammers" id="4532-8b1e-9ef1-93a7" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                    <infoLink name="Thunder Hammer" id="4532-8b1e-9ef1-93a7" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f378-68ca-6e2d-8198" includeChildSelections="false"/>
@@ -2276,7 +2276,7 @@
                     <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Thunder Hammers" id="9e10-8718-ba22-c25d" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                    <infoLink name="Thunder Hammer" id="9e10-8718-ba22-c25d" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3713-088c-54d0-ee33" includeChildSelections="false"/>
@@ -2383,7 +2383,7 @@
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
                       </costs>
                       <infoLinks>
-                        <infoLink name="Thunder Hammers" id="cbb4-5fb4-0205-e293" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                        <infoLink name="Thunder Hammer" id="cbb4-5fb4-0205-e293" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                       </infoLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7155-5129-8132-feb1" includeChildSelections="false"/>
@@ -2560,7 +2560,7 @@
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
                       </costs>
                       <infoLinks>
-                        <infoLink name="Thunder Hammers" id="3477-1b07-3dce-73cb" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                        <infoLink name="Thunder Hammer" id="3477-1b07-3dce-73cb" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                       </infoLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb09-b1e1-8528-a1b5" includeChildSelections="false"/>
@@ -2631,7 +2631,7 @@
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
                       </costs>
                       <infoLinks>
-                        <infoLink name="Thunder Hammers" id="c7d5-d25d-a9a0-d0e9" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                        <infoLink name="Thunder Hammer" id="c7d5-d25d-a9a0-d0e9" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                       </infoLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ff0-a349-8145-607f" includeChildSelections="false"/>
@@ -2772,7 +2772,7 @@
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
                       </costs>
                       <infoLinks>
-                        <infoLink name="Thunder Hammers" id="ea44-c8c5-1877-8ab8" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                        <infoLink name="Thunder Hammer" id="ea44-c8c5-1877-8ab8" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                       </infoLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e98e-ed25-c90d-b36b" includeChildSelections="false"/>
@@ -2889,6 +2889,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e003-4dd1-3e64-c148" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="76ec-ac1b-4a7d-8bb6" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="One Wolf Guard pack may select any type of Land Raider as a dedicated transport." hidden="false" id="e376-7dcd-0f74-9a34">
@@ -2951,7 +2952,7 @@
         <infoLink name="Iron Priest" id="f8d0-80ea-d90a-59df" hidden="false" type="profile" targetId="70dc-5372-0f00-5a0e"/>
         <infoLink name="Runic Armour" id="c679-0e9b-c366-a106" hidden="false" type="profile" targetId="eac9-dbf2-fa70-a3c7"/>
         <infoLink name="Servo-arm" id="9944-7a8a-fff3-b8a0" hidden="false" type="profile" targetId="3bb0-d10e-9059-eb84"/>
-        <infoLink name="Thunder Hammers" id="234d-5cd8-67ec-8918" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+        <infoLink name="Thunder Hammer" id="234d-5cd8-67ec-8918" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
         <infoLink name="Frag Grenades" id="cc3b-333a-77cc-1d92" hidden="false" type="profile" targetId="6e7c-a63e-3bc6-5bc9"/>
         <infoLink name="Krak Grenades" id="ebec-fa78-e857-700d" hidden="false" type="profile" targetId="0a12-b99c-7d80-2ab6"/>
         <infoLink name="And They Shall Know No Fear" id="26d8-ce1b-e0a1-0869" hidden="false" type="rule" targetId="73f8-658e-9da5-beba"/>
@@ -3442,7 +3443,7 @@
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
               </costs>
               <infoLinks>
-                <infoLink name="Thunder Hammers" id="9bf5-f78a-8bae-43b4" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                <infoLink name="Thunder Hammer" id="9bf5-f78a-8bae-43b4" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eba3-377f-f706-f1f5"/>
@@ -3582,7 +3583,7 @@
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
               </costs>
               <infoLinks>
-                <infoLink name="Thunder Hammers" id="5d31-a957-50e8-4d10" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                <infoLink name="Thunder Hammer" id="5d31-a957-50e8-4d10" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb79-7a70-1d78-fe8e" includeChildSelections="false"/>
@@ -3663,7 +3664,7 @@
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
               </costs>
               <infoLinks>
-                <infoLink name="Thunder Hammers" id="daee-aaac-c4e2-c907" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                <infoLink name="Thunder Hammer" id="daee-aaac-c4e2-c907" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc97-575d-1e83-7a3e" includeChildSelections="false"/>
@@ -3792,6 +3793,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2165-1835-8c6b-8074"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="9c12-2e77-a8b5-7b4d" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="57d5-738d-9018-6b5c"/>
@@ -4355,7 +4357,7 @@
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
                       </costs>
                       <infoLinks>
-                        <infoLink name="Thunder Hammers" id="b86b-63c4-0208-4c2f" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                        <infoLink name="Thunder Hammer" id="b86b-63c4-0208-4c2f" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
                       </infoLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab33-948a-f3fc-2a31" includeChildSelections="false"/>
@@ -5042,6 +5044,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbe7-b96a-0cea-f2de"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="752c-a814-83e8-2903" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="361c-d533-18c1-f71a"/>
@@ -5845,6 +5848,12 @@
     <entryLink import="true" name="Land Raider Redeemer" hidden="false" id="1921-007c-d78a-5704" type="selectionEntry" targetId="8cc0-a205-f73d-4ff9">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="0c82-fcf7-021d-dc28" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Repulsor" hidden="false" id="819c-2dc3-abd7-678f" type="selectionEntry" targetId="b556-6668-cc88-ab99"/>
+    <entryLink import="true" name="Gladiator" hidden="false" id="612c-15dd-c100-bf7a" type="selectionEntry" targetId="b8fb-3d05-1547-38bc">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="3c9c-45e3-0ac1-5f6f" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

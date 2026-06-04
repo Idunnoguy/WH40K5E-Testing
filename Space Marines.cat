@@ -2283,6 +2283,7 @@ Units which include Servitors are still subject to this rule, providing that the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7716-a064-ff34-4009"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="5ae1-459e-8052-372b" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="ca98-e46c-1c2b-e16d"/>
@@ -4030,6 +4031,7 @@ Therefore, a Land Raider that has moved at combat speed can fire two weapons, an
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ce-17ae-1a4c-15da"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="0ff8-42cc-00ca-5b60" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9801-9f3d-a12b-fc99"/>
@@ -5843,6 +5845,7 @@ Walkers make sweeping advances, pile-in moves and consolidations unless they ar
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dde6-a832-c6e4-54b7"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="84b3-df7a-4175-2384" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="7643-fe39-5de9-98c2"/>
@@ -8557,6 +8560,7 @@ If the tank suffers a Wrecked or Explodes! result, roll a D6. On a 1 or 2, Chron
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="073d-0824-65ea-53bd"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="105b-9089-8b50-226f" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="f58f-f08d-56de-e1cc"/>
@@ -10007,6 +10011,7 @@ If the tank suffers a Wrecked or Explodes! result, roll a D6. On a 1 or 2, Chron
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0dd-8fdd-f5d7-c865"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Impulsor" hidden="false" id="f10c-eefb-49c3-99fe" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="1782-32da-5b6c-bf5a"/>
@@ -10302,6 +10307,16 @@ If the tank suffers a Wrecked or Explodes! result, roll a D6. On a 1 or 2, Chron
     </profile>
   </sharedProfiles>
   <entryLinks>
+    <entryLink targetId="b8fb-3d05-1547-38bc" id="7707-028a-3fb0-2d3f" type="selectionEntry" name="Gladiator" hidden="false">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="d19d-b22e-f0e2-6e83" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink targetId="b556-6668-cc88-ab99" id="12c8-fc39-6c0c-d986" type="selectionEntry" name="Repulsor" hidden="false">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="e725-38da-3e58-3a28" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Marneus Calgar, Lord Macragge" hidden="false" id="4774-eaef-e52c-c026" type="selectionEntry" targetId="5565-f3d0-6f8f-89aa">
       <categoryLinks>
         <categoryLink targetId="1f0d-7d41-7ef9-ce4a" id="1e42-2bab-8888-ff00" primary="false" name="Unique"/>
