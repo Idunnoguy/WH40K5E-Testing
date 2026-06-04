@@ -1304,6 +1304,23 @@ Units which include Servitors are still subject to this rule, providing that the
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Epistolary" hidden="false" id="4ea7-e7c4-ccff-bed2">
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="50"/>
+          </costs>
+          <profiles>
+            <profile name="Epistolary" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="cdd6-3a9f-8b69-9687">
+              <characteristics>
+                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">This Psyker may use two psychic powers each turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30e3-3534-8baa-b407" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Space Marine Chaplain" hidden="false" id="a110-347f-c0be-b7ad">
       <costs>
@@ -2083,7 +2100,7 @@ Units which include Servitors are still subject to this rule, providing that the
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="26"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Marine Gunner" hidden="false" id="494f-3ed0-4bdd-1df3">
+            <selectionEntry type="model" import="true" name="Marine Gunner" hidden="true" id="494f-3ed0-4bdd-1df3">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="16"/>
               </costs>
@@ -2149,7 +2166,7 @@ Units which include Servitors are still subject to this rule, providing that the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d43-4e9e-03f6-951b"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Marine Heavy Gunner" hidden="false" id="b0c1-23ec-0126-95d2">
+            <selectionEntry type="model" import="true" name="Marine Heavy Gunner" hidden="true" id="b0c1-23ec-0126-95d2">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="16"/>
               </costs>
@@ -2237,6 +2254,17 @@ Units which include Servitors are still subject to this rule, providing that the
             <constraint type="min" value="5" field="selections" scope="self" shared="true" id="7981-0cc9-4814-84f6"/>
             <constraint type="max" value="10" field="selections" scope="self" shared="true" id="fef9-3b7f-0f47-27cf"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="9" field="selections" scope="self" childId="any" shared="true" includeChildSelections="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden" scope="0180-a652-58ea-adec" affects="self.entries.forces.recursive.494f-3ed0-4bdd-1df3"/>
+                <modifier type="set" value="false" field="hidden" scope="0180-a652-58ea-adec" affects="self.entries.forces.recursive.b0c1-23ec-0126-95d2"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" id="12cb-0f33-99cf-7894" hidden="false">
           <entryLinks>
@@ -2613,10 +2641,6 @@ Once the Drop Pod has landed, all passengers must immediately disembark, as norm
                   </characteristics>
                 </profile>
               </profiles>
-              <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1b37-4d8d-7b27-21f0-max-min"/>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="1b37-4d8d-7b27-21f0-max-max"/>
-              </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon" id="fa4d-7441-aacf-08e2" hidden="false" defaultSelectionEntryId="5402-aa51-cb5e-6a26">
                   <selectionEntries>
@@ -2642,6 +2666,14 @@ Once the Drop Pod has landed, all passengers must immediately disembark, as norm
                       </infoLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4691-c1c5-bec3-0bc8"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="0352-dfae-3c18-7a2c">
+                      <infoLinks>
+                        <infoLink name="Shotgun" id="dce0-2920-31a5-696e" hidden="false" type="profile" targetId="2ce3-d5a9-9590-6b9e"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe78-fc47-b08b-f425" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
                   </selectionEntries>
@@ -2749,6 +2781,14 @@ Once the Drop Pod has landed, all passengers must immediately disembark, as norm
                       </infoLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5705-f54a-6114-d8b4"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="2afc-65b4-ff0f-8340">
+                      <infoLinks>
+                        <infoLink name="Shotgun" id="ed90-d0d7-c497-d841" hidden="false" type="profile" targetId="2ce3-d5a9-9590-6b9e"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8b8-4cbb-6209-37f9" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
                   </selectionEntries>
@@ -9693,6 +9733,23 @@ If the tank suffers a Wrecked or Explodes! result, roll a D6. On a 1 or 2, Chron
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Epistolary" hidden="false" id="3997-3662-b799-7ca8">
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="50"/>
+          </costs>
+          <profiles>
+            <profile name="Epistolary" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="9ccd-a59e-b435-8178">
+              <characteristics>
+                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">This Psyker may use two psychic powers each turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c971-e295-8c5b-b5bd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Honour Guard" hidden="false" id="67d2-c56d-8486-47fc">
       <selectionEntryGroups>

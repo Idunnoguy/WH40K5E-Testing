@@ -2667,7 +2667,7 @@ A Synapse creature is able to cause all Spore Mines within 24&quot; to detonate 
                   </selectionEntries>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="self" shared="true" id="362c-22cd-abfd-0376-min"/>
-                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="362c-22cd-abfd-0376-max"/>
+                    <constraint type="max" value="2" field="selections" scope="self" shared="true" id="362c-22cd-abfd-0376-max"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3654,9 +3654,6 @@ Movement: Spore Mine Clusters drift D6&quot; in the direction rolled on a Scatte
       <infoLinks>
         <infoLink name="Scything Talons" id="6af4-df4f-bf27-f03a" hidden="false" type="profile" targetId="a4de-9410-14a4-babd"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="increment" value="1" field="a535-0722-3bc1-4d3c" scope="parent" affects="profiles.Unit"/>
-      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

@@ -3500,6 +3500,7 @@ Protective Carapace: +1 to Toughness</characteristic>
         <infoLink name="Fearless" id="c15b-8ef1-ed78-ae99" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
         <infoLink name="Spore Mine" id="d292-16e6-e728-8a03" hidden="false" type="profile" targetId="f0bf-63c7-ed8d-4464"/>
         <infoLink name="Living Bomb" id="b1d2-b868-e8f1-3f63" hidden="false" type="profile" targetId="d421-bc38-3f2d-7fee"/>
+        <infoLink name="Jump Infantry" id="da78-c689-a54e-a5ef" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="First Weapon" id="2985-6055-4698-a5fa" hidden="false" defaultSelectionEntryId="5bff-adf3-d767-6d31">

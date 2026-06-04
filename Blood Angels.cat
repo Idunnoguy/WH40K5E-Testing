@@ -5544,6 +5544,60 @@ The target does not change facing and will stop if it comes within 1&quot; or di
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d087-dbfa-ae39-f06b" includeChildSelections="true"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Lemartes" hidden="false" id="dc70-895b-7952-37d0">
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="150"/>
+          </costs>
+          <profiles>
+            <profile name="Lemartes" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="27b6-5ded-0b47-615b">
+              <characteristics>
+                <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">5</characteristic>
+                <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">4</characteristic>
+                <characteristic name="S" typeId="09af-e927-0c3c-9d88">4</characteristic>
+                <characteristic name="T" typeId="ff29-f8b2-5b20-b686">4</characteristic>
+                <characteristic name="W" typeId="4a81-ac45-a71c-c71e">2</characteristic>
+                <characteristic name="I" typeId="8517-a46c-d6df-9c75">6</characteristic>
+                <characteristic name="A" typeId="a535-0722-3bc1-4d3c">2</characteristic>
+                <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">10</characteristic>
+                <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">3+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Liturgies of Blood" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="1787-7e61-f7e3-6de7">
+              <characteristics>
+                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">On a player turn in which he assaults, this model and all members of any squad he has joined can re-roll failed rolls to hit. Death Company models can also re-roll failed rolls to Wound.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Blood Crozius" typeId="1d88-1369-f0ed-b39c" typeName="Melee Weapons" hidden="false" id="34c9-3dec-6c1a-0827">
+              <characteristics>
+                <characteristic name="Ability" typeId="2113-98a2-4376-a94c">The Blood Crozius is a master-crafted power weapon.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Fury Unbound" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="6406-db2e-c5cb-6076">
+              <characteristics>
+                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">If Lemartes suffers an unsaved wound, but is not slain, his Strength and Attacks both immediately increase to 5.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Jump Pack" id="5b1c-292c-7e11-10d8" hidden="false" type="profile" targetId="9fdf-bc3e-5c20-fe0c"/>
+            <infoLink name="Jump Infantry" id="005f-5a50-af2e-0257" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
+            <infoLink name="Bolt Pistol" id="824a-f39b-996c-48d5" hidden="false" type="profile" targetId="d1b6-0b7d-7649-7b73"/>
+            <infoLink name="Frag Grenades" id="c371-d7be-a9aa-73de" hidden="false" type="profile" targetId="6e7c-a63e-3bc6-5bc9"/>
+            <infoLink name="Krak Grenades" id="90be-8cc7-033d-6a39" hidden="false" type="profile" targetId="0a12-b99c-7d80-2ab6"/>
+            <infoLink name="Rosarius" id="15cd-6c58-fd91-f9b3" hidden="false" type="profile" targetId="068b-48c1-6ad3-22ee"/>
+            <infoLink name="Descent of Angels" id="3ed1-1077-9e65-7667" hidden="false" type="profile" targetId="3ba9-7b3f-cd05-67ba"/>
+            <infoLink name="Black Rage" id="c2fc-4fd7-54bb-07b6" hidden="false" type="profile" targetId="9440-c26d-6314-2e0c"/>
+            <infoLink name="Fearless" id="a533-e2ed-d48d-a55f" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
+            <infoLink name="Feel No Pain" id="75c1-702d-5682-ef34" hidden="false" type="profile" targetId="d22d-ca74-1014-8212"/>
+            <infoLink name="Furious Charge" id="994f-49f2-b88c-c704" hidden="false" type="profile" targetId="8f63-946f-5992-31e0"/>
+            <infoLink name="Relentless" id="50e9-3e8d-ecd8-e045" hidden="false" type="profile" targetId="eadc-173f-94e1-8411"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="958e-4601-7a9a-4920" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Death Company Dreadnought" hidden="false" id="cbbd-025d-8f4b-9fc1">
       <costs>
@@ -6051,6 +6105,10 @@ The target does not change facing and will stop if it comes within 1&quot; or di
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Bolt Pistol" id="5650-9ec8-8242-9a3c" hidden="false" type="profile" targetId="d1b6-0b7d-7649-7b73"/>
+                <infoLink name="Close-Combat Weapon" id="4fe6-be84-0258-f354" hidden="false" type="profile" targetId="662b-09f1-bd5b-b334"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Space Marine Sergeant" hidden="false" id="7b73-bda7-680e-44ac" collective="false" defaultAmount="1">
               <constraints>
@@ -6058,7 +6116,7 @@ The target does not change facing and will stop if it comes within 1&quot; or di
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cb0-a893-518a-c3e3"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="The Space Marine Sergeant may replace his bolt pistol and/or chainsword with" id="a184-69f4-84e1-524a" hidden="false">
+                <selectionEntryGroup name="Loadout" id="a184-69f4-84e1-524a" hidden="false">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Storm Shield" hidden="false" id="9f04-703f-fd5f-1b4e">
                       <costs>
@@ -6138,6 +6196,22 @@ The target does not change facing and will stop if it comes within 1&quot; or di
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e1b-8431-6a25-b767"/>
                       </constraints>
                     </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Bolt Pistol" hidden="false" id="93f8-234a-bb92-b400" defaultAmount="1">
+                      <infoLinks>
+                        <infoLink name="Bolt Pistol" id="baf8-056a-fc96-4692" hidden="false" type="profile" targetId="d1b6-0b7d-7649-7b73"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08a6-5202-767c-91a0" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="50b2-ab7c-698d-509f" defaultAmount="1">
+                      <infoLinks>
+                        <infoLink name="Close-Combat Weapon" id="1dad-12ed-22c5-5421" hidden="false" type="profile" targetId="662b-09f1-bd5b-b334"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c9c-f1c6-9918-8b5a" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
                   </selectionEntries>
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="self" shared="true" id="db0a-1b51-7568-2392"/>
@@ -6187,33 +6261,112 @@ The target does not change facing and will stop if it comes within 1&quot; or di
                 </profile>
               </profiles>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Space Marine Gunner" hidden="false" id="bb5d-c66f-2373-7134" collective="false" defaultAmount="">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="18"/>
+              </costs>
+              <profiles>
+                <profile name="Space Marine" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="da03-43de-2e0c-51c1">
+                  <characteristics>
+                    <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">4</characteristic>
+                    <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">4</characteristic>
+                    <characteristic name="S" typeId="09af-e927-0c3c-9d88">4</characteristic>
+                    <characteristic name="T" typeId="ff29-f8b2-5b20-b686">4</characteristic>
+                    <characteristic name="W" typeId="4a81-ac45-a71c-c71e">1</characteristic>
+                    <characteristic name="I" typeId="8517-a46c-d6df-9c75">4</characteristic>
+                    <characteristic name="A" typeId="a535-0722-3bc1-4d3c">1</characteristic>
+                    <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">8</characteristic>
+                    <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Loadout" id="4341-43fe-aa0e-3d30" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="140f-5be2-c431-b2e9" defaultAmount="1">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Flamer" id="b9ba-ef4f-bfec-8dd3" hidden="false" type="profile" targetId="8e25-e118-f3a3-6ac8"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d34-6af1-2218-3f83" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Plasma Pistol" hidden="false" id="f6fe-e02e-4017-8d6f">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Plasma Pistol" id="6fcd-05f1-5630-4411" hidden="false" type="profile" targetId="b62f-861c-897a-2966"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="911a-97dd-4d93-c573" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="73f1-a7d6-1214-4baa">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Meltagun" id="9b70-d556-6600-63bd" hidden="false" type="profile" targetId="a9bc-3c46-8c3e-c07a"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebd6-9b37-ae7b-e129" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Hand Flamer" hidden="false" id="df35-106c-d73d-2d5b">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Hand Flamer" id="8e04-1d64-4bf0-fc2f" hidden="false" type="profile" targetId="389c-f7a0-ea2a-36e1"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba6f-0b50-a3a3-39b4" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Plasma Gun" hidden="false" id="7076-4abe-b0a7-dbbd">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Plasma Gun" id="8ed6-b835-c9df-f18b" hidden="false" type="profile" targetId="29c3-2b26-b62c-779c"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffc6-1efd-53e2-ab35" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Inferno Pistol" hidden="false" id="5830-6aec-0ebc-245f">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Inferno Pistol" id="ae6d-4ee2-0528-da40" hidden="false" type="profile" targetId="75d9-90dc-0e9d-254a"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e38-0303-21f2-0dc6" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="self" shared="true" id="a46e-9739-230e-2902-min"/>
+                    <constraint type="max" value="2" field="selections" scope="self" shared="true" id="a46e-9739-230e-2902-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f4bb-5b86-e542-47f0" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Close-Combat Weapon" id="690d-3515-f73b-a528" hidden="false" type="profile" targetId="662b-09f1-bd5b-b334"/>
+              </infoLinks>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="10" field="selections" scope="self" shared="true" id="46e4-eb3c-6cca-62b4"/>
             <constraint type="min" value="5" field="selections" scope="self" shared="true" id="b09b-ada3-d039-fa0b"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="For every five models, one Space Marine may replace his bolt pistol" id="4341-43fe-aa0e-3d30" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="140f-5be2-c431-b2e9">
-              <costs>
-                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Flamer" id="b9ba-ef4f-bfec-8dd3" hidden="false" type="profile" targetId="8e25-e118-f3a3-6ac8"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Plasma Pistol" hidden="false" id="f6fe-e02e-4017-8d6f">
-              <costs>
-                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Plasma Pistol" id="6fcd-05f1-5630-4411" hidden="false" type="profile" targetId="b62f-861c-897a-2966"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="self" shared="true" id="a46e-9739-230e-2902"/>
           </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Configuration" id="c6b6-3f84-6cfe-0ba5" hidden="false">
@@ -6268,7 +6421,7 @@ The target does not change facing and will stop if it comes within 1&quot; or di
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9982-d492-4edc-79d0" includeChildSelections="false"/>
                       </constraints>
                       <costs>
-                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Rhino" hidden="false" id="c91c-39f0-53ee-ed2c" type="selectionEntry" targetId="0761-9e60-dce9-7b3d">
@@ -6299,8 +6452,6 @@ The target does not change facing and will stop if it comes within 1&quot; or di
       <infoLinks>
         <infoLink name="And They Shall Know No Fear" id="8dbc-d316-c6e2-8582" hidden="false" type="rule" targetId="73f8-658e-9da5-beba"/>
         <infoLink name="Combat Squads" id="1450-9001-dc3e-df05" hidden="false" type="rule" targetId="9b83-9c79-fe48-a8b5"/>
-        <infoLink name="Bolt Pistol" id="5650-9ec8-8242-9a3c" hidden="false" type="profile" targetId="d1b6-0b7d-7649-7b73"/>
-        <infoLink name="Close-Combat Weapon" id="4fe6-be84-0258-f354" hidden="false" type="profile" targetId="662b-09f1-bd5b-b334"/>
         <infoLink name="Frag Grenades" id="f400-831d-c39b-3788" hidden="false" type="profile" targetId="6e7c-a63e-3bc6-5bc9"/>
         <infoLink name="Krak Grenades" id="703b-4585-567b-eacc" hidden="false" type="profile" targetId="0a12-b99c-7d80-2ab6"/>
         <infoLink name="The Red Thirst" id="fa55-0f58-c699-3ea4" hidden="false" type="profile" targetId="545c-83df-5191-aab3"/>
