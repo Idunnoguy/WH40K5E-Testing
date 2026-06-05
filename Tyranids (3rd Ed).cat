@@ -3441,6 +3441,255 @@ Movement: Spore Mine Clusters drift D6&quot; in the direction rolled on a Scatte
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tervigon" hidden="false" id="8ee6-615a-a473-27b1">
+      <profiles>
+        <profile name="Tervigon" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="0d30-98d8-4d24-f91f">
+          <characteristics>
+            <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">3</characteristic>
+            <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">3</characteristic>
+            <characteristic name="S" typeId="09af-e927-0c3c-9d88">5</characteristic>
+            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">6</characteristic>
+            <characteristic name="W" typeId="4a81-ac45-a71c-c71e">6</characteristic>
+            <characteristic name="I" typeId="8517-a46c-d6df-9c75">2</characteristic>
+            <characteristic name="A" typeId="a535-0722-3bc1-4d3c">3</characteristic>
+            <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">10</characteristic>
+            <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Birthing Brood" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="7f7f-7bd9-fcb9-4dae">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">During the movement phase, the Tervigon may return 2D6 destroyed models to a friendly Gaunt unit within 6&quot;.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Spine Banks" id="4e75-7eb4-d312-fe3a" hidden="false" type="profile" targetId="68d4-e1e1-afc0-5c17"/>
+        <infoLink name="Spinefist" id="ae8a-1e40-fbf5-ea9a" hidden="false" type="profile" targetId="d9e8-3488-90ab-0181"/>
+        <infoLink name="Synapse Creature" id="f98e-df19-5f4e-456a" hidden="false" type="profile" targetId="29cc-1526-6edd-ba42"/>
+        <infoLink name="Monstrous Creature" id="3a54-7898-221a-801a" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Symbiotes" id="d48e-105f-24b1-cd62" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Crushing Claws" hidden="false" id="189e-f338-fc19-2407">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Crushing Claws" id="eb08-1780-1743-7b94" hidden="false" type="profile" targetId="76ae-6fe0-96f6-a5d7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="469a-57a7-7cc4-d50a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scything Talons" hidden="false" id="8e6d-22fd-4219-815e" defaultAmount="1">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="8"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Scything Talons" id="33f6-0cfd-18ed-2d67" hidden="false" type="profile" targetId="a4de-9410-14a4-babd"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28ec-73e1-85ff-f464" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="59dd-6705-3132-ff23-min"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="59dd-6705-3132-ff23-max"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Biomorphs" id="3cf1-1bc3-1844-4a94" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Adrenal Glands (+1 I)" hidden="false" id="25e2-1693-49b0-3e02" type="selectionEntry" targetId="1fde-a1f5-8231-2ac4">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Adrenal Glands (+1 WS)" hidden="false" id="ff4e-19e2-69d3-4dd2" type="selectionEntry" targetId="59c2-8b3c-858f-3dd2">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="4"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Enhanced Senses (+1 BS)" hidden="false" id="0654-12e2-48a6-bba8" type="selectionEntry" targetId="c74c-9bf1-258e-d29a">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Extended Carapace (+1 Sv)" hidden="false" id="c873-91dc-1d1b-5af3" type="selectionEntry" targetId="11c9-1b30-5dbd-de3d">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="40f9-c55c-3005-a66a" type="selectionEntry" targetId="c26f-797e-8c25-b5cf">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="4"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Implant Attack" hidden="false" id="b83b-4d0c-097c-c105" type="selectionEntry" targetId="74b5-fa2d-6bde-7572">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="12"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs (+1 S)" hidden="false" id="5021-f83c-ad8e-9709" type="selectionEntry" targetId="8cee-09a6-3312-2980">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="12"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxic Miasma" hidden="false" id="20d7-8451-c6a0-ceb4" type="selectionEntry" targetId="9d4c-49e7-7ff7-8432">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="6"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="160"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ac8d-efba-1884-d3ad" id="fdc5-015f-7e1f-5996" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tyrannofex" hidden="false" id="59a2-4e91-892c-b4b3">
+      <profiles>
+        <profile name="Tyrannofex" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="cf84-783e-62dc-4600">
+          <characteristics>
+            <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">3</characteristic>
+            <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">3</characteristic>
+            <characteristic name="S" typeId="09af-e927-0c3c-9d88">5</characteristic>
+            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">6</characteristic>
+            <characteristic name="W" typeId="4a81-ac45-a71c-c71e">6</characteristic>
+            <characteristic name="I" typeId="8517-a46c-d6df-9c75">1</characteristic>
+            <characteristic name="A" typeId="a535-0722-3bc1-4d3c">3</characteristic>
+            <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">8</characteristic>
+            <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Biomorphs" id="ef16-fd6c-4b69-20f4" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Adrenal Glands (+1 I)" hidden="false" id="455b-0b44-2cb2-2c04" type="selectionEntry" targetId="1fde-a1f5-8231-2ac4">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Adrenal Glands (+1 WS)" hidden="false" id="0350-3bd2-aebc-bcf5" type="selectionEntry" targetId="59c2-8b3c-858f-3dd2">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="4"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Enhanced Senses (+1 BS)" hidden="false" id="4c87-34c0-2aa8-24a0" type="selectionEntry" targetId="c74c-9bf1-258e-d29a">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Extended Carapace (+1 Sv)" hidden="false" id="44b3-fc2d-0c97-4b6d" type="selectionEntry" targetId="11c9-1b30-5dbd-de3d">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="f46d-10d6-caaa-57d1" type="selectionEntry" targetId="c26f-797e-8c25-b5cf">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="4"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Implant Attack" hidden="false" id="6efe-71e7-523f-5b7c" type="selectionEntry" targetId="74b5-fa2d-6bde-7572">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="12"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs (+1 S)" hidden="false" id="d629-621c-0199-ab9b" type="selectionEntry" targetId="8cee-09a6-3312-2980">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="12"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="15" field="6f18-a8fc-2c5b-9517" scope="b9e4-d4d5-328d-8fb9" affects="self.entries.ad2d-60e8-01a5-dff9"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Toxic Miasma" hidden="false" id="0e2e-8a66-6e99-7b21" type="selectionEntry" targetId="9d4c-49e7-7ff7-8432">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="6"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Symbiote" id="3a2b-fc72-74d8-0955" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Acid Spray" hidden="false" id="8451-217a-d6e2-086d" defaultAmount="1">
+              <profiles>
+                <profile name="Acid Spray" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="be0e-ea8d-f130-680d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">Template</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">S+1</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">4</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 1</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">To fire the acid spray place the template so that the narrow end is within 12&quot; of the weapon and the large end is no closer to the weapon than the narrow end. The acid spray is then treated like any other template weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebd2-cf9e-9d6f-b4a8" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rupture Cannon" hidden="false" id="ad2d-60e8-01a5-dff9">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Rupture Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="a84f-1a8a-2c63-5744">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">48&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">S+4</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">4</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 2</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">Ranged Weapon-Symbiotes</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f554-9d1e-1ddf-75e0" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fleshborer Hive" hidden="false" id="e068-dc09-8a83-a2b7">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Fleshborer Hive" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="f31b-7233-454a-ec88">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">12&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">S+1</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 20</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">Ranged Weapon-Symbiotes</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47bd-a749-d842-9555" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="b8a9-96c0-cda6-1d92-min"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="b8a9-96c0-cda6-1d92-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="2235-cb8e-da57-5a37" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="200"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Spine Banks" id="9154-e726-a5bb-63dd" hidden="false" type="profile" targetId="68d4-e1e1-afc0-5c17"/>
+        <infoLink name="Spinefist" id="e9da-7253-8c4d-96a0" hidden="false" type="profile" targetId="d9e8-3488-90ab-0181"/>
+        <infoLink name="Monstrous Creature" id="1cbe-7fff-b3a6-74ce" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Acid Maw" hidden="false" id="c767-ab8f-8fbb-6829">
