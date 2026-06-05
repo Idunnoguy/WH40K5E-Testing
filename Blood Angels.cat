@@ -3467,7 +3467,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Loadout" id="9c96-f367-17d0-ac0e" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Blood Fist with Storm Bolter" hidden="false" id="cd5c-42bf-b0f0-3ed1">
+            <selectionEntry type="upgrade" import="true" name="Blood Fist" hidden="false" id="cd5c-42bf-b0f0-3ed1" defaultAmount="2">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f88-052b-9d83-00f9" includeChildSelections="false"/>
               </constraints>
@@ -3475,15 +3475,40 @@
                 <infoLink name="Storm Bolter" id="9d01-562f-f393-f9ed" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
                 <infoLink name="Dreadnought Close Combat Weapon" id="20aa-5d7a-fad3-b8c7" hidden="false" type="profile" targetId="72a1-7ddd-b4ae-b945"/>
               </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blood Fist with Meltagun" hidden="false" id="d860-c510-998f-5525">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5afb-7837-0dc6-cce7" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Meltagun" id="51ae-e335-3184-60b1" hidden="false" type="profile" targetId="a9bc-3c46-8c3e-c07a"/>
-                <infoLink name="Dreadnought Close Combat Weapon" id="aa44-6080-062f-9fb2" hidden="false" type="profile" targetId="72a1-7ddd-b4ae-b945"/>
-              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Loadout" id="97ed-e72e-b3ae-d2f5" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="9693-65a2-f83c-af99" defaultAmount="1">
+                      <infoLinks>
+                        <infoLink name="Heavy Flamer" id="f325-77fa-7f16-4c74" hidden="false" type="profile" targetId="f83b-3e9d-4395-7a68"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dcb-dd41-e570-b45b" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="a7a7-d7b7-6bd9-d8a6">
+                      <infoLinks>
+                        <infoLink name="Meltagun" id="33b3-22db-f1ee-9948" hidden="false" type="profile" targetId="a9bc-3c46-8c3e-c07a"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c3f-9c0a-f82b-e045" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="9624-8a9b-80bd-138f">
+                      <infoLinks>
+                        <infoLink name="Storm Bolter" id="388c-80bb-d526-c66b" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0e0-d654-ffb0-ca89" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="self" shared="true" id="5209-e80f-513c-0328-min"/>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="5209-e80f-513c-0328-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Frag Cannon" hidden="false" id="b335-f286-86c0-fa94">
               <constraints>
@@ -3493,31 +3518,48 @@
                 <infoLink targetId="0ed5-5fe7-6b45-9138" id="1fac-b22d-2477-1033" type="profile" name="Frag Cannon" hidden="false"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blood Talons" hidden="false" id="94f7-5e09-37d7-8f42">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fc8-6e2a-027f-17e7" includeChildSelections="false"/>
-              </constraints>
+            <selectionEntry type="upgrade" import="true" name="Blood Talon" hidden="false" id="94f7-5e09-37d7-8f42">
               <profiles>
-                <profile name="Blood Talons" typeId="1d88-1369-f0ed-b39c" typeName="Melee Weapons" hidden="false" id="2482-0f7a-c156-deff">
-                  <characteristics>
-                    <characteristic name="Ability" typeId="2113-98a2-4376-a94c">Blood Talons follow the rules for Lightning Claws. In addition, if the Dreadnought has two Blood Talons, for every unsaved wound caused with a Blood Talon in close combat, the Dreadnought immediately makes an additional attack. These extra attacks can generate further additional attacks in the same way, until no further unsaved wounds are caused, or all the enemy are slain.</characteristic>
-                  </characteristics>
-                </profile>
                 <profile name="Blood Talons" typeId="1d88-1369-f0ed-b39c" typeName="Melee Weapons" hidden="false" id="14fa-55db-ee15-8263">
                   <characteristics>
                     <characteristic name="Ability" typeId="2113-98a2-4376-a94c">Blood Talons follow the rules for Lightning Claws. In addition, if the Dreadnought has two Blood Talons, for every unsaved wound caused with a Blood Talon in close combat, the Dreadnought immediately makes an additional attack. These extra attacks can generate further additional attacks in the same way, until no further unsaved wounds are caused, or all the enemy are slain.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blood Fist with Heavy Flamer" hidden="false" id="fbb6-7c26-b9a6-83c6">
-              <infoLinks>
-                <infoLink name="Heavy Flamer" id="e459-23ba-df09-ed75" hidden="false" type="profile" targetId="f83b-3e9d-4395-7a68"/>
-                <infoLink name="Dreadnought Close Combat Weapon" id="d9b8-57c9-1d5b-53bc" hidden="false" type="profile" targetId="72a1-7ddd-b4ae-b945"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b288-f7dc-94a1-e450" includeChildSelections="false"/>
-              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Loadout" id="0130-fe2c-9897-19e9" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="42cd-507d-4374-ed5a" defaultAmount="1">
+                      <infoLinks>
+                        <infoLink name="Heavy Flamer" id="0d7f-80c3-d692-ac6c" hidden="false" type="profile" targetId="f83b-3e9d-4395-7a68"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5aa4-e705-f3fa-dc3d" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="dc1b-1dea-1bca-2f95">
+                      <infoLinks>
+                        <infoLink name="Meltagun" id="f0ee-8ea4-46ae-39ad" hidden="false" type="profile" targetId="a9bc-3c46-8c3e-c07a"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a33-0bb3-f29d-f57e" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="f9c0-13f6-896b-eaa8">
+                      <infoLinks>
+                        <infoLink name="Storm Bolter" id="7de3-e212-86d5-c2fe" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e70d-3f0e-28f3-23a7" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="self" shared="true" id="c0bc-d0fc-964a-daeb-min"/>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c0bc-d0fc-964a-daeb-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -7738,7 +7780,11 @@ Therefore, a Land Raider that has moved at combat speed can fire two weapons, an
         <infoLink name="The Red Thirst" id="400b-d724-2b19-565e" hidden="false" type="profile" targetId="545c-83df-5191-aab3"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Predator" hidden="false" id="a0f4-349e-629f-b7b6" type="selectionEntry" targetId="392a-15f6-d475-8511"/>
+    <entryLink import="true" name="Predator" hidden="false" id="a0f4-349e-629f-b7b6" type="selectionEntry" targetId="392a-15f6-d475-8511">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="446b-f826-7217-8d0b" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Vindicator" hidden="false" id="c203-5d7e-0f5f-f8f6" type="selectionEntry" targetId="5dd4-383b-f834-e831">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="5fca-f221-61fd-9685" primary="true" name="Heavy Support"/>
