@@ -6156,6 +6156,7 @@ If using the Crack Shot rule when firing at a monstrous creature, any hits that 
         <infoLink name="Frag Grenades" id="4d63-da58-f8f9-3df1" hidden="false" type="profile" targetId="6e7c-a63e-3bc6-5bc9"/>
         <infoLink name="Krak Grenades" id="2de6-cc5b-aaa0-fa08" hidden="false" type="profile" targetId="0a12-b99c-7d80-2ab6"/>
         <infoLink name="Independent Character" id="a57c-00d0-b860-8f89" hidden="false" type="profile" targetId="db9c-91d8-5b8a-ee16"/>
+        <infoLink name="Power Fist" id="b598-c308-2c15-9e5b" hidden="false" type="profile" targetId="cc61-3ec6-0369-8cd8"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Chimera Dedicated Transport" hidden="false" id="9b5e-9bfe-81c0-4024" type="selectionEntry" targetId="d678-774b-9976-ed5e"/>

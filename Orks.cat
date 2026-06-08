@@ -2751,7 +2751,7 @@ Note that no more than one Waaagh! can be called per turn, so Ghazghkull cannot 
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power Klaw" hidden="false" id="2570-bb48-4995-6bd8">
               <costs>
-                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
               </costs>
               <infoLinks>
                 <infoLink name="Power Klaw" id="004c-a1fc-4613-461e" hidden="false" type="profile" targetId="6705-2eb7-6536-7904"/>

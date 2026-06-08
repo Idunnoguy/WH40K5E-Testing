@@ -1148,6 +1148,9 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
           <infoLinks>
             <infoLink name="Sensor Spines" id="bdac-bfd2-b2ea-587f" hidden="false" type="profile" targetId="b56a-b649-de8c-8eac"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ba-b39c-3b1b-73c4" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Targeting Array" hidden="false" id="8c35-70a5-6cf7-7983">
           <costs>
@@ -1156,6 +1159,9 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
           <infoLinks>
             <infoLink name="Targeting Array" id="18bf-0455-9845-c8ce" hidden="false" type="profile" targetId="3c84-bbba-a8c2-fdc0"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="848f-c31e-f877-60eb" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Multi-Tracker" hidden="false" id="da67-36c1-cf5c-f3df">
           <costs>
@@ -1164,6 +1170,9 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
           <infoLinks>
             <infoLink name="Vehicle-mounted Multi-tracker" id="472c-fc0a-18eb-0322" hidden="false" type="profile" targetId="9887-af37-eca1-27c5"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1666-d669-4029-0074" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blacksun Filter" hidden="false" id="460f-c29b-32f5-db0b">
           <costs>
@@ -1172,6 +1181,9 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
           <infoLinks>
             <infoLink name="Blacksun Filter" id="a3d8-98eb-57da-2f23" hidden="false" type="profile" targetId="f235-7880-f61b-f7d2"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1029-d2a1-9538-d05f" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Target Lock" hidden="false" id="4ef1-4dd4-3e5c-3219">
           <costs>
@@ -1180,6 +1192,9 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
           <infoLinks>
             <infoLink name="Vehicle-mounted Target Lock" id="7629-bddf-f978-1d43" hidden="false" type="profile" targetId="58a3-e56f-4a63-2553"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73ad-59d1-5ad8-a0c5" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flechette Discharger" hidden="false" id="f5e4-6833-dc68-2cb4">
           <costs>
@@ -1188,6 +1203,9 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
           <infoLinks>
             <infoLink name="Flechette Discharger" id="9719-9e35-16c6-2c42" hidden="false" type="profile" targetId="5980-b148-b086-932e"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b79-e709-a1d0-1194" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Disruption Pod" hidden="false" id="6edf-0d2b-8aed-8dea">
           <costs>
@@ -1196,6 +1214,9 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
           <infoLinks>
             <infoLink name="Disruption pod" id="84d8-f196-c69b-6f56" hidden="false" type="profile" targetId="4a46-c486-93e8-22cd"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69f4-2225-5ef7-0113" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Decoy Launchers" hidden="false" id="ca95-5c36-ac2c-37f3">
           <costs>
@@ -1204,14 +1225,20 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
           <infoLinks>
             <infoLink name="Decoy launchers" id="0366-ac75-87f8-bce0" hidden="false" type="profile" targetId="b563-0d07-491d-9e02"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9762-6674-990f-31c4" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Seeker Missile (Maximum 2 per Vehicle)" hidden="false" id="1065-bd64-e1a6-10d0">
+        <selectionEntry type="upgrade" import="true" name="Seeker Missile" hidden="false" id="1065-bd64-e1a6-10d0">
           <costs>
             <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
           </costs>
           <infoLinks>
             <infoLink name="Seeker Missile" id="6458-0c89-cbc1-b1d1" hidden="false" type="profile" targetId="3f3a-1c2a-5f36-7a6f"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f996-0325-7075-cf67" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -2915,6 +2942,55 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90ba-c4a0-a796-c908" includeChildSelections="false"/>
                           </constraints>
+                          <selectionEntryGroups>
+                            <selectionEntryGroup name="Drones" id="e2a6-9708-5273-901c" hidden="false">
+                              <selectionEntries>
+                                <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="b42c-08b7-11cf-83a6" defaultAmount="2">
+                                  <costs>
+                                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                                  </costs>
+                                  <infoLinks>
+                                    <infoLink name="Gun Drone" id="a2b4-5f5b-a0db-4972" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
+                                    <infoLink name="Twin-linked Pulse Carbine" id="654a-8857-8905-c64a" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
+                                    <infoLink name="Jump Infantry" id="b8e1-2a8e-439a-00ea" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
+                                  </infoLinks>
+                                </selectionEntry>
+                                <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="8c46-dbec-ec12-ff66">
+                                  <costs>
+                                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                                  </costs>
+                                  <infoLinks>
+                                    <infoLink name="Shield Drone" id="adea-eb71-8516-c949" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
+                                  </infoLinks>
+                                  <profiles>
+                                    <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="dcdd-a0a4-14e6-5439">
+                                      <characteristics>
+                                        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
+                                      </characteristics>
+                                    </profile>
+                                    <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="2e7b-c0b9-103a-63c0">
+                                      <characteristics>
+                                        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
+                                      </characteristics>
+                                    </profile>
+                                  </profiles>
+                                </selectionEntry>
+                                <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="2daa-92d3-ddfa-ead0">
+                                  <costs>
+                                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
+                                  </costs>
+                                  <infoLinks>
+                                    <infoLink name="Marker Drone" id="2f9f-f4ae-178b-be99" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
+                                    <infoLink name="Networked Markerlight" id="4378-1748-3cab-a9e5" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
+                                  </infoLinks>
+                                </selectionEntry>
+                              </selectionEntries>
+                              <constraints>
+                                <constraint type="min" value="2" field="selections" scope="self" shared="true" id="4c2d-2448-b0ec-1da8-min" includeChildSelections="false"/>
+                                <constraint type="max" value="2" field="selections" scope="self" shared="true" id="4c2d-2448-b0ec-1da8-max" includeChildSelections="false"/>
+                              </constraints>
+                            </selectionEntryGroup>
+                          </selectionEntryGroups>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Hard-wired Multi-tracker" hidden="false" id="3512-738e-fea0-568e">
                           <costs>
@@ -2936,54 +3012,6 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                           </infoLinks>
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a765-d2ec-c386-5948" includeChildSelections="false"/>
-                          </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="2daa-92d3-ddfa-ead0">
-                          <costs>
-                            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
-                          </costs>
-                          <infoLinks>
-                            <infoLink name="Marker Drone" id="2f9f-f4ae-178b-be99" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
-                            <infoLink name="Networked Markerlight" id="4378-1748-3cab-a9e5" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
-                          </infoLinks>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f057-39ac-3d7e-c26b" includeChildSelections="false"/>
-                          </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="b42c-08b7-11cf-83a6">
-                          <costs>
-                            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
-                          </costs>
-                          <infoLinks>
-                            <infoLink name="Gun Drone" id="a2b4-5f5b-a0db-4972" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
-                            <infoLink name="Twin-linked Pulse Carbine" id="654a-8857-8905-c64a" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
-                            <infoLink name="Jump Infantry" id="b8e1-2a8e-439a-00ea" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
-                          </infoLinks>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a911-4e54-764b-473b" includeChildSelections="false"/>
-                          </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="8c46-dbec-ec12-ff66">
-                          <costs>
-                            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
-                          </costs>
-                          <infoLinks>
-                            <infoLink name="Shield Drone" id="adea-eb71-8516-c949" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
-                          </infoLinks>
-                          <profiles>
-                            <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="dcdd-a0a4-14e6-5439">
-                              <characteristics>
-                                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
-                              </characteristics>
-                            </profile>
-                            <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="2e7b-c0b9-103a-63c0">
-                              <characteristics>
-                                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
-                              </characteristics>
-                            </profile>
-                          </profiles>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac6-1312-8ba4-778b" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
                       </selectionEntries>
@@ -3173,14 +3201,6 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4274-fdf9-4d68-de96" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Hard-wired Drone Controller" hidden="false" id="4eee-eb43-9d46-a97d">
-                      <infoLinks>
-                        <infoLink name="Drone Controller" id="df77-fbe1-1f1e-3cf6" hidden="false" type="profile" targetId="6a48-ae3b-b476-9d71"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c49-8473-f762-8970" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Hard-wired Multi-tracker" hidden="false" id="4e7d-11ac-b9b8-7739">
                       <costs>
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
@@ -3203,53 +3223,62 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bad-d4c8-c3b8-7845" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="a420-3518-291f-9a85">
-                      <costs>
-                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
-                      </costs>
+                    <selectionEntry type="upgrade" import="true" name="Hard-wired Drone Controller" hidden="false" id="c848-acbb-d101-3bcc">
                       <infoLinks>
-                        <infoLink name="Marker Drone" id="951b-3c5b-4b47-639a" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
-                        <infoLink name="Networked Markerlight" id="5a93-66ca-3ee2-28be" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
+                        <infoLink name="Drone Controller" id="82e7-f971-6de8-f240" hidden="false" type="profile" targetId="6a48-ae3b-b476-9d71"/>
                       </infoLinks>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16c1-6716-a5ce-6c5a" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2171-118e-48ef-2e8d" includeChildSelections="false"/>
                       </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="8235-d3a2-021a-3e44">
-                      <costs>
-                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Gun Drone" id="073e-1097-467a-697e" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
-                        <infoLink name="Twin-linked Pulse Carbine" id="69b9-cded-e40e-2af8" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
-                        <infoLink name="Jump Infantry" id="5fdc-7e84-3adc-df40" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9726-7a6d-0bbe-db47" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="6a96-1a1e-7af0-ca35">
-                      <costs>
-                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Shield Drone" id="e443-c908-eb80-9914" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="8c26-4fec-03ae-2b8d">
-                          <characteristics>
-                            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="110d-63a6-a223-fab6">
-                          <characteristics>
-                            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="346a-e431-0058-17dd" includeChildSelections="false"/>
-                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Drones" id="f177-1e3c-1dc5-3096" hidden="false">
+                          <selectionEntries>
+                            <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="8088-fd73-3999-28b8" defaultAmount="2">
+                              <costs>
+                                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Gun Drone" id="8425-9b8e-b772-5b43" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
+                                <infoLink name="Twin-linked Pulse Carbine" id="bee7-0f13-3532-2aee" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
+                                <infoLink name="Jump Infantry" id="f2b0-8804-3713-a352" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
+                              </infoLinks>
+                            </selectionEntry>
+                            <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="22c1-67c0-df28-7b61">
+                              <costs>
+                                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Shield Drone" id="0927-9f4d-971b-b2f0" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
+                              </infoLinks>
+                              <profiles>
+                                <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="dd7d-2991-dc28-4bb1">
+                                  <characteristics>
+                                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
+                                  </characteristics>
+                                </profile>
+                                <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="2146-6ea3-eb20-ec5b">
+                                  <characteristics>
+                                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                            </selectionEntry>
+                            <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="5990-d5d2-9d39-e3c0">
+                              <costs>
+                                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Marker Drone" id="5f3c-11f5-76ef-7261" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
+                                <infoLink name="Networked Markerlight" id="342f-7221-fd01-081b" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
+                              </infoLinks>
+                            </selectionEntry>
+                          </selectionEntries>
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="self" shared="true" id="127a-c688-cbd4-4ca1-min" includeChildSelections="false"/>
+                            <constraint type="max" value="2" field="selections" scope="self" shared="true" id="127a-c688-cbd4-4ca1-max" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -3347,6 +3376,9 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="599b-19f6-819e-27c7" type="selectionEntryGroup" targetId="026d-a225-5644-4788"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="XV8 Crisis Battlesuit Team" hidden="false" id="f7c6-2d68-72fb-5064">
       <selectionEntryGroups>
@@ -3801,19 +3833,6 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="530d-3ba4-47f0-212d" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="9f68-f55b-f5c6-2144">
-                  <costs>
-                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Gun Drone" id="1d88-3c09-d21e-477b" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
-                    <infoLink name="Twin-linked Pulse Carbine" id="ac85-7550-4f88-74ad" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
-                    <infoLink name="Jump Infantry" id="4594-942e-2c62-aea5" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccb0-48e6-e001-a30b" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Iridium Armour (Special Issue)" hidden="false" id="0402-50f4-f739-8d66">
                   <costs>
                     <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
@@ -3824,17 +3843,6 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d198-df3e-975d-289e" includeChildSelections="true" includeChildForces="true"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4f0-90c9-99bf-9d3c" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Hard-wired Drone Controller" hidden="false" id="f884-cd23-abfa-8a0b">
-                  <costs>
-                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Drone Controller" id="ea1d-d9a8-231b-1004" hidden="false" type="profile" targetId="6a48-ae3b-b476-9d71"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41b5-0b85-7bfa-3f62" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Hard-wired Blacksun Filter" hidden="false" id="858d-4a50-5677-eaeb">
@@ -3870,41 +3878,6 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbd7-4a66-b1c4-3f5e" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="fea7-c692-d35f-1b8d">
-                  <costs>
-                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Marker Drone" id="53a3-9fb5-ba02-7931" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
-                    <infoLink name="Networked Markerlight" id="54d9-11dd-8562-2852" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe97-8974-3af2-e3a8" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="6c68-46a0-a85e-4b0d">
-                  <costs>
-                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Shield Drone" id="5fa0-822d-0709-b413" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
-                  </infoLinks>
-                  <profiles>
-                    <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="d38c-a501-a4b7-afbb">
-                      <characteristics>
-                        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="a3d3-bf54-6e8a-20bc">
-                      <characteristics>
-                        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf40-7cae-600d-7348" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Stimulant Injector (Special Issue)" hidden="false" id="2b8c-98f4-8611-1b00">
                   <costs>
                     <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
@@ -3915,6 +3888,63 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="005c-3e5a-3850-25f2" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hard-wired Drone Controller" hidden="false" id="4ba5-8387-6d5d-2407">
+                  <infoLinks>
+                    <infoLink name="Drone Controller" id="eab4-79a8-c3a2-2d0a" hidden="false" type="profile" targetId="6a48-ae3b-b476-9d71"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="add9-f247-476e-619b" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Drones" id="e42e-2877-5351-0d58" hidden="false">
+                      <selectionEntries>
+                        <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="07f8-41ec-25f0-5483" defaultAmount="2">
+                          <costs>
+                            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Gun Drone" id="b0a9-e98c-27cf-e6f4" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
+                            <infoLink name="Twin-linked Pulse Carbine" id="d847-bc84-dedf-4133" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
+                            <infoLink name="Jump Infantry" id="6eae-ef45-1f70-c2ca" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="34f0-a0e5-043c-2c28">
+                          <costs>
+                            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Shield Drone" id="a9a3-8720-6c31-439b" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
+                          </infoLinks>
+                          <profiles>
+                            <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="7220-d474-61b3-83d8">
+                              <characteristics>
+                                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
+                              </characteristics>
+                            </profile>
+                            <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="9399-ea68-c198-ac7e">
+                              <characteristics>
+                                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="72de-fd2e-6cd9-cd17">
+                          <costs>
+                            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Marker Drone" id="650d-1178-e6a7-5376" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
+                            <infoLink name="Networked Markerlight" id="9b78-3e93-72a9-5853" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="self" shared="true" id="906e-d195-2ffe-a2ac-min" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="self" shared="true" id="906e-d195-2ffe-a2ac-max" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -4082,19 +4112,6 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91b5-ae4c-c874-5807" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="1f87-aa48-b4c3-36bc">
-                  <costs>
-                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Gun Drone" id="c51a-5e3b-7578-6937" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
-                    <infoLink name="Twin-linked Pulse Carbine" id="33d9-bb33-066a-1d3b" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
-                    <infoLink name="Jump Infantry" id="ac0a-cc92-7ae1-1ba6" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f04-69b6-fbd2-8655" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Iridium Armour (Special Issue)" hidden="false" id="d3a7-699f-30ec-05ca">
                   <costs>
                     <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
@@ -4105,17 +4122,6 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4fc6-6a15-0cad-ad73" includeChildSelections="true" includeChildForces="true"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d22f-8da8-40ee-1d56" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Hard-wired Drone Controller" hidden="false" id="e3ca-3513-641c-4a4d">
-                  <costs>
-                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Drone Controller" id="8a73-718d-eeff-5826" hidden="false" type="profile" targetId="6a48-ae3b-b476-9d71"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7ee-a988-df3b-ebd0" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Hard-wired Blacksun Filter" hidden="false" id="9287-613f-ad74-ef5f">
@@ -4151,41 +4157,6 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb87-63c0-e348-599f" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="5bca-5ab6-790c-5699">
-                  <costs>
-                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Marker Drone" id="9e44-a308-c129-6120" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
-                    <infoLink name="Networked Markerlight" id="f820-9418-6ebb-ed6c" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11e0-3dac-cd3f-e9d4" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="0216-cae2-0c9a-b09e">
-                  <costs>
-                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Shield Drone" id="ffc1-3c70-55a3-8fec" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
-                  </infoLinks>
-                  <profiles>
-                    <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="64ba-bc62-9e68-7cfc">
-                      <characteristics>
-                        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="a49c-6a11-f7ea-0e0d">
-                      <characteristics>
-                        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84c2-2c50-d7f0-84ce" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Stimulant Injector (Special Issue)" hidden="false" id="0ee2-14de-e2f3-9a46">
                   <costs>
                     <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
@@ -4197,6 +4168,63 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                     <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="db3a-5960-478f-a207" includeChildSelections="true" includeChildForces="true"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d61b-d08e-0e5e-84f0" includeChildSelections="false"/>
                   </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hard-wired Drone Controller" hidden="false" id="f6d0-1d0d-6dea-e74a">
+                  <infoLinks>
+                    <infoLink name="Drone Controller" id="55b7-8681-c5e4-25c4" hidden="false" type="profile" targetId="6a48-ae3b-b476-9d71"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d13-9628-a11c-f1bf" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Drones" id="2990-3056-fd4a-c7df" hidden="false">
+                      <selectionEntries>
+                        <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="0286-3bde-f2fe-c7e5" defaultAmount="2">
+                          <costs>
+                            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Gun Drone" id="c043-8981-a532-356e" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
+                            <infoLink name="Twin-linked Pulse Carbine" id="0f77-df45-e1ed-e4af" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
+                            <infoLink name="Jump Infantry" id="8a5c-bcb3-f24d-15d6" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="5656-1f09-8501-672d">
+                          <costs>
+                            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Shield Drone" id="3388-13ea-5bf0-aff5" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
+                          </infoLinks>
+                          <profiles>
+                            <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="3c41-91af-6c87-9b4c">
+                              <characteristics>
+                                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
+                              </characteristics>
+                            </profile>
+                            <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="ef39-2204-7658-50da">
+                              <characteristics>
+                                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="b7a3-fdfb-955b-7d07">
+                          <costs>
+                            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Marker Drone" id="2410-fd13-1a1d-2204" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
+                            <infoLink name="Networked Markerlight" id="5a91-09d8-740d-e38e" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="self" shared="true" id="da2a-896d-792d-3ea8-min" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="self" shared="true" id="da2a-896d-792d-3ea8-max" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -4443,14 +4471,6 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc58-d1d5-f16c-c705" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Hard-wired Drone Controller" hidden="false" id="349b-63ec-aaeb-c4f7">
-                      <infoLinks>
-                        <infoLink name="Drone Controller" id="b44f-7669-9c2b-afb2" hidden="false" type="profile" targetId="6a48-ae3b-b476-9d71"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d1f-38a8-5e71-d7f4" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Hard-wired Multi-tracker" hidden="false" id="1c1e-a575-12e3-41a3">
                       <costs>
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
@@ -4473,53 +4493,62 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="964b-016c-4136-7e96" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="4538-ef4b-0e19-2c61">
-                      <costs>
-                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
-                      </costs>
+                    <selectionEntry type="upgrade" import="true" name="Hard-wired Drone Controller" hidden="false" id="881b-e8cd-599c-6ff1">
                       <infoLinks>
-                        <infoLink name="Marker Drone" id="b30d-34f2-197f-1e88" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
-                        <infoLink name="Networked Markerlight" id="740c-e820-2414-820b" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
+                        <infoLink name="Drone Controller" id="e8a5-8265-e74c-cc66" hidden="false" type="profile" targetId="6a48-ae3b-b476-9d71"/>
                       </infoLinks>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1019-750e-1215-2a09" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1668-d7ab-6079-5497" includeChildSelections="false"/>
                       </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="20c6-3af9-8293-6a84">
-                      <costs>
-                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Gun Drone" id="25b2-76ac-a031-aa59" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
-                        <infoLink name="Twin-linked Pulse Carbine" id="a4dd-ccf7-d53d-468a" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
-                        <infoLink name="Jump Infantry" id="eff2-afe9-2a33-b449" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a998-edd7-6407-831a" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="77d9-b297-9b30-d078">
-                      <costs>
-                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Shield Drone" id="7051-ba22-d382-0f81" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="c075-8c20-cd75-be73">
-                          <characteristics>
-                            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="69e8-f9f8-0e42-6918">
-                          <characteristics>
-                            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a14-1492-50e3-96ff" includeChildSelections="false"/>
-                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Drones" id="33c7-fca1-f053-90af" hidden="false">
+                          <selectionEntries>
+                            <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="7180-1e0a-62e1-79ca" defaultAmount="2">
+                              <costs>
+                                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Gun Drone" id="2363-7303-31ca-732c" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
+                                <infoLink name="Twin-linked Pulse Carbine" id="bdf4-ca8d-b146-d4a6" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
+                                <infoLink name="Jump Infantry" id="cf5b-339d-9684-fc6c" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
+                              </infoLinks>
+                            </selectionEntry>
+                            <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="b2a8-83aa-d643-24cc">
+                              <costs>
+                                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Shield Drone" id="e094-6912-d977-2da0" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
+                              </infoLinks>
+                              <profiles>
+                                <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="a175-d28a-98c2-ad4b">
+                                  <characteristics>
+                                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
+                                  </characteristics>
+                                </profile>
+                                <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="d171-4f3f-9fc8-c8cc">
+                                  <characteristics>
+                                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                            </selectionEntry>
+                            <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="01d5-eb64-c9cd-a829">
+                              <costs>
+                                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Marker Drone" id="c919-8015-0ba6-6edc" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
+                                <infoLink name="Networked Markerlight" id="32a6-7649-42ea-22ac" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
+                              </infoLinks>
+                            </selectionEntry>
+                          </selectionEntries>
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="self" shared="true" id="63b9-0ea8-f649-c6df-min" includeChildSelections="false"/>
+                            <constraint type="max" value="2" field="selections" scope="self" shared="true" id="63b9-0ea8-f649-c6df-max" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -4896,17 +4925,6 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84b2-b533-1406-64c3" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Hard-wired Drone Controller" hidden="false" id="c480-9d86-6534-95f5">
-                      <costs>
-                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="0"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Drone Controller" id="fcae-f886-7126-0bca" hidden="false" type="profile" targetId="6a48-ae3b-b476-9d71"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01b8-87b6-4a1b-b807" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Hard-wired Blacksun Filter" hidden="false" id="5fdf-27dc-135b-32d9">
                       <costs>
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="3"/>
@@ -4940,49 +4958,64 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0b2-b2e1-bb5a-5225" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="a188-0319-6fc6-1557">
-                      <costs>
-                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
-                      </costs>
+                    <selectionEntry type="upgrade" import="true" name="Hard-wired Drone Controller" hidden="false" id="3ef9-6583-0945-e86a">
                       <infoLinks>
-                        <infoLink name="Marker Drone" id="d785-32c1-699a-0c08" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
-                        <infoLink name="Networked Markerlight" id="5d12-0d1d-2c7c-7dbb" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
+                        <infoLink name="Drone Controller" id="4a95-de31-0a98-ba2c" hidden="false" type="profile" targetId="6a48-ae3b-b476-9d71"/>
                       </infoLinks>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3ce-49cf-1690-b2dd" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14b9-2b0a-e5cd-636c" includeChildSelections="false"/>
                       </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="6b8c-33b7-0cbe-4ce0">
-                      <costs>
-                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Shield Drone" id="9dae-b234-ed9f-8879" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="233b-2bc1-5d76-ce81">
-                          <characteristics>
-                            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="9e64-7741-22a5-b6a3">
-                          <characteristics>
-                            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e801-3551-0473-423e" includeChildSelections="false"/>
-                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Drones" id="8cfb-7bea-cc54-f8ba" hidden="false">
+                          <selectionEntries>
+                            <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="eaa5-4a15-af92-7826" defaultAmount="2">
+                              <costs>
+                                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Gun Drone" id="ce09-35d2-8da4-a5bc" hidden="false" type="profile" targetId="3969-d555-f692-a0d0"/>
+                                <infoLink name="Twin-linked Pulse Carbine" id="1aba-80f1-acfa-ba23" hidden="false" type="profile" targetId="38bc-4e53-be82-6233"/>
+                                <infoLink name="Jump Infantry" id="8b8e-88cc-b055-ad47" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
+                              </infoLinks>
+                            </selectionEntry>
+                            <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="055e-722a-1a47-5922">
+                              <costs>
+                                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Shield Drone" id="cf59-b08b-5196-7943" hidden="false" type="profile" targetId="0aba-da36-8a01-a832"/>
+                              </infoLinks>
+                              <profiles>
+                                <profile name="Close Protection" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="1fcd-a192-40e4-8340">
+                                  <characteristics>
+                                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Shield Drones always have the same Toughness and Armour Save values a the individual they accompany.</characteristic>
+                                  </characteristics>
+                                </profile>
+                                <profile name="Invulnerable Save" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="3f32-58c1-0be3-8e9a">
+                                  <characteristics>
+                                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shield Drone has a 4+ Invulnerable Save.</characteristic>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                            </selectionEntry>
+                            <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="cdb5-03b8-3525-5f12">
+                              <costs>
+                                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Marker Drone" id="9739-6bfd-303d-ca7e" hidden="false" type="profile" targetId="06eb-39a9-634c-c821"/>
+                                <infoLink name="Networked Markerlight" id="f6e5-9bbd-9ae6-cd33" hidden="false" type="profile" targetId="ebf0-1674-f193-5618"/>
+                              </infoLinks>
+                            </selectionEntry>
+                          </selectionEntries>
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="self" shared="true" id="b497-62db-2160-e677-min" includeChildSelections="false"/>
+                            <constraint type="max" value="2" field="selections" scope="self" shared="true" id="b497-62db-2160-e677-max" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </selectionEntry>
                   </selectionEntries>
-                  <entryLinks>
-                    <entryLink import="true" name="Gun Drone" hidden="false" id="734a-cf3d-9ffa-88be" targetId="96a3-15dd-b58e-fd63" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57ef-282e-304e-406d" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -5231,7 +5264,7 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a2f-2dc1-c86f-f0b6"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Seeker Missile (Maximum 2 per Vehicle)" hidden="false" id="44de-4ee5-5cf7-9feb">
+            <selectionEntry type="upgrade" import="true" name="Seeker Missile" hidden="false" id="44de-4ee5-5cf7-9feb">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
               </costs>
