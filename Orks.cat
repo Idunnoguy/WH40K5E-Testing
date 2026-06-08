@@ -4462,7 +4462,7 @@ Note that no more than one Waaagh! can be called per turn, so Ghazghkull cannot 
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="8651-8e23-0ebb-784d" primary="true" name="HQ"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="false" field="hidden" scope="e6da-4259-c063-f81e" affects="self.entries.forces.recursive.59ba-03b6-7dc2-6369"/>
+        <modifier type="set" value="false" field="hidden" scope="e6da-4259-c063-f81e" affects="self.entries.forces.recursive.8583-52b4-2d76-15b1"/>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Weirdboy" hidden="false" id="daf6-9eeb-1ec3-a98d" type="selectionEntry" targetId="925e-c084-20d4-e745">
@@ -4549,7 +4549,7 @@ Note that no more than one Waaagh! can be called per turn, so Ghazghkull cannot 
         <categoryLink targetId="default-category" id="3954-6ab8-3ffb-98c6" primary="true" name="Troops"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="326f-dc1b-c73e-b03c" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="326f-dc1b-c73e-b03c" includeChildSelections="false"/>
       </constraints>
     </entryLink>
     <entryLink import="true" name="Killa Kans" hidden="false" id="a727-97a4-f01d-474c" type="selectionEntry" targetId="fbdd-cc21-6eba-4a71">
