@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9c90-407d-0876-14fb" name="Warhammer 40,000 5e" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-9c90-407d-0876-14fb" name="Warhammer 40,000 5e" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
-    <categoryEntry name="Troops" id="default-category">
-      <constraints>
-        <constraint type="min" value="2" field="selections" scope="roster" shared="true" id="2ba4-d6dd-3a79-60e6" includeChildSelections="true"/>
-        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="5770-fa9b-1025-feb8" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry name="HQ" id="ac8d-efba-1884-d3ad" hidden="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="36e3-3e20-327c-26e1" includeChildSelections="true"/>
-        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="0fd7-7355-461b-d50b" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry name="Elites" id="978c-e18f-8aeb-f4c1" hidden="false">
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c4fb-3ff8-9cb5-bad5" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry name="Fast Attack" id="74fe-37c3-fbbf-849e" hidden="false">
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ab7a-b1c8-57d8-a763" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry name="Heavy Support" id="9260-7d57-be5c-bd52" hidden="false">
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="6c48-3c27-0430-e4da" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry name="Troops" id="default-category"/>
+    <categoryEntry name="HQ" id="ac8d-efba-1884-d3ad" hidden="false"/>
+    <categoryEntry name="Elites" id="978c-e18f-8aeb-f4c1" hidden="false"/>
+    <categoryEntry name="Fast Attack" id="74fe-37c3-fbbf-849e" hidden="false"/>
+    <categoryEntry name="Heavy Support" id="9260-7d57-be5c-bd52" hidden="false"/>
     <categoryEntry name="Dedicated Transport" id="168b-a772-94f7-83f5" hidden="false"/>
     <categoryEntry name="Unique" id="1f0d-7d41-7ef9-ce4a" hidden="false"/>
     <categoryEntry name="Super-Heavy" id="5968-f35e-18fd-612b" hidden="false">
@@ -39,13 +17,100 @@
   <forceEntries>
     <forceEntry name="Default Force" hidden="false" id="default-force">
       <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="79cd-b337-09f1-8e8b" targetId="ac8d-efba-1884-d3ad"/>
-        <categoryLink name="Troops" hidden="false" id="default-force-category-link" targetId="default-category"/>
-        <categoryLink name="Elites" hidden="false" id="b932-bd98-317c-5dbd" targetId="978c-e18f-8aeb-f4c1"/>
-        <categoryLink name="Fast Attack" hidden="false" id="cf6d-e1b9-b714-97f2" targetId="74fe-37c3-fbbf-849e"/>
-        <categoryLink name="Heavy Support" hidden="false" id="877c-51b8-b64b-f539" targetId="9260-7d57-be5c-bd52"/>
+        <categoryLink name="HQ" hidden="false" id="79cd-b337-09f1-8e8b" targetId="ac8d-efba-1884-d3ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e619-387f-589d-3eb4"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fcd1-68af-73b4-b8fd"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="default-force-category-link" targetId="default-category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4621-3a92-b225-3539"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="69ca-824c-ebd9-01f9"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="b932-bd98-317c-5dbd" targetId="978c-e18f-8aeb-f4c1">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a606-b788-4abd-7a98"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="cf6d-e1b9-b714-97f2" targetId="74fe-37c3-fbbf-849e">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f3c4-8e77-8c54-5da4"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="877c-51b8-b64b-f539" targetId="9260-7d57-be5c-bd52">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4472-93fb-0de2-e8a0"/>
+          </constraints>
+        </categoryLink>
         <categoryLink name="Dedicated Transport" hidden="false" id="5b31-c3ad-730a-dc0a" targetId="168b-a772-94f7-83f5"/>
         <categoryLink name="Unique" hidden="false" id="88f3-8ce2-ad3f-1919" targetId="1f0d-7d41-7ef9-ce4a"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Planetstrike Attacker" id="674e-bca5-05b5-04b4" hidden="false">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="1c25-a918-2c0a-89d4" targetId="ac8d-efba-1884-d3ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b609-280e-49ae-b277"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="92bd-586e-234a-c321"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="d24d-44bf-60a2-fcfc" targetId="default-category">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b8e2-0268-794e-6412"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="b325-4f07-620f-2f51" targetId="978c-e18f-8aeb-f4c1">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5bbe-4b6a-dca9-ce57"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="4691-cb13-81ab-855e" targetId="74fe-37c3-fbbf-849e">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6b5a-4dbc-9258-4edb"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="a09d-8746-bfd0-1dfd" targetId="9260-7d57-be5c-bd52">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="56be-a909-1e21-31f7"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Dedicated Transport" hidden="false" id="3ef1-83d9-7f88-57f7" targetId="168b-a772-94f7-83f5"/>
+        <categoryLink name="Unique" hidden="false" id="a724-f495-0912-598e" targetId="1f0d-7d41-7ef9-ce4a"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Planetstrike Defender" id="d1e4-66de-8a14-1f58" hidden="false">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="f7d1-116e-b9c0-7c31" targetId="ac8d-efba-1884-d3ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95d9-ac5e-5a13-5aea"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f97f-f4c8-8076-1efa"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="e785-684c-c0be-5206" targetId="default-category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="44b6-9df8-727d-bf98"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="a1f4-68b6-7485-cc40"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="223b-150b-2ed8-2385" targetId="978c-e18f-8aeb-f4c1">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7989-826f-20cc-d262"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="8955-8991-f2e4-c184" targetId="74fe-37c3-fbbf-849e">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d054-2225-f77a-bc7e"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="e330-f63d-cb86-5872" targetId="9260-7d57-be5c-bd52">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c932-937e-ea1a-a745"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Dedicated Transport" hidden="false" id="27c2-ab60-7ecb-e426" targetId="168b-a772-94f7-83f5"/>
+        <categoryLink name="Unique" hidden="false" id="63d2-696d-636e-aca1" targetId="1f0d-7d41-7ef9-ce4a"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -3989,7 +4054,7 @@ Once the Drop Pod has landed, all passengers must immediately disembark, as norm
         </profile>
         <profile name="Exposed Rear" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="1c56-6508-4074-729f">
           <characteristics>
-            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Attacks made against the rear of an Impulsor count as Open-topped. </characteristic>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Attacks made against the rear of an Impulsor count as Open-topped.</characteristic>
           </characteristics>
         </profile>
       </profiles>
