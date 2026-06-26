@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9c90-407d-0876-14fb" name="Warhammer 40,000 5e" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-9c90-407d-0876-14fb" name="Warhammer 40,000 5e" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="Troops" id="default-category"/>
     <categoryEntry name="HQ" id="ac8d-efba-1884-d3ad" hidden="false"/>
@@ -13,6 +13,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6b87-b497-7b84-2c68" includeChildSelections="false"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Configuration" id="4ac9-fd30-1e3d-b249" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Default Force" hidden="false" id="default-force">
@@ -46,6 +47,7 @@
         </categoryLink>
         <categoryLink name="Dedicated Transport" hidden="false" id="5b31-c3ad-730a-dc0a" targetId="168b-a772-94f7-83f5"/>
         <categoryLink name="Unique" hidden="false" id="88f3-8ce2-ad3f-1919" targetId="1f0d-7d41-7ef9-ce4a"/>
+        <categoryLink name="Configuration" hidden="false" id="d5de-ee57-ad4b-e4b7" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Planetstrike Attacker" id="674e-bca5-05b5-04b4" hidden="false">
@@ -4301,6 +4303,60 @@ Once the Drop Pod has landed, all passengers must immediately disembark, as norm
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="24c5-a830-40d8-e88a" primary="true" name="Heavy Support"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Show/Hide Options" hidden="false" id="e8ef-836a-a9d1-901d">
+      <entryLinks>
+        <entryLink import="true" name="Show Legends" hidden="false" id="892f-57ca-d650-7199" type="selectionEntry" targetId="9ed-cbf4-bfe5-90bf">
+          <categoryLinks>
+            <categoryLink targetId="4ac9-fd30-1e3d-b249" id="1f09-e84e-4b8b-18c4" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Show Forgeworld" hidden="false" id="ffb5-655b-9721-de5f" type="selectionEntry" targetId="c7b0-448a-4b1c-62d2">
+          <categoryLinks>
+            <categoryLink targetId="4ac9-fd30-1e3d-b249" id="c959-6c21-b2dd-e6ac" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="7478-2e95-2444-b500" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="7478-2e95-2444-b500"/>
+        <modifier type="set-primary" value="4ac9-fd30-1e3d-b249" field="category"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="a27f-9b1b-d2da-399b" primary="false" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Show Homebrew" hidden="false" id="9ed-cbf4-bfe5-90bf">
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="0622-2fa8-f9af-424c" primary="false" name="Configuration"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="7cbd-24e3-bacb-1eb1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51d8-e3c2-867-5eb"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f32-5aaa-603e-fed1"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="7cbd-24e3-bacb-1eb1"/>
+        <modifier type="set" value="0" field="51d8-e3c2-867-5eb"/>
+        <modifier type="set" value="Homebrew are visible" field="name"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Show Forgeworld" hidden="false" id="c7b0-448a-4b1c-62d2">
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="de2c-f82e-d7b7-84ce" primary="false" name="Configuration"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="bc20-36ea-83c8-48e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee0f-8e2e-e98a-227f"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2378-72a8-6ad3-ff6f"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="bc20-36ea-83c8-48e6"/>
+        <modifier type="set" value="0" field="ee0f-8e2e-e98a-227f"/>
+        <modifier type="set" value="Forgeworld are visible" field="name"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
 </gameSystem>
