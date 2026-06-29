@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="fb81-2fd6-1a4c-f64f" name="Tyranids" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="fb81-2fd6-1a4c-f64f" name="Tyranids" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Biovore" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="5c69-a5c8-e9be-8840">
       <characteristics>
@@ -1048,6 +1048,55 @@ If a Spore Mine suffers a wound, touches an enemy model, impassable terrain, or 
         <characteristic name="A" typeId="a535-0722-3bc1-4d3c">3</characteristic>
         <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">10</characteristic>
         <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">3+ (4+ Invulnerable)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Meiotic Spore" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="7d34-ffd7-b9c1-93b9">
+      <characteristics>
+        <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">1</characteristic>
+        <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">0</characteristic>
+        <characteristic name="S" typeId="09af-e927-0c3c-9d88">1</characteristic>
+        <characteristic name="T" typeId="ff29-f8b2-5b20-b686">5</characteristic>
+        <characteristic name="W" typeId="4a81-ac45-a71c-c71e">1</characteristic>
+        <characteristic name="I" typeId="8517-a46c-d6df-9c75">1</characteristic>
+        <characteristic name="A" typeId="a535-0722-3bc1-4d3c">0</characteristic>
+        <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">6</characteristic>
+        <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Meiotic Spore" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="73af-7610-f141-cfc4" publicationId="2523-c82d-5a2f-e23d">
+      <characteristics>
+        <characteristic name="Range" typeId="9b9e-0c24-e409-a801">n/a</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
+        <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+        <characteristic name="Type" typeId="1524-30c8-5da7-66ff">5&quot; Blast</characteristic>
+        <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+      </characteristics>
+      <alias>73</alias>
+    </profile>
+    <profile name="Malanthrope" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="006c-2dce-d220-bb95" publicationId="2523-c82d-5a2f-e23d" page="72">
+      <characteristics>
+        <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">3</characteristic>
+        <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">3</characteristic>
+        <characteristic name="S" typeId="09af-e927-0c3c-9d88">5</characteristic>
+        <characteristic name="T" typeId="ff29-f8b2-5b20-b686">5</characteristic>
+        <characteristic name="W" typeId="4a81-ac45-a71c-c71e">4</characteristic>
+        <characteristic name="I" typeId="8517-a46c-d6df-9c75">5</characteristic>
+        <characteristic name="A" typeId="a535-0722-3bc1-4d3c">3</characteristic>
+        <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">10</characteristic>
+        <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stone-Crusher Carnifex" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="4631-4ba7-b80e-5b23" publicationId="2523-c82d-5a2f-e23d" page="74">
+      <characteristics>
+        <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">3</characteristic>
+        <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">2</characteristic>
+        <characteristic name="S" typeId="09af-e927-0c3c-9d88">9</characteristic>
+        <characteristic name="T" typeId="ff29-f8b2-5b20-b686">6</characteristic>
+        <characteristic name="W" typeId="4a81-ac45-a71c-c71e">4</characteristic>
+        <characteristic name="I" typeId="8517-a46c-d6df-9c75">1</characteristic>
+        <characteristic name="A" typeId="a535-0722-3bc1-4d3c">3</characteristic>
+        <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">8</characteristic>
+        <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">2+</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -4842,6 +4891,102 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         <infoLink name="Stealth" id="c9f3-6d68-40fb-8a4d" hidden="false" type="profile" targetId="8dc7-2ec3-1248-9d84"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Meiotic Spore [Forgeworld]" hidden="false" id="1ebe-7533-a2a4-d67d">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Meiotic Spore" hidden="false" id="b6ac-0b44-6c57-00fc" publicationId="2523-c82d-5a2f-e23d" page="73">
+          <infoLinks>
+            <infoLink name="Meiotic Spore" id="f4e0-6248-5e81-58c8" hidden="false" type="profile" targetId="7d34-ffd7-b9c1-93b9" publicationId="2523-c82d-5a2f-e23d" page="73"/>
+            <infoLink name="Meiotic Spore" id="66bd-574d-173d-f531" hidden="false" type="profile" targetId="73af-7610-f141-cfc4" publicationId="2523-c82d-5a2f-e23d" page="73"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c87-dbad-7247-c07a"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4cff-5621-e64e-5aff"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="35"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="656d-bf09-7c04-3f3e" hidden="false" type="profile" targetId="a4d9-aab7-6c66-e4da"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Movement" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="795f-1eef-ce95-bd92" publicationId="2523-c82d-5a2f-e23d" page="73">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">After it has arrived via deep strike, the Meiotic Spore may &apos;drift&apos; D6&quot; in any direction its owning player chooses in a subsequent Movement phase, but may not move normally, assault, etc. This movement is unaffected by Difficult Terrain.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Detonation" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="ebd8-9470-6958-7416" page="73" publicationId="2523-c82d-5a2f-e23d">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">In the owing player&apos;s Shooting phase, if they wish it, or, if for any reason a Meiotic Spore comes within 2&quot; of an enemy model, it detonates immediately. Resolve the Meiotic spore attack listed with the blast marker centred on the spore. After resolving the attack, remove the spore from play as a casualty and place D6-2 Spore mines on its former location, just as you would place a deep striking unit. These spore mines then act exactly as they would normally from this point onwards.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Living Weapon" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="c63d-950e-3757-23f9" publicationId="2523-c82d-5a2f-e23d" page="73">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Neither Meiotic Spores, nor the spore mines they generate, are ever classed as scoring units, nor do they award the enemy Kill points/Victory points when they are destroyed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Malanthrope [Forgeworld]" hidden="false" id="63a9-822c-477a-fa6d">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Malanthrope" hidden="false" id="a5cc-9168-0072-91fe" publicationId="2523-c82d-5a2f-e23d" page="73">
+          <infoLinks>
+            <infoLink name="Malanthrope" id="b6ae-b121-cb6c-5746" hidden="false" type="profile" targetId="006c-2dce-d220-bb95" publicationId="2523-c82d-5a2f-e23d" page="72"/>
+            <infoLink name="Claws and Teeth" id="678c-7979-e810-f197" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb" publicationId="7263-1a06-5469-04ab" page="83"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f14-c42d-4134-3b62"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7d68-3437-0ebe-7b08"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="110"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Monstrous Creature" id="7212-f7ad-23f8-5c0b" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+        <infoLink name="Regeneration" id="7b3e-b3c8-5dfd-da1b" hidden="false" type="profile" targetId="e8d9-c24c-0ada-0f4a"/>
+        <infoLink name="Toxin Sacs" id="de33-f03a-d2ed-2cce" hidden="false" type="profile" targetId="bf9b-5f6f-7099-c9e8"/>
+        <infoLink name="Synapse Creature" id="fc56-1d37-3cc4-940a" hidden="false" type="profile" targetId="c532-63f6-20dd-0d6f"/>
+        <infoLink name="Toxic Miasma" id="ea78-8923-e553-9d1e" hidden="false" type="profile" targetId="f0af-7b7b-bae0-b9fe"/>
+        <infoLink name="Fleet" id="b070-9966-fca0-3fe0" hidden="false" type="profile" targetId="3748-79f1-e937-8650"/>
+        <infoLink name="Move Through Cover" id="3543-5504-6522-f78c" hidden="false" type="profile" targetId="25f7-501a-6b03-6c3b"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Prey Adaptation" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="54a5-405e-69c8-4908" publicationId="2523-c82d-5a2f-e23d" page="72">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Once a Malanthrope brood has destroyed an enemy infantry unit (of any type) in an assault, both they and any friendly Tyranid model or unit within Synapse range of the Malanthrope brood (including the Malanthrope themselves) gain the Preferred Enemy special rule against the enemy type they have slain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Stone-Crusher Carnifex [Forgeworld]" hidden="false" id="7b86-9b69-bc88-8549" publicationId="2523-c82d-5a2f-e23d" page="74">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="195"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Stone-Crusher Carnifex" id="fc9a-6130-96f0-b5cb" hidden="false" type="profile" targetId="4631-4ba7-b80e-5b23"/>
+        <infoLink name="Monstrous Creature" id="29a8-cf90-ce97-f2f3" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+        <infoLink name="Crushing Claws" id="cd86-6a9a-1df9-2dd0" hidden="false" type="profile" targetId="2d7b-ae8e-20dd-559d"/>
+        <infoLink name="Instinctive Behaviour - Feed" id="e97b-cfdd-4d36-8975" hidden="false" type="profile" targetId="033b-00cf-e0e1-c66c"/>
+        <infoLink name="Fearless" id="b862-64fe-0ac6-53f2" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
+        <infoLink name="Living Battering Ram" id="6f08-bfae-a0f6-5fc0" hidden="false" targetId="1cf6-a779-a032-78d5" type="profile"/>
+        <infoLink name="Regeneration" id="006c-e667-dff7-9417" hidden="false" type="profile" targetId="e8d9-c24c-0ada-0f4a"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Stone Crusher" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="20fc-8a1c-81ca-f534">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Stone-Crusher Carnifex counts as being equipped with assault grenades, and in addition increases all rolls on damage charts against Vehicles and Buildings by +1. In Cities of Death games, a Stone-crusher Carnifex counts as having the Wrecker Stratagem.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="It will not Die!" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="3363-4a24-29fb-88a5">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Stone-crusher Carnifex has the Regenerate biomorph as per Codex Tyranids, and may re-roll results of &apos;1&apos; when attempting to regenerate lost wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Instinctive Behaviour" id="2661-5eaf-7f02-4291" hidden="false">
@@ -4855,12 +5000,12 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
     </rule>
   </sharedRules>
   <entryLinks>
-    <entryLink import="true" name="Hive Tyrant" hidden="false" id="bcf1-12ed-3ced-e1e4" type="selectionEntry" targetId="b7df-e825-5bd8-ed62">
+    <entryLink import="true" name="Hive Tyrant" hidden="false" id="bcf1-12ed-3ced-e1e4" type="selectionEntry" targetId="b7df-e825-5bd8-ed62" page="86" publicationId="7263-1a06-5469-04ab">
       <categoryLinks>
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="a0a6-b171-111a-c5ff" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="The Swarmlord" hidden="false" id="d434-592b-bedb-c136" type="selectionEntry" targetId="9e34-863a-97d2-500e">
+    <entryLink import="true" name="The Swarmlord" hidden="false" id="d434-592b-bedb-c136" type="selectionEntry" targetId="9e34-863a-97d2-500e" publicationId="7263-1a06-5469-04ab" page="86">
       <categoryLinks>
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="62ed-1080-0938-0697" primary="true" name="HQ"/>
       </categoryLinks>
@@ -4868,17 +5013,17 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40af-2502-2a09-152c"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Tervigon" hidden="false" id="a8a3-5605-298d-8692" type="selectionEntry" targetId="0f36-b514-b951-ac09">
+    <entryLink import="true" name="Tervigon" hidden="false" id="a8a3-5605-298d-8692" type="selectionEntry" targetId="0f36-b514-b951-ac09" publicationId="7263-1a06-5469-04ab" page="87">
       <categoryLinks>
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="c6a6-eb79-1ecd-070e" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tyranid Prime" hidden="false" id="d642-89f0-d0a9-5119" type="selectionEntry" targetId="6a43-eb42-9048-43cb">
+    <entryLink import="true" name="Tyranid Prime" hidden="false" id="d642-89f0-d0a9-5119" type="selectionEntry" targetId="6a43-eb42-9048-43cb" publicationId="7263-1a06-5469-04ab" page="87">
       <categoryLinks>
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="2cae-be3d-5410-d18b" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="The Parasite of Mortrex" hidden="false" id="2822-d1f9-5b0e-dac7" type="selectionEntry" targetId="4124-cde7-60b0-84d5">
+    <entryLink import="true" name="The Parasite of Mortrex" hidden="false" id="2822-d1f9-5b0e-dac7" type="selectionEntry" targetId="4124-cde7-60b0-84d5" publicationId="7263-1a06-5469-04ab" page="87">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ceb1-ad79-a674-3e01"/>
       </constraints>
@@ -4886,17 +5031,17 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="bc94-8340-f72f-eca7" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Hive Guard Brood" hidden="false" id="e4b7-34b7-801d-8a7e" type="selectionEntry" targetId="3cf9-a8f8-8d26-0ad5">
+    <entryLink import="true" name="Hive Guard Brood" hidden="false" id="e4b7-34b7-801d-8a7e" type="selectionEntry" targetId="3cf9-a8f8-8d26-0ad5" publicationId="7263-1a06-5469-04ab" page="88">
       <categoryLinks>
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="ccbb-ba57-7414-8131" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Lictor Brood" hidden="false" id="2337-2941-4c7e-f1b4" type="selectionEntry" targetId="69da-685f-c2f7-4be7">
+    <entryLink import="true" name="Lictor Brood" hidden="false" id="2337-2941-4c7e-f1b4" type="selectionEntry" targetId="69da-685f-c2f7-4be7" publicationId="7263-1a06-5469-04ab" page="88">
       <categoryLinks>
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="4535-c782-5080-b570" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Deathleaper" hidden="false" id="19ae-1455-4065-1885" type="selectionEntry" targetId="1b9e-06be-9a2f-f69e">
+    <entryLink import="true" name="Deathleaper" hidden="false" id="19ae-1455-4065-1885" type="selectionEntry" targetId="1b9e-06be-9a2f-f69e" publicationId="7263-1a06-5469-04ab" page="88">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfb5-c223-f31b-068f"/>
       </constraints>
@@ -4904,17 +5049,17 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="dbd8-884d-b67b-411c" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Venomthrope Brood" hidden="false" id="f8ac-b3b4-f8a3-83a2" type="selectionEntry" targetId="145d-c581-4dda-a684">
+    <entryLink import="true" name="Venomthrope Brood" hidden="false" id="f8ac-b3b4-f8a3-83a2" type="selectionEntry" targetId="145d-c581-4dda-a684" publicationId="7263-1a06-5469-04ab" page="88">
       <categoryLinks>
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="8416-76b0-1795-1d6c" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Zoanthrope Brood" hidden="false" id="0b04-2882-f65c-74c8" type="selectionEntry" targetId="6adf-75d3-9773-652c">
+    <entryLink import="true" name="Zoanthrope Brood" hidden="false" id="0b04-2882-f65c-74c8" type="selectionEntry" targetId="6adf-75d3-9773-652c" publicationId="7263-1a06-5469-04ab" page="89">
       <categoryLinks>
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="db26-73c2-3e77-66ed" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="The Doom of Malan&apos;tai" hidden="false" id="df60-2cb8-6b1b-07bb" type="selectionEntry" targetId="be4b-26de-f016-d121">
+    <entryLink import="true" name="The Doom of Malan&apos;tai" hidden="false" id="df60-2cb8-6b1b-07bb" type="selectionEntry" targetId="be4b-26de-f016-d121" publicationId="7263-1a06-5469-04ab" page="89">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e52-81e6-7923-0ee1"/>
       </constraints>
@@ -4922,77 +5067,77 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="a6f3-d08b-cbaa-e783" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Pyrovore Brood" hidden="false" id="6f10-f7e9-82fd-eddd" type="selectionEntry" targetId="82a3-852f-7b1e-b597">
+    <entryLink import="true" name="Pyrovore Brood" hidden="false" id="6f10-f7e9-82fd-eddd" type="selectionEntry" targetId="82a3-852f-7b1e-b597" publicationId="7263-1a06-5469-04ab" page="89">
       <categoryLinks>
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="c51c-e9e6-2ab8-5741" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Ymgarl Genestealer Brood" hidden="false" id="1060-b3fe-6d99-93fa" type="selectionEntry" targetId="e617-087f-8fcf-0ec3">
+    <entryLink import="true" name="Ymgarl Genestealer Brood" hidden="false" id="1060-b3fe-6d99-93fa" type="selectionEntry" targetId="e617-087f-8fcf-0ec3" publicationId="7263-1a06-5469-04ab" page="89">
       <categoryLinks>
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="2891-b61d-d907-b8e2" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tyranid Warrior Brood" hidden="false" id="6de2-f4d7-8181-b494" type="selectionEntry" targetId="a5b4-8db3-10f6-d26f">
+    <entryLink import="true" name="Tyranid Warrior Brood" hidden="false" id="6de2-f4d7-8181-b494" type="selectionEntry" targetId="a5b4-8db3-10f6-d26f" publicationId="7263-1a06-5469-04ab" page="90">
       <categoryLinks>
         <categoryLink targetId="default-category" id="ee56-3678-01b3-f407" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Genestealer Brood" hidden="false" id="e5f7-6054-3e35-cfe1" type="selectionEntry" targetId="8033-7f5c-2617-d04c">
+    <entryLink import="true" name="Genestealer Brood" hidden="false" id="e5f7-6054-3e35-cfe1" type="selectionEntry" targetId="8033-7f5c-2617-d04c" publicationId="7263-1a06-5469-04ab" page="90">
       <categoryLinks>
         <categoryLink targetId="default-category" id="abda-2589-12ab-1ccf" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Termagant Brood" hidden="false" id="b639-ffe6-63b2-f07c" type="selectionEntry" targetId="4fed-36d0-39a8-e477">
+    <entryLink import="true" name="Termagant Brood" hidden="false" id="b639-ffe6-63b2-f07c" type="selectionEntry" targetId="4fed-36d0-39a8-e477" publicationId="7263-1a06-5469-04ab" page="91">
       <categoryLinks>
         <categoryLink targetId="default-category" id="3f24-8e26-cdb0-3fba" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Hormagaunt Brood" hidden="false" id="6d28-bcd1-f038-921b" type="selectionEntry" targetId="c1ea-33fd-b106-ab15">
+    <entryLink import="true" name="Hormagaunt Brood" hidden="false" id="6d28-bcd1-f038-921b" type="selectionEntry" targetId="c1ea-33fd-b106-ab15" publicationId="7263-1a06-5469-04ab" page="91">
       <categoryLinks>
         <categoryLink targetId="default-category" id="555e-3468-5e76-df4f" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Ripper Swarm Brood" hidden="false" id="2474-a58f-ce38-35cd" type="selectionEntry" targetId="9a92-7c07-f170-c3a9">
+    <entryLink import="true" name="Ripper Swarm Brood" hidden="false" id="2474-a58f-ce38-35cd" type="selectionEntry" targetId="9a92-7c07-f170-c3a9" publicationId="7263-1a06-5469-04ab" page="91">
       <categoryLinks>
         <categoryLink targetId="default-category" id="4408-9e7f-93b5-631b" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tyranid Shrikes" hidden="false" id="669c-f487-cf44-6712" type="selectionEntry" targetId="0189-36bf-3860-ac9c">
+    <entryLink import="true" name="Tyranid Shrikes" hidden="false" id="669c-f487-cf44-6712" type="selectionEntry" targetId="0189-36bf-3860-ac9c" publicationId="7263-1a06-5469-04ab" page="92">
       <categoryLinks>
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="f9f5-3d3c-70fe-f373" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Ravener Brood" hidden="false" id="e220-b910-55a0-d031" type="selectionEntry" targetId="9590-5821-44fe-6866">
+    <entryLink import="true" name="Ravener Brood" hidden="false" id="e220-b910-55a0-d031" type="selectionEntry" targetId="9590-5821-44fe-6866" publicationId="7263-1a06-5469-04ab" page="92">
       <categoryLinks>
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="1da9-ea6d-6bce-e3a9" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Sky-slasher Swarm Brood" hidden="false" id="8322-37a2-cc58-a201" type="selectionEntry" targetId="8f63-c6fc-d36b-9e6a">
+    <entryLink import="true" name="Sky-slasher Swarm Brood" hidden="false" id="8322-37a2-cc58-a201" type="selectionEntry" targetId="8f63-c6fc-d36b-9e6a" publicationId="7263-1a06-5469-04ab" page="92">
       <categoryLinks>
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="7b60-f978-cc67-fafa" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Gargoyle Brood" hidden="false" id="20ea-16e7-9102-cb34" type="selectionEntry" targetId="a3fe-0404-a74f-efdc">
+    <entryLink import="true" name="Gargoyle Brood" hidden="false" id="20ea-16e7-9102-cb34" type="selectionEntry" targetId="a3fe-0404-a74f-efdc" publicationId="7263-1a06-5469-04ab" page="93">
       <categoryLinks>
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="4c4f-7970-223c-1ee0" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Harpy" hidden="false" id="694e-64f0-7d9f-5514" type="selectionEntry" targetId="640e-1695-a3e4-8fa6">
+    <entryLink import="true" name="Harpy" hidden="false" id="694e-64f0-7d9f-5514" type="selectionEntry" targetId="640e-1695-a3e4-8fa6" publicationId="7263-1a06-5469-04ab" page="93">
       <categoryLinks>
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="28ec-10b3-b3ac-1da4" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Spore Mine Cluster" hidden="false" id="fba5-6825-5fcf-fbd2" type="selectionEntry" targetId="3a5f-ff5d-a0c5-1456">
+    <entryLink import="true" name="Spore Mine Cluster" hidden="false" id="fba5-6825-5fcf-fbd2" type="selectionEntry" targetId="3a5f-ff5d-a0c5-1456" publicationId="7263-1a06-5469-04ab" page="93">
       <categoryLinks>
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="0d21-3d44-e0b8-e3af" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Carnifex Brood" hidden="false" id="2d55-13e7-abc4-959e" type="selectionEntry" targetId="72b2-b527-e277-7cfc">
+    <entryLink import="true" name="Carnifex Brood" hidden="false" id="2d55-13e7-abc4-959e" type="selectionEntry" targetId="72b2-b527-e277-7cfc" publicationId="7263-1a06-5469-04ab" page="94">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="55e5-695c-fb4c-b7ed" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Old One Eye" hidden="false" id="41a6-d7b5-3300-3cdd" type="selectionEntry" targetId="6f8a-5d1d-1440-5c0f">
+    <entryLink import="true" name="Old One Eye" hidden="false" id="41a6-d7b5-3300-3cdd" type="selectionEntry" targetId="6f8a-5d1d-1440-5c0f" publicationId="7263-1a06-5469-04ab" page="94">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="f33d-0031-30d2-902e" primary="true" name="Heavy Support"/>
       </categoryLinks>
@@ -5000,27 +5145,27 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2c3-be71-c1f2-c6b5"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Biovore Brood" hidden="false" id="d829-8619-0075-a275" type="selectionEntry" targetId="ba3e-4974-c2a3-5590">
+    <entryLink import="true" name="Biovore Brood" hidden="false" id="d829-8619-0075-a275" type="selectionEntry" targetId="ba3e-4974-c2a3-5590" publicationId="7263-1a06-5469-04ab" page="94">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="584b-1c95-6414-c786" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Trygon" hidden="false" id="9135-fb52-7aaa-1b43" type="selectionEntry" targetId="998f-bf31-8ab5-b716">
+    <entryLink import="true" name="Trygon" hidden="false" id="9135-fb52-7aaa-1b43" type="selectionEntry" targetId="998f-bf31-8ab5-b716" publicationId="7263-1a06-5469-04ab" page="95">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="c354-4740-f30f-cdcf" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mawloc" hidden="false" id="4995-e023-20a8-77d4" type="selectionEntry" targetId="482d-fbbb-5430-df9d">
+    <entryLink import="true" name="Mawloc" hidden="false" id="4995-e023-20a8-77d4" type="selectionEntry" targetId="482d-fbbb-5430-df9d" publicationId="7263-1a06-5469-04ab" page="95">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="ff77-dc8b-cfcc-d1f7" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tyrannofex" hidden="false" id="08f0-5fd3-6e34-1f91" type="selectionEntry" targetId="47b8-e3a1-9068-de42">
+    <entryLink import="true" name="Tyrannofex" hidden="false" id="08f0-5fd3-6e34-1f91" type="selectionEntry" targetId="47b8-e3a1-9068-de42" publicationId="7263-1a06-5469-04ab" page="95">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="8230-8706-a996-8f7c" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Norn Emmisary" hidden="false" id="7dcf-b463-4695-d6e4" type="selectionEntry" targetId="4e5a-e0a5-11b7-6098">
+    <entryLink import="true" name="Norn Emmisary [Homebrew]" hidden="false" id="7dcf-b463-4695-d6e4" type="selectionEntry" targetId="4e5a-e0a5-11b7-6098">
       <categoryLinks>
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="8efb-9751-1053-a53c" primary="true" name="HQ"/>
       </categoryLinks>
@@ -5032,7 +5177,7 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Norn Assimilator" hidden="false" id="2159-af89-7bb9-25ad" type="selectionEntry" targetId="e028-0196-a332-1a08">
+    <entryLink import="true" name="Norn Assimilator [Homebrew]" hidden="false" id="2159-af89-7bb9-25ad" type="selectionEntry" targetId="e028-0196-a332-1a08">
       <categoryLinks>
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="d6e6-bb22-cdbc-82a5" primary="true" name="HQ"/>
       </categoryLinks>
@@ -5044,7 +5189,7 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Barbgaunt Brood" hidden="false" id="7430-12f4-00be-a539" type="selectionEntry" targetId="35ce-75e3-12a8-f579">
+    <entryLink import="true" name="Barbgaunt Brood [Homebrew]" hidden="false" id="7430-12f4-00be-a539" type="selectionEntry" targetId="35ce-75e3-12a8-f579">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="728e-5fce-e61f-57b0" primary="true" name="Heavy Support"/>
       </categoryLinks>
@@ -5056,7 +5201,7 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Exocrine Brood" hidden="false" id="cf71-3955-bbe2-a94c" type="selectionEntry" targetId="2cce-e1b5-d622-af70">
+    <entryLink import="true" name="Exocrine Brood [Homebrew]" hidden="false" id="cf71-3955-bbe2-a94c" type="selectionEntry" targetId="2cce-e1b5-d622-af70">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="9477-eecd-3044-5545" primary="true" name="Heavy Support"/>
       </categoryLinks>
@@ -5068,7 +5213,7 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Haruspex Brood" hidden="false" id="ff3f-2e5a-0fd3-ebaf" type="selectionEntry" targetId="6fa3-901c-ff96-9d70">
+    <entryLink import="true" name="Haruspex Brood [Homebrew]" hidden="false" id="ff3f-2e5a-0fd3-ebaf" type="selectionEntry" targetId="6fa3-901c-ff96-9d70">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="45dc-bbe9-df69-aa45" primary="true" name="Heavy Support"/>
       </categoryLinks>
@@ -5080,7 +5225,7 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Maleceptor Brood" hidden="false" id="2ba2-7d20-7f0e-91b3" type="selectionEntry" targetId="c402-878a-7ff1-ce46">
+    <entryLink import="true" name="Maleceptor Brood [Homebrew]" hidden="false" id="2ba2-7d20-7f0e-91b3" type="selectionEntry" targetId="c402-878a-7ff1-ce46">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="7dbb-6224-662b-c3a5" primary="true" name="Heavy Support"/>
       </categoryLinks>
@@ -5092,7 +5237,7 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Neurogaunt Brood" hidden="false" id="1ea6-89f2-03ba-6a5f" type="selectionEntry" targetId="c944-e22d-1fd0-37ef">
+    <entryLink import="true" name="Neurogaunt Brood [Homebrew]" hidden="false" id="1ea6-89f2-03ba-6a5f" type="selectionEntry" targetId="c944-e22d-1fd0-37ef">
       <categoryLinks>
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="9056-39ea-554f-7e0e" primary="true" name="Elites"/>
       </categoryLinks>
@@ -5104,7 +5249,7 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Neurolictor Brood" hidden="false" id="b8c2-aeaf-36a5-99fe" type="selectionEntry" targetId="4a3c-e287-30dc-755b">
+    <entryLink import="true" name="Neurolictor Brood [Homebrew]" hidden="false" id="b8c2-aeaf-36a5-99fe" type="selectionEntry" targetId="4a3c-e287-30dc-755b">
       <categoryLinks>
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="ecf0-a7cb-c7bc-d6ef" primary="true" name="Elites"/>
       </categoryLinks>
@@ -5116,7 +5261,7 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Neurotyrant" hidden="false" id="cf41-e3cd-26d7-6d92" type="selectionEntry" targetId="5cca-d39e-cecd-f232">
+    <entryLink import="true" name="Neurotyrant [Homebrew]" hidden="false" id="cf41-e3cd-26d7-6d92" type="selectionEntry" targetId="5cca-d39e-cecd-f232">
       <categoryLinks>
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="d036-1816-b46d-5fbb" primary="true" name="HQ"/>
       </categoryLinks>
@@ -5128,7 +5273,7 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Psychophage Brood" hidden="false" id="6340-6f19-d7a0-2f80" type="selectionEntry" targetId="9ba9-0692-ac2c-bb78">
+    <entryLink import="true" name="Psychophage Brood [Homebrew]" hidden="false" id="6340-6f19-d7a0-2f80" type="selectionEntry" targetId="9ba9-0692-ac2c-bb78">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="8588-00cb-de48-5c63" primary="true" name="Heavy Support"/>
       </categoryLinks>
@@ -5168,6 +5313,42 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="3e7e-34f5-7202-ad9a" primary="false" name="Configuration"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Meiotic Spore [Forgeworld]" hidden="false" id="58f3-35b4-defb-e8c3" type="selectionEntry" targetId="1ebe-7533-a2a4-d67d">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="4fd3-c6f5-ac06-7b1d" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="09d0-7c53-20fa-0814" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Malanthrope [Forgeworld]" hidden="false" id="2126-2caf-1b6d-0db5" type="selectionEntry" targetId="63a9-822c-477a-fa6d">
+      <categoryLinks>
+        <categoryLink targetId="ac8d-efba-1884-d3ad" id="c04d-8892-92fa-fc2b" primary="true" name="HQ"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="2515-001b-c604-184b" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Stone-Crusher Carnifex [Forgeworld]" hidden="false" id="3e80-fb73-6f89-fe48" type="selectionEntry" targetId="7b86-9b69-bc88-8549">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="79cd-d530-a922-eb0f" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="fc88-99de-4f18-4d53" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
 </catalogue>

@@ -793,6 +793,8 @@ If a destroyer weapon hits a non-vehicle model, there is no need to roll to woun
   <publications>
     <publication name="Warhammer 40,000 5e Rulebook" id="ad9c-8597-0188-2ba0" hidden="false"/>
     <publication name="Codex: Imperial Guard" id="e1ac-28b4-5326-9bdf" hidden="false"/>
+    <publication name="Imperial Armour Apocalypse (Second Edition)" id="2523-c82d-5a2f-e23d" hidden="false"/>
+    <publication name="Codex: Tyranids" id="7263-1a06-5469-04ab" hidden="false"/>
   </publications>
   <sharedProfiles>
     <profile name="Plasma Gun" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="29c3-2b26-b62c-779c">
@@ -4306,7 +4308,7 @@ Once the Drop Pod has landed, all passengers must immediately disembark, as norm
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Show/Hide Options" hidden="false" id="e8ef-836a-a9d1-901d">
       <entryLinks>
-        <entryLink import="true" name="Show Legends" hidden="false" id="892f-57ca-d650-7199" type="selectionEntry" targetId="9ed-cbf4-bfe5-90bf">
+        <entryLink import="true" name="Show Homebrew" hidden="false" id="892f-57ca-d650-7199" type="selectionEntry" targetId="9ed-cbf4-bfe5-90bf">
           <categoryLinks>
             <categoryLink targetId="4ac9-fd30-1e3d-b249" id="1f09-e84e-4b8b-18c4" primary="false" name="Configuration"/>
           </categoryLinks>
