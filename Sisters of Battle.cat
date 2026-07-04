@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0eb2-8d77-d6e9-5714" name="Sisters of Battle" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0eb2-8d77-d6e9-5714" name="Sisters of Battle" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Condemnor Boltgun (Stake)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="49df-6f91-aae0-a618">
       <characteristics>
@@ -424,6 +424,94 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Repressor [Forgeworld]" hidden="false" id="481b-6f64-7d07-e8cc">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="50"/>
+      </costs>
+      <profiles>
+        <profile name="Repressor" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="1d6d-3d7e-10d8-6dc2">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">11</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">11</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Repressor" typeId="9a37-e4d2-11fe-9e81" typeName="Transport" hidden="false" id="c1c7-4799-f492-84bc">
+          <characteristics>
+            <characteristic name="Capacity" typeId="7cdf-4c80-a83d-200c">10 Models</characteristic>
+            <characteristic name="Access Points" typeId="6e42-3bd5-70a6-724f">Once at rear, One each side.</characteristic>
+            <characteristic name="Fire Points" typeId="aa94-ae0c-98e7-5923">Up to six passengers may fire their basic weapons from the repressor’ fire points. Additionally one model may fire any weapon from the top hatch. All models using the fire points must engage the same target, although they may engage a different target to the Repressor itself.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Tank" id="583e-44f9-7cbf-c985" hidden="false" type="rule" targetId="3475-46b4-28e6-8fb0"/>
+        <infoLink name="Smoke Launchers" id="028d-a036-7054-d94e" hidden="false" type="profile" targetId="180e-ad4b-4df0-81ae"/>
+        <infoLink name="Shield of Faith" id="f661-8fb8-38f7-6c28" hidden="false" type="profile" targetId="35d8-dd34-a92a-42f4"/>
+        <infoLink name="Storm Bolter" id="2be5-4c18-e627-ade6" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+        <infoLink name="Dozer Blade" id="3eef-0289-7871-f614" hidden="false" type="profile" targetId="071f-6e73-2a57-cfc4"/>
+        <infoLink name="Searchlight" id="9a30-79df-3b47-09bb" hidden="false" type="profile" targetId="589c-c16c-2ed7-61f9"/>
+        <infoLink name="Heavy Flamer" id="2011-a38e-58b7-2b82" hidden="false" type="profile" targetId="f83b-3e9d-4395-7a68"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="d93c-07a8-446e-d6b4" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Laud Hailer" hidden="false" id="9f95-b5d3-d233-fc87" sortIndex="6">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Laud Hailer" id="8cdc-bbb4-9123-c49d" hidden="false" type="profile" targetId="a812-b31f-d861-1ece"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd51-2d13-3d8e-5219" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hunter-Killer Missile" hidden="false" id="3557-53c6-ec13-3ec7" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Hunter-Killer Missile" id="b297-adaa-b2ac-252e" hidden="false" type="profile" targetId="ecc5-0991-ef00-23ac"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49bb-c0aa-ab54-e5ee" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="9b5f-bd09-4da0-515e" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="7660-b239-81c5-5462" hidden="false" type="profile" targetId="ec58-94f7-12e5-a9b9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8605-3381-c3f7-330f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessed Banner" hidden="false" id="a174-4b0f-031d-12b0" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Blessed Banner" id="6ef7-4165-3330-f64d" hidden="false" type="profile" targetId="e5df-28bd-a4fa-2e0b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3f5-5452-8535-b746" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="8aae-caaf-c5ac-947b" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Saint Celestine" hidden="false" id="b8f8-69fb-20f4-a644">
@@ -557,7 +645,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab1b-8bed-e8c8-8170" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="e3bc-1b2f-0951-5ebc">
+            <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="e3bc-1b2f-0951-5ebc">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
               </costs>
@@ -896,7 +984,11 @@ For example, if a Canoness joins a unit of Celestians then you would require two
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Dedicated Transport" hidden="false" id="9e7e-d44e-6a20-f78e" type="selectionEntryGroup" targetId="e084-2074-ac51-1468"/>
+            <entryLink import="true" name="Dedicated Transport" hidden="false" id="9e7e-d44e-6a20-f78e" type="selectionEntryGroup" targetId="e084-2074-ac51-1468">
+              <entryLinks>
+                <entryLink import="true" name="Repressor [Forgeworld]" hidden="false" id="ad3e-6c63-aea8-d30b" type="selectionEntry" targetId="481b-6f64-7d07-e8cc"/>
+              </entryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1104,7 +1196,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b731-d614-b540-85ba" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="940a-3568-7fff-053e">
+            <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="940a-3568-7fff-053e">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
               </costs>
@@ -1357,7 +1449,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcaa-02a6-6f99-ec7b" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="118f-cc97-0809-e9ef">
+            <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="118f-cc97-0809-e9ef">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
               </costs>
@@ -1535,7 +1627,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb95-267c-3a30-844c" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="1587-7e8c-559c-ceb6">
+                    <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="1587-7e8c-559c-ceb6">
                       <costs>
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
                       </costs>
@@ -1816,7 +1908,11 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="68cf-f21e-bff2-934e" primary="true" name="Elites"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Dedicated Transport" hidden="false" id="88fa-3cc3-6511-e611" type="selectionEntryGroup" targetId="e084-2074-ac51-1468"/>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="88fa-3cc3-6511-e611" type="selectionEntryGroup" targetId="e084-2074-ac51-1468">
+          <entryLinks>
+            <entryLink import="true" name="Repressor [Forgeworld]" hidden="false" id="d14e-fde1-4bcc-82c5" type="selectionEntry" targetId="481b-6f64-7d07-e8cc"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Repentia" hidden="false" id="0566-21d7-1f9a-bebf">
@@ -2046,7 +2142,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f5b-cb80-6b2e-b98f" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="2840-791e-ca1f-266f">
+                    <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="2840-791e-ca1f-266f">
                       <costs>
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
                       </costs>
@@ -2327,7 +2423,11 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <categoryLink targetId="default-category" id="fb86-50db-5fb4-a293" primary="true" name="Troops"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Dedicated Transport" hidden="false" id="0589-984e-7ac6-532e" type="selectionEntryGroup" targetId="e084-2074-ac51-1468"/>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="0589-984e-7ac6-532e" type="selectionEntryGroup" targetId="e084-2074-ac51-1468">
+          <entryLinks>
+            <entryLink import="true" name="Repressor [Forgeworld]" hidden="false" id="a267-637a-4692-be55" type="selectionEntry" targetId="481b-6f64-7d07-e8cc"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Seraphim" hidden="false" id="22eb-be09-0838-d9b9">
@@ -2454,7 +2554,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f769-c5f5-7f64-1037" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="7445-bf93-e4d7-91c1">
+                    <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="7445-bf93-e4d7-91c1">
                       <costs>
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
                       </costs>
@@ -2688,7 +2788,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9afd-3129-d98d-4d7f" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="dc0b-3578-77b1-68dd">
+                    <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="dc0b-3578-77b1-68dd">
                       <costs>
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
                       </costs>
@@ -2868,7 +2968,11 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="ae88-ffe0-308f-0524" primary="true" name="Fast Attack"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Dedicated Transport" hidden="false" id="4e42-087a-e6b3-ed60" type="selectionEntryGroup" targetId="e084-2074-ac51-1468"/>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="4e42-087a-e6b3-ed60" type="selectionEntryGroup" targetId="e084-2074-ac51-1468">
+          <entryLinks>
+            <entryLink import="true" name="Repressor [Forgeworld]" hidden="false" id="eca8-fd9c-1a5d-cc79" type="selectionEntry" targetId="481b-6f64-7d07-e8cc"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Retributor Squad" hidden="false" id="93e1-2b23-042a-f284">
@@ -2996,7 +3100,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4704-0bcb-ee14-04d6" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="2d8f-c6ef-d8f7-4992">
+                    <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="2d8f-c6ef-d8f7-4992">
                       <costs>
                         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
                       </costs>
@@ -3175,7 +3279,11 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <categoryLink targetId="9260-7d57-be5c-bd52" id="ab13-00e9-f0c8-42cc" primary="true" name="Heavy Support"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Dedicated Transport" hidden="false" id="7a5a-a8c8-037c-43c3" type="selectionEntryGroup" targetId="e084-2074-ac51-1468"/>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="7a5a-a8c8-037c-43c3" type="selectionEntryGroup" targetId="e084-2074-ac51-1468">
+          <entryLinks>
+            <entryLink import="true" name="Repressor [Forgeworld]" hidden="false" id="6f4c-efb9-5824-be78" type="selectionEntry" targetId="481b-6f64-7d07-e8cc"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Exorcist" hidden="false" id="aefa-ca7f-e29b-62d1">
@@ -3350,4 +3458,16 @@ For example, if a Canoness joins a unit of Celestians then you would require two
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="61e0-d0e0-84af-012e" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="f116-77a9-d850-76ee" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arvus Lighter [Forgeworld]" hidden="false" id="2103-7fc0-bbe8-08b0" type="selectionEntry" targetId="0861-fcb8-853d-2531">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="f16f-ef71-6df9-9f4c" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>

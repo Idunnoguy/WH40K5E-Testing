@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="302a-dd20-f8bc-1035" name="Chaos Space Marines" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="302a-dd20-f8bc-1035" name="Chaos Space Marines" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Abaddon" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="4984-5c46-5c7a-76f2">
       <characteristics>
@@ -6413,6 +6413,11 @@ If the model that is possessed by the Greater Daemon is inside a transport, the 
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="30f0-440d-d146-1588" primary="true" name="Heavy Support"/>
         <categoryLink targetId="5968-f35e-18fd-612b" id="ffbb-efa0-7c74-7324" primary="false" name="Super-Heavy"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="3081-5ebb-253a-6ed0" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="4c95-ecff-7b6b-0b03" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

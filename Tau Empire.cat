@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f2f7-a0aa-7716-4170" name="Tau Empire" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f2f7-a0aa-7716-4170" name="Tau Empire" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Burst Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="f287-d7e7-db30-4fb4">
       <characteristics>
@@ -6083,6 +6083,11 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31bb-5d69-9bf8-557b"/>
       </constraints>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="aa23-0c6a-3c33-f049" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="7208-a421-b108-1ebe" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
 </catalogue>

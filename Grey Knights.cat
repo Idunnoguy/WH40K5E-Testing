@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1d92-05fa-b42e-029a" name="Grey Knights" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1d92-05fa-b42e-029a" name="Grey Knights" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Apothecary" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="9139-2bb7-ecfa-02de">
       <characteristics>
@@ -2844,7 +2844,7 @@ If Mordrak is removed as a casualty, the Ghost Knights lose their connection to 
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
               </costs>
               <infoLinks>
-                <infoLink name="Thunder Hammers" id="0488-59e4-0951-9aa9" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
+                <infoLink name="Thunder Hammer" id="0488-59e4-0951-9aa9" hidden="false" type="profile" targetId="4cb2-e19a-4b72-594d"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d72e-f366-0766-825f" includeChildSelections="false"/>
@@ -7711,6 +7711,11 @@ Any Daemon or Psyker that suffers one or more unsaved wounds from Nemesis Force 
     <entryLink import="true" name="Land Raider Redeemer" hidden="false" id="fa1b-0086-1889-5c67" type="selectionEntry" targetId="f1d4-c36b-ad18-b27d">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="051f-5a0d-a32d-56e5" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="2781-8653-abb5-acc2" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="0eba-bcfd-9a97-09b5" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

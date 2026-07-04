@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="372d-cc35-485d-bd8c" name="Chaos Daemons" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="372d-cc35-485d-bd8c" name="Chaos Daemons" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Beast of Nurgle" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="4df3-011c-360d-4be8">
       <characteristics>
@@ -2845,6 +2845,11 @@ If the test is failed, the unit must immediately fire all its weapons (no holdin
     <entryLink import="true" name="Daemon Prince of Chaos" hidden="false" id="fa11-4163-9956-c93e" type="selectionEntry" targetId="5890-0cc9-1f81-961c">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="f45b-1051-719a-7071" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="d55e-f6e2-3e69-2cb2" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="9851-bbba-8bbf-9e69" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

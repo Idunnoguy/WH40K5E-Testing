@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="43fc-3e09-4a79-7a71" name="Eldar" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="43fc-3e09-4a79-7a71" name="Eldar" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Autarch" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="48ad-6dc6-755d-8e96">
       <characteristics>
@@ -747,12 +747,12 @@
     </profile>
     <profile name="Runes of Warding" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="a533-3584-4847-4d9e">
       <characteristics>
-        <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">All enemy Psychic tests must be taken on 3D6, suffering a Perils of the Warp attack on any roll of 12 or above.</characteristic>
+        <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">All enemy Psykers must roll an extra dice when taking Psychic tests, suffering Perils of the Warp on any roll of 12 or above</characteristic>
       </characteristics>
     </profile>
     <profile name="Runes of Witnessing" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="68f7-d23e-0003-f5da">
       <characteristics>
-        <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">A Farseer with runes of witnessing rolls 3D6 and discards the highest roll when taking a Psychic test. You must use the lowest two rolls.</characteristic>
+        <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">A Farseer with runes of witnessing must roll an extra dice when taking Psychic tests and discards the highest result.</characteristic>
       </characteristics>
     </profile>
     <profile name="Spirit Stones" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="69dc-1c6c-deb2-375d">
@@ -805,7 +805,7 @@
     </profile>
     <profile name="Defend" typeId="56e3-7b0a-703a-e89d" typeName="Exarch Power" hidden="false" id="a8a7-0b93-5bdc-ce5c">
       <characteristics>
-        <characteristic name="Description" typeId="30bc-cf7e-dc4a-3be1">Enemy models directing their attacks towards the Exarch&apos;s squad lose one Attack in each assault phase (to a minimum of 1)</characteristic>
+        <characteristic name="Description" typeId="30bc-cf7e-dc4a-3be1">Enemy models directing their Attacks towards the Exarch’s squad lose one Attack for that Assault phase (to a minimum of one)</characteristic>
       </characteristics>
     </profile>
     <profile name="War Shout" typeId="56e3-7b0a-703a-e89d" typeName="Exarch Power" hidden="false" id="9f30-2738-6be2-fccf">
@@ -1136,6 +1136,11 @@
         <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
         <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Pistol, Poison 2+</characteristic>
         <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+      </characteristics>
+    </profile>
+    <profile name="Cynosure" typeId="56e3-7b0a-703a-e89d" typeName="Exarch Power" hidden="false" id="6516-76bb-c657-e7ab">
+      <characteristics>
+        <characteristic name="Description" typeId="30bc-cf7e-dc4a-3be1">The Exarch is adept at precision targeting using the Ghostlight. The squad may re-roll a failed rolled To Hit when using the Ghostlight.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -2115,7 +2120,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Nose-weapon" id="94c0-8974-c072-bf63" hidden="false" defaultSelectionEntryId="1253-9508-5032-ee71">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Catapults" hidden="false" id="1253-9508-5032-ee71">
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Catapults" hidden="false" id="1253-9508-5032-ee71" sortIndex="1">
               <infoLinks>
                 <infoLink name="Twin-linked Shuriken Catapults" id="ee41-e75e-0b30-beda" hidden="false" targetId="0af5-7e80-fa6a-d979" type="profile"/>
               </infoLinks>
@@ -2123,7 +2128,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84ba-1b3e-b8a1-92c8" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="207e-2770-4a44-6602">
+            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="207e-2770-4a44-6602" sortIndex="2">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
               </costs>
@@ -2142,7 +2147,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Turret" id="6e8f-2c78-dafc-c768" hidden="false" defaultSelectionEntryId="17f3-fb14-89e6-90f6">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Cannons" hidden="false" id="17f3-fb14-89e6-90f6">
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Cannons" hidden="false" id="17f3-fb14-89e6-90f6" sortIndex="1">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
               </costs>
@@ -2153,7 +2158,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ac0-45bf-bf37-dda4" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Twin-linked Scatter Lasers" hidden="false" id="35b2-8485-4edd-5775">
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Scatter Lasers" hidden="false" id="35b2-8485-4edd-5775" sortIndex="2">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
               </costs>
@@ -2164,7 +2169,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a276-2fbb-6ef8-84a9" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Twin-linked Eldar Missile Launchers" hidden="false" id="0d8d-5bc3-82fc-916e">
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Eldar Missile Launchers" hidden="false" id="0d8d-5bc3-82fc-916e" sortIndex="3">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
               </costs>
@@ -2176,7 +2181,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26ab-9d47-6897-2714" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Twin-linked Starcannons" hidden="false" id="ca0c-343c-5b35-f568">
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Starcannons" hidden="false" id="ca0c-343c-5b35-f568" sortIndex="4">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="35"/>
               </costs>
@@ -2187,7 +2192,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5017-9deb-db9a-93d9" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Twin-linked Bright Lances" hidden="false" id="c40c-b058-efa3-b64a">
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Bright Lances" hidden="false" id="c40c-b058-efa3-b64a" sortIndex="5">
               <infoLinks>
                 <infoLink targetId="5ac9-7506-88c4-16ad" id="c0df-f45e-1168-bdda" type="profile" name="Twin-linked Bright Lances" hidden="false"/>
               </infoLinks>
@@ -2489,6 +2494,13 @@
       <infoLinks>
         <infoLink name="Fearless" id="4864-1aa7-f46b-0039" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
       </infoLinks>
+      <profiles>
+        <profile name="Wraithsight" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="5ef9-422a-33e7-dcbd">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Wraithguard do not see the world as mortals do, but instead witness an ever-shifting image of spirits that makes them slower to react to changes on the battlefield. At the start of its own turn, roll a D6 for each Wraithguard unit that is not within 6&quot; of a friendly psyker. On a roll of a 1, the Wraithguard is inactive until the end of its turn. Inactive models may not move, shoot, assault, attack in close combat or make sweeping advances, and are hit automatically in close combat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Warlocks" hidden="false" id="792b-f657-8f7a-3ec5" collective="false">
       <infoLinks>
@@ -4298,6 +4310,13 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <profiles>
+        <profile name="Wraithsight" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="6bc4-5694-5a7b-83f8">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Wraithlords see the world as an ever-shifting image of spirits that makes them slower to react to changes on the battlefield. At the start of its own turn, roll a D6 for each Wraithlord that is not within 6&quot; of a friendly psyker. On a roll of a 1, the Wraithlord is inactive until the end of its turn. Inactive models may not move, shoot, assault, attack in close combat or make sweeping advances, and are hit automatically in close combat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Walker Squadron" hidden="false" id="0852-be22-3109-1b78">
       <selectionEntries>
@@ -4397,7 +4416,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Hull Weapon" id="8782-5c1c-de30-87e9" hidden="false" defaultSelectionEntryId="03d1-1769-150e-63c3">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Catapults" hidden="false" id="03d1-1769-150e-63c3">
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Catapults" hidden="false" id="03d1-1769-150e-63c3" sortIndex="1">
               <infoLinks>
                 <infoLink name="Twin-linked Shuriken Catapults" id="4959-0947-41ab-53f9" hidden="false" type="profile" targetId="0af5-7e80-fa6a-d979"/>
               </infoLinks>
@@ -4406,7 +4425,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e898-f221-a2c3-f103" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="7271-0e73-b02e-b58e">
+            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="7271-0e73-b02e-b58e" sortIndex="2">
               <infoLinks>
                 <infoLink name="Shuriker Cannon" id="dd51-3679-46de-59b8" hidden="false" type="profile" targetId="db20-c0b9-7553-8719"/>
               </infoLinks>
@@ -4425,7 +4444,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Turret" id="37db-ad32-a9d0-6553" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="dbca-e905-0ff7-b9c0">
+            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="dbca-e905-0ff7-b9c0" sortIndex="1">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
               </costs>
@@ -4436,7 +4455,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55dc-0e9c-34e8-ed9d" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="f325-a3df-dbf7-6cdf">
+            <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="f325-a3df-dbf7-6cdf" sortIndex="2">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
               </costs>
@@ -4447,7 +4466,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef52-338d-3a3b-66a0" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="d20e-1508-c280-1ce2">
+            <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="d20e-1508-c280-1ce2" sortIndex="3">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
               </costs>
@@ -4460,7 +4479,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6e0-8b0f-a14e-72a8" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="2f81-1e01-511d-4c43">
+            <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="2f81-1e01-511d-4c43" sortIndex="4">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
               </costs>
@@ -4471,7 +4490,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b62-0c24-36ba-ebcd" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="eb98-33bd-34a5-7259">
+            <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="eb98-33bd-34a5-7259" sortIndex="5">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
               </costs>
@@ -4509,7 +4528,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Hull Weapon" id="5a48-8159-70c5-370d" hidden="false" defaultSelectionEntryId="03d1-1769-150e-63c3">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Catapults" hidden="false" id="5845-e691-bbcd-0553">
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Catapults" hidden="false" id="5845-e691-bbcd-0553" sortIndex="1">
               <infoLinks>
                 <infoLink name="Twin-linked Shuriken Catapults" id="1f5f-60f5-5288-7805" hidden="false" type="profile" targetId="0af5-7e80-fa6a-d979"/>
               </infoLinks>
@@ -4517,7 +4536,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85c9-4c05-1dd0-0929"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="d5fa-49de-aa67-4b0b">
+            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="d5fa-49de-aa67-4b0b" sortIndex="2">
               <infoLinks>
                 <infoLink name="Shuriker Cannon" id="1cb0-85c0-680c-46d0" hidden="false" type="profile" targetId="db20-c0b9-7553-8719"/>
               </infoLinks>
@@ -4746,6 +4765,778 @@
         <infoLink name="Jump Infantry" id="c130-93c3-2c00-7236" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fire Storm [Forgeworld]" hidden="false" id="0edd-b94f-f0f2-99de" publicationId="2523-c82d-5a2f-e23d" page="58">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="180"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Hull Weapon" id="a231-e7dd-ff1a-da39" hidden="false" defaultSelectionEntryId="03d1-1769-150e-63c3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Catapults" hidden="false" id="dd7a-9eb8-b174-33d5" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Twin-linked Shuriken Catapults" id="086b-a044-e805-f039" hidden="false" type="profile" targetId="0af5-7e80-fa6a-d979"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37ab-74c4-a6f8-2a9a"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="cdd5-4196-5d7d-30fd" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Shuriker Cannon" id="1063-93b5-2ad6-504b" hidden="false" type="profile" targetId="db20-c0b9-7553-8719"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a1e-7ddb-4933-cc09"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="e01d-3eff-255f-deed"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="2742-663d-6c55-ecdf"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Skimmer" id="433c-301e-2bb1-0cca" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+        <infoLink name="Tank" id="4d92-45c5-a1e2-4261" hidden="false" type="rule" targetId="3475-46b4-28e6-8fb0"/>
+        <infoLink name="Fast" id="6973-b374-d09f-8254" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="5b47-acb2-628f-fe37" type="selectionEntryGroup" targetId="ea13-5c3a-0b18-21a9"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Firestorm Scatter Lasers" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="a626-f97c-3c20-9e8d">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">60&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">6</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">6</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 6, Twin-Linked, AA Mount</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Fire Storm" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="5649-202a-3662-ed2a">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">3</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">12</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">12</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="83f5-6edf-fb93-69a6" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wraithseer [Forgeworld]" hidden="false" id="c646-e208-b573-678c" publicationId="2523-c82d-5a2f-e23d" page="59">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="185"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Monstrous Creature" id="0a29-621d-0059-ef53" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+        <infoLink name="Fearless" id="70fe-b7d6-35fd-f814" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Shoulder Cannon" id="8707-7719-dc6a-2cc2" hidden="false" defaultSelectionEntryId="e082-04e7-5618-394d">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="5209-6168-8538-16e3" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Starcannon" id="55f0-d8bd-f1f4-6c4b" hidden="false" type="profile" targetId="eec3-78b8-1100-fed9"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="355c-b6dd-389a-5123" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Bright Lance" id="3bf2-bd43-e908-c5b2" hidden="false" type="profile" targetId="bfd9-6ef3-6072-c0ba"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="a2b3-9032-d0ac-34ef" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Scatter Laser" id="1282-28a0-ec9d-4c3c" hidden="false" type="profile" targetId="4a05-4111-e207-f688"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="D-Cannon" hidden="false" id="8a53-63cd-5f31-c963" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="40"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="D-Cannon" id="b85b-6009-3f06-f2b0" hidden="false" type="profile" targetId="cbaf-c822-680a-c030"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="a3c2-779b-c0bd-6721" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Eldar Missile Launcher (Krak)" id="26fb-49e5-dc73-6e85" hidden="false" type="profile" targetId="87ed-f72d-1883-564a"/>
+                <infoLink name="Eldar Missile Launcher (Plasma)" id="36e6-f275-9545-da8a" hidden="false" type="profile" targetId="c8a4-edd8-ca09-6a37"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="7971-414e-13d5-49d6"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="3555-8d0e-06f6-5f6d"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Wraithseer [Forgeworld]" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="628b-22db-00d5-98de">
+          <characteristics>
+            <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">5</characteristic>
+            <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">4</characteristic>
+            <characteristic name="S" typeId="09af-e927-0c3c-9d88">10</characteristic>
+            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">8</characteristic>
+            <characteristic name="W" typeId="4a81-ac45-a71c-c71e">4</characteristic>
+            <characteristic name="I" typeId="8517-a46c-d6df-9c75">4</characteristic>
+            <characteristic name="A" typeId="a535-0722-3bc1-4d3c">3</characteristic>
+            <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">10</characteristic>
+            <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wraithspear" typeId="1d88-1369-f0ed-b39c" typeName="Melee Weapons" hidden="false" id="b6a1-a935-6a89-297b">
+          <characteristics>
+            <characteristic name="Ability" typeId="2113-98a2-4376-a94c">This massive, rune-etched spear allows the Wraithseer to re-roll failed To Hit rolls in close combat, and adds +1 to all results on the Vehicle Damage chart.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wraithshield" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="8a37-6bcb-8430-42e6">
+          <characteristics>
+            <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">The Wraithseer has a 5+ Invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Greater Spiritseer" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="8435-d504-cdd4-2da3">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">A Wraithseer can guide the spirits of the dead. Any Wraithlord or Wraithguard unit within 12&quot; of the Wraithseer need not test for Wraithsight. In addition, cover saves against its shooting attacks, or shooting attacks carried out by Wraithguard or Wraithlords within 12&quot; of the Wraithseer are worsened by one (5+ becoming 6+, 6+ being ignored, etc).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wraithseer Powers" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="3d84-2ebb-f5cf-cdf9">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Wraithseers are Psykers who may use one Psychic power per turn and may choose from one of the three Psychic powers listed below each turn to use. These powers are used at the beginning of the Eldar player&apos;s turn, and the Wraithseer is not required to have line of sight to its target in order to use these powers.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Foreboding" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="0aed-c4cd-3320-6f37">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Wraithseer invokes the terror of death upon lesser species, clouding their minds with dread. A single enemy unit chosen within 18&quot; must take a Pinning test at -2 Leadership</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Enliven" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="fa4b-c059-d8f3-2896">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Wraithseer enlivens the Eldar spirit stones around him, bringing them fresh vigour and life. A single Wraithlord or a Wraithguard squad within 12&quot; of the Wraithseer gains the Fleet special rule for the rest of the turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deliverance" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="500c-5fbc-66d5-27c0">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The fates are marshalled to protect the Wraithseer and their charges. Choose a single Wraithlord or Wraithguard squad within 6&quot; (or the Wraithseer itself). That model (or models) gains the Feel No Pain special rule until the beginning of the next Eldar player turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="HQ [WIP]" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="3591-84b7-b7b9-0720">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">This unit can&apos;t be used to fill mandatory HQ slots, but I don&apos;t know how to implement that in NR yet so just do it yourself I guess</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="eb23-92a4-b373-04f9"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="eb23-92a4-b373-04f9">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0e99-a241-c747-2143" shared="true" includeChildSelections="false" childName="Wraithguard"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hornet Squadron [Forgeworld]" hidden="false" id="a7ea-7280-39eb-a63e">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hornet" hidden="false" id="37c3-2e8f-6acc-14d1" collective="true">
+          <profiles>
+            <profile name="Hornet" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="ed69-28cf-fbdd-40f0">
+              <characteristics>
+                <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+                <characteristic name="F" typeId="84f1-6495-b3c8-6025">11</characteristic>
+                <characteristic name="S" typeId="38b6-8429-f0fd-11cb">11</characteristic>
+                <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5885-4374-1ce8-8709"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1596-b192-a05c-2858"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="61f7-55c4-01a8-e88f" hidden="false" defaultSelectionEntryId="e4c9-9531-a2a5-c4e4">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="7c13-d7bd-9d36-643c" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Shuriker Cannon" id="245e-aa57-3a85-4287" hidden="false" type="profile" targetId="db20-c0b9-7553-8719"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="c6a3-1215-4a62-4a62" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Scatter Laser" id="e0bf-541e-2228-95a4" hidden="false" type="profile" targetId="4a05-4111-e207-f688"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="c479-2fd8-f4ff-0689" sortIndex="3">
+                  <infoLinks>
+                    <infoLink name="Eldar Missile Launcher (Krak)" id="62e8-5081-77c4-6460" hidden="false" type="profile" targetId="87ed-f72d-1883-564a"/>
+                    <infoLink name="Eldar Missile Launcher (Plasma)" id="1cea-9f2b-3297-e1bb" hidden="false" type="profile" targetId="c8a4-edd8-ca09-6a37"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="8829-98d5-72ba-3341" sortIndex="4">
+                  <infoLinks>
+                    <infoLink name="Starcannon" id="7b17-3c00-b1ed-f30c" hidden="false" type="profile" targetId="eec3-78b8-1100-fed9"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="ed3c-0cbd-7ca3-0d16" sortIndex="5">
+                  <infoLinks>
+                    <infoLink name="Bright Lance" id="0c61-64ae-7a65-840c" hidden="false" type="profile" targetId="bfd9-6ef3-6072-c0ba"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pulse Laser" hidden="false" id="5533-1b0c-50f0-618a" sortIndex="6">
+                  <infoLinks>
+                    <infoLink name="Pulse Laser" id="d298-9b3a-ed8c-39cd" hidden="false" type="profile" targetId="86a2-ced0-6683-8523"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="self" shared="true" id="6ddd-ba18-5724-a58c"/>
+                <constraint type="max" value="2" field="selections" scope="self" shared="true" id="5b57-9054-102e-313c"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="65"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="a016-dbfc-e162-2c2e" type="selectionEntryGroup" targetId="ea13-5c3a-0b18-21a9"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Scouts" id="d59b-1f02-8708-adf2" hidden="false" type="profile" targetId="e289-1576-b63b-c142"/>
+        <infoLink name="Skimmer" id="d5cf-f9e0-99ce-9837" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+        <infoLink name="Fast" id="1c66-6648-b95c-e67a" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
+        <infoLink name="Star Engines" id="7f9c-2d55-5017-3935" hidden="false" type="profile" targetId="6d44-86d2-abdd-929e"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Aerial Assault" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="58cd-ed21-be79-f22d">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">A vehicle with the Aerial Assault rule that moves at cruising speed may fire all of its weapons.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="7623-52c8-e016-9ec2" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Warp Hunter [Forgeworld]" hidden="false" id="64f7-5c1b-085a-5956" publicationId="2523-c82d-5a2f-e23d" page="58">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="125"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Hull Weapon" id="b9cd-25fb-f0f7-b0f0" hidden="false" defaultSelectionEntryId="03d1-1769-150e-63c3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Catapults" hidden="false" id="087c-07f2-b0ec-20c4" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Twin-linked Shuriken Catapults" id="084c-7c80-ceae-4815" hidden="false" type="profile" targetId="0af5-7e80-fa6a-d979"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e38-960b-8bd5-3e98"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="9fb3-17c9-1d88-6ccf" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Shuriker Cannon" id="e4b4-85bd-8706-5990" hidden="false" type="profile" targetId="db20-c0b9-7553-8719"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="face-6de4-2e6c-c923"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="a02b-9966-5e2f-a81f"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="85d2-ad37-7a35-eac3"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Skimmer" id="95ef-c8f9-4f3b-fc4c" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+        <infoLink name="Tank" id="e4fd-8dc8-496a-636d" hidden="false" type="rule" targetId="3475-46b4-28e6-8fb0"/>
+        <infoLink name="Fast" id="6fa1-da0b-b39b-72fe" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="27f2-4ac9-c32e-95bc" type="selectionEntryGroup" targetId="ea13-5c3a-0b18-21a9"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Distortion Cannon (Blast)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="07bc-c614-f128-d00c">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">X</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, 5&quot; Blast, Barrage, D-Cannon</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Distortion Cannon (Æther Rift)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="5d94-422d-4e00-d73c">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">Template</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">X</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, D-Cannon</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Warp Hunter" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="f92f-de03-bf79-c756">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">12</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">12</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="D-Cannon" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="c98f-e9bc-bbb9-44ef">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The D-Cannon uses the Eldar&apos;s sophisticated knowledge of warp technology to create a rift of seething warp-energy. A D-cannon&apos;s attacks bypass power fields and void shields. 
+
+Against models with a Toughness score, D-Cannons always wound on a 2+ and inflict Instant Death on a roll of a 6. Against models with an Armour Value roll a D6, the weapon inflicts a Glancing hit on the roll of 2-4 and a Penetrating hit on a roll of 5+.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Æther Rift" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="43d6-c6e3-267c-645d">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Warp Hunter can adapt its D-cannon fire to unleash the warp energies contained within it to create a seething Æther-rift in front of the vehicle. In the Shooting phase, instead of using the standard D-cannon Blast profile, you may choose to use the Æther-rift profile instead. 
+
+
+To fire the Æther-rift, place the template so that the narrow end is within 6&quot; of the weapon and the large end is no closer to the weapon than the narrow end. The Æther-rift is then treated like any other template weapon and has the D-cannon special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="67f2-8b50-07a6-8e52" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wasp Assault Walker Squadron [Forgeworld]" hidden="false" id="eeb3-9ed5-5aab-b0fe">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="War Walker" hidden="false" id="e6c1-d1bc-8a66-c05c">
+          <infoLinks>
+            <infoLink name="War Walker" id="d142-7b5b-faba-27da" hidden="false" type="profile" targetId="6cf5-4efa-e231-85a8"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b51c-13b6-10d8-2238"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f7ce-07ac-d321-fcd0"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="40"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Loadout" id="b668-aa3c-cac3-1808" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="a189-1e1b-94d9-f754">
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Starcannon" id="843b-fb74-b7c7-1e4c" hidden="false" type="profile" targetId="eec3-78b8-1100-fed9"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="5a7e-8a82-bda9-916d">
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Eldar Missile Launcher (Krak)" id="2bb0-d63f-2e59-7b92" hidden="false" type="profile" targetId="87ed-f72d-1883-564a"/>
+                    <infoLink name="Eldar Missile Launcher (Plasma)" id="9ef0-8aea-44e5-6d6b" hidden="false" type="profile" targetId="c8a4-edd8-ca09-6a37"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="3256-2fdb-b56f-38af">
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Scatter Laser" id="8095-c2e2-5c6f-e788" hidden="false" type="profile" targetId="4a05-4111-e207-f688"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="c593-4454-ef76-15e0">
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Shuriker Cannon" id="cc58-3d43-4cc5-08f1" hidden="false" type="profile" targetId="db20-c0b9-7553-8719"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="6d3b-9a7b-be37-7386">
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="30"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Bright Lance" id="cbec-4108-b4fd-e581" hidden="false" type="profile" targetId="bfd9-6ef3-6072-c0ba"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="self" shared="true" id="21c0-1581-005c-5d33"/>
+                <constraint type="max" value="2" field="selections" scope="self" shared="true" id="3a50-06da-7b98-393f"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spirit Stones" hidden="false" id="3bdb-da54-2ff1-6f0d">
+              <infoLinks>
+                <infoLink name="Spirit Stones (Vehicle)" id="8da1-6eb1-324c-df8b" hidden="false" type="profile" targetId="3933-2c64-aa15-2cbd"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="615f-6125-1e9f-52e8"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Walker" id="4180-0595-04e0-004a" hidden="false" targetId="fea1-2c4a-c33c-5600" type="rule"/>
+        <infoLink name="Deep Strike" id="2e3a-75c0-b266-dcff" hidden="false" type="profile" targetId="a4d9-aab7-6c66-e4da"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="7617-7fb7-046d-8a52" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Wasp Jump Jets" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="8d67-97b1-76d5-491c">
+          <characteristics>
+            <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">Although they forgo the ability to scout as is common to standard Eldar War Walkers, Wasps are fitted with jet-supported anti-grav systems enabling them to rapidly redeploy as part of a Corsair raid. They are treated as Jet Pack infantry for the purposes of movement rather than Walkers. In addition, in the Shooting phase, instead of firing their weapons, the squadron may make a special power-boosted jump move of 12&quot;, ignoring intervening terrain as if they were skimmers. After making this move they may not assault that turn or use their special jet pack move. They do, however, gain a cover save of 5+ until their next player turn thanks to their speed, jet-wash, and the dust and debris this kicks up.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Shadow Spectres [Forgeworld]" hidden="false" id="4adf-2955-6ab8-eff2">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Squad" id="fb09-a5c8-fa5e-1795" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Shadow Spectre" hidden="false" id="3a8e-e7a7-d8f5-3cc0" defaultAmount="3">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="35"/>
+              </costs>
+              <profiles>
+                <profile name="Shadow Spectre" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="4442-c961-d769-d63e">
+                  <characteristics>
+                    <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">4</characteristic>
+                    <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">4</characteristic>
+                    <characteristic name="S" typeId="09af-e927-0c3c-9d88">3</characteristic>
+                    <characteristic name="T" typeId="ff29-f8b2-5b20-b686">3</characteristic>
+                    <characteristic name="W" typeId="4a81-ac45-a71c-c71e">1</characteristic>
+                    <characteristic name="I" typeId="8517-a46c-d6df-9c75">5</characteristic>
+                    <characteristic name="A" typeId="a535-0722-3bc1-4d3c">1</characteristic>
+                    <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">9</characteristic>
+                    <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">4+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Spectre Holo-fields" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="0915-fcbe-c00e-7208">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">5+ Invulnerable save, increasing to 4+ against attacks from 12&quot; away</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Prism Rifle (Focused)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="fe00-337f-e4ce-0f93">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">6</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                  </characteristics>
+                </profile>
+                <profile name="Prism Rifle (Diffuse)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="3562-df69-6e90-83b2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, 3&quot; Blast</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Exarch" hidden="false" id="94b9-30d2-c4a7-e48b">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="47"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Exarch" id="b5ab-9b7c-388c-9a69" hidden="false" type="profile" targetId="4846-9fbc-e26a-0635"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78b8-57a9-41b9-5957"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Loadout" id="6993-9e39-8a9c-e96a" hidden="false" defaultSelectionEntryId="290a-005c-28ac-906e">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Prism Rifle" hidden="false" id="f990-7a8b-0d0c-eee8" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99f8-3bdc-243c-97b0"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Prism Rifle (Diffuse)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="6126-b73b-d28f-6b62">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
+                            <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+                            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
+                            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, 3&quot; Blast</characteristic>
+                            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                          </characteristics>
+                        </profile>
+                        <profile name="Prism Rifle (Focused)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="a974-56b8-d757-fc9c">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
+                            <characteristic name="Str." typeId="1ebc-896c-43de-904a">6</characteristic>
+                            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+                            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1</characteristic>
+                            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Prism Blaster" hidden="false" id="cbb0-9244-e827-a220" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79f9-2cfa-9da0-91d9"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Prism Blaster" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="286f-6f0f-5bf4-7ce9">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">18&quot;</characteristic>
+                            <characteristic name="Str." typeId="1ebc-896c-43de-904a">7</characteristic>
+                            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
+                            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 2</characteristic>
+                            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Haywire Launcher" hidden="false" id="ac51-b398-f96f-f0b7" sortIndex="3">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e15-a567-2511-58a5"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Haywire Launcher" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="8fa9-1278-db4d-d06a">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+                            <characteristic name="Str." typeId="1ebc-896c-43de-904a">3</characteristic>
+                            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+                            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, Haywire</characteristic>
+                            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">Against vehicles do not roll for armour penetration, instead roll on the Haywire table below.
+
+
+D6  Result
+1  No Effect
+2-4  Glancing Hit
+5-6  Penetrating Hit</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="self" shared="true" id="c1e9-51b9-17fe-6408"/>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="8e55-7480-0c15-2fce"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Exarch Powers" id="ee41-f5da-da51-2619" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Withdraw" hidden="false" id="3759-97b7-2f04-60e6">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Withdraw" id="7776-4702-a9df-5fd3" hidden="false" type="profile" targetId="27fb-830a-f3ca-e7ea"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9640-8097-e986-d839"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Cynosure" hidden="false" id="22bf-f16c-9dfc-b42d">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Cynosure" id="1a99-4e4f-b192-02c4" hidden="false" type="profile" targetId="6516-76bb-c657-e7ab"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3103-ae6e-1d25-376f"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Spectre Holo-fields" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="2688-8c9e-82b4-23d7">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">5+ Invulnerable save, increasing to 4+ against attacks from 12&quot; away</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="self" shared="true" id="db85-3fd9-daac-52a9"/>
+            <constraint type="max" value="6" field="selections" scope="self" shared="true" id="4aa5-aea6-ee59-ccc4"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Acute Senses" id="e7f4-f268-837a-c3f5" hidden="false" type="profile" targetId="253f-bb05-f8fd-fffd"/>
+        <infoLink name="Jump Infantry" id="340c-02ad-900e-73a3" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
+        <infoLink name="Jet Pack" id="54a9-819a-576b-d56e" hidden="false" type="profile" targetId="738d-e5f9-d3a3-c049"/>
+        <infoLink name="Deep Strike" id="8edd-f36e-e39f-7b62" hidden="false" type="profile" targetId="a4d9-aab7-6c66-e4da"/>
+        <infoLink name="Relentless" id="6d0d-53d0-f264-875b" hidden="false" type="profile" targetId="eadc-173f-94e1-8411"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Ghostlight" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="a0ff-018e-bae7-eaca">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shadow Spectres squad can combine the fire of their prism weapons into a single, coherent blast of energy that can burn through the heaviest enemy armour. The squad may opt to combine its fire into a single Ghostlight attack, if this is done then all of the Shadow Spectres fire in this manner, and a single shot is made for the entire unit as follows:
+
+
+Draw a line of sight and measure the distance for this attack from any single model in the squad. Use the highest BS in the squad.
+
+
+*The range of the Ghostlight is 18&quot;+6&quot; per two firing models (rounding odd numbers down) in the squad.
+
+
+**The Strength of the Ghostlight attack is either 6+1 per two firing models in the squad if all are armed with Prism Rifles, or if the squad has an Exarch armed with a Prism Blaster 7+1 per two firing models in the squad (to a maximum of Strength of 10 in either case).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ghostlight" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="d763-875d-9bd7-4f2f">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">*</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">**</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, 3&quot; Blast</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">See Ghostlight Special Rule</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="4e26-7a61-0f25-48c5" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Irillyth [Forgeworld]" hidden="false" id="a280-fee7-4206-a412">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="225"/>
+      </costs>
+      <profiles>
+        <profile name="Disciplines (Shadow Spectres)" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="465f-6b67-3af8-5edb">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">If the Phoenix Lord is leading a squad of their Aspect, the whole squad becomes Fearless. Phoenix Lords cannot join Aspect Warrior squads not of their Aspect. Note that if a squad has two of the same Exarch power, they are not cumulative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ghostlight" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="7756-a4b7-90c9-5e36">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">*</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">**</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, 3&quot; Blast</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">See Ghostlight Special Rule</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ghostlight" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="7a1d-e59d-5b78-e15c">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Shadow Spectres squad can combine the fire of their prism weapons into a single, coherent blast of energy that can burn through the heaviest enemy armour. The squad may opt to combine its fire into a single Ghostlight attack, if this is done then all of the Shadow Spectres fire in this manner, and a single shot is made for the entire unit as follows:
+
+
+Draw a line of sight and measure the distance for this attack from any single model in the squad. Use the highest BS in the squad.
+
+
+*The range of the Ghostlight is 18&quot;+6&quot; per two firing models (rounding odd numbers down) in the squad.
+
+
+**The Strength of the Ghostlight attack is either 6+1 per two firing models in the squad if all are armed with Prism Rifles, or if the squad has an Exarch armed with a Prism Blaster 7+1 per two firing models in the squad (to a maximum of Strength of 10 in either case).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Holosuit" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="19e5-4c30-65f5-b009">
+          <characteristics>
+            <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">Irillyth&apos;s armour includes a holofield generator which fragments his image, confusing enemy targeters and disguising his precise location behind an aura of ethereal light. He has a 5+ invulnerable save, increasing to 4+ against attacks from 12&quot; away or more.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Spear of Starlight" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="1f82-d6a9-6a61-4367">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">24&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">7</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 3</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">This is a unique, beautifully constructed Prism Blaster with an in-built power glaive (this counts as power weapon). It can be fired as part of the Ghostlight.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Eternal Warrior" id="6fdd-78ed-77db-2885" hidden="false" type="profile" targetId="0fcb-3f5f-22f7-bffd"/>
+        <infoLink name="Fearless" id="46c7-1bb3-2b91-3025" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
+        <infoLink name="Fleet" id="fc51-475c-10a4-bcc3" hidden="false" type="profile" targetId="3748-79f1-e937-8650"/>
+        <infoLink name="Independent Character" id="b2e8-911b-2e9a-9880" hidden="false" type="profile" targetId="db9c-91d8-5b8a-ee16"/>
+        <infoLink name="Phoenix Lord" id="9051-6515-2faf-86ae" hidden="false" type="profile" targetId="9353-0d17-6adf-23bc"/>
+        <infoLink name="Cynosure" id="53e6-9226-add3-af4a" hidden="false" type="profile" targetId="6516-76bb-c657-e7ab"/>
+        <infoLink name="Withdraw" id="34fd-d20a-416a-44fe" hidden="false" type="profile" targetId="27fb-830a-f3ca-e7ea"/>
+        <infoLink name="Acute Senses" id="b72b-bfc7-a161-5c9f" hidden="false" type="profile" targetId="253f-bb05-f8fd-fffd"/>
+        <infoLink name="Relentless" id="248d-1230-7ae4-e47a" hidden="false" type="profile" targetId="eadc-173f-94e1-8411"/>
+        <infoLink name="Jump Infantry" id="c45c-5e6d-4c19-4722" hidden="false" type="rule" targetId="4158-c955-9c2f-46f7"/>
+        <infoLink name="Jet Pack" id="9daf-09b8-6887-12b8" hidden="false" type="profile" targetId="738d-e5f9-d3a3-c049"/>
+        <infoLink name="Power Weapon" id="0e57-093d-ee18-f598" hidden="false" type="profile" targetId="31dd-6647-d267-e3c2"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="5123-6df1-6771-aaed" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <infoLinks>
     <infoLink targetId="a523-0c5b-eb97-f0a0" id="eb88-22d2-76d6-ec55" type="rule" name="Jetbike" hidden="false"/>
@@ -4938,6 +5729,46 @@
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="9a05-e171-50d3-5ee1" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="3255-9bda-ef1f-2513" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="6f22-8dfe-4b70-a9ab" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Fire Storm [Forgeworld]" hidden="false" id="b5ca-541a-525c-3aa8" type="selectionEntry" targetId="0edd-b94f-f0f2-99de">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="86ad-f32e-c8b4-ad33" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Wraithseer [UNFINISHED] [Forgeworld]" hidden="false" id="948c-6327-d46c-04d6" type="selectionEntry" targetId="c646-e208-b573-678c">
+      <categoryLinks>
+        <categoryLink targetId="ac8d-efba-1884-d3ad" id="4c91-e616-2903-bbc5" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hornet Squadron" hidden="false" id="52dc-77e6-4fba-f0c3" type="selectionEntry" targetId="a7ea-7280-39eb-a63e">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="7296-7d97-4bd3-29e2" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warp Hunter [Forgeworld]" hidden="false" id="fbe6-93cf-d3ea-a7a7" type="selectionEntry" targetId="64f7-5c1b-085a-5956">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="122c-db08-7126-04f6" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Wasp Assault Walker Squadron [Forgeworld]" hidden="false" id="7799-e3da-d52f-dc7d" type="selectionEntry" targetId="eeb3-9ed5-5aab-b0fe">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="a302-585b-a08a-4635" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Shadow Spectres [Forgeworld]" hidden="false" id="a6d8-d713-2ce8-fecc" type="selectionEntry" targetId="4adf-2955-6ab8-eff2">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="013d-49aa-fe6f-7dc5" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Irillyth [Forgeworld]" hidden="false" id="ab7e-b7d7-ff29-b404" type="selectionEntry" targetId="a280-fee7-4206-a412">
+      <categoryLinks>
+        <categoryLink targetId="ac8d-efba-1884-d3ad" id="a993-ef3c-4e72-3074" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Warlock Power" id="6622-8fbf-6aa8-2e1e" hidden="false">
@@ -4968,17 +5799,6 @@
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a69f-001d-f25c-1142"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Star Engines" hidden="false" id="caf1-c2c6-d74c-5f17">
-          <costs>
-            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Star Engines" id="1dd9-2e50-d33d-6df8" hidden="false" type="profile" targetId="6d44-86d2-abdd-929e"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd75-6529-75ca-197e"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Holo-fields" hidden="false" id="33f7-897e-3150-2af2">

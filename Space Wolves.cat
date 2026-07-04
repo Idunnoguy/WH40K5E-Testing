@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5ba7-7a3d-e374-cdd7" name="Space Wolves" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5ba7-7a3d-e374-cdd7" name="Space Wolves" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="HQ" hidden="false" id="61a9-0225-aacd-faa5">
       <selectionEntries>
@@ -5066,6 +5066,425 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Space Wolves Contemptor Pattern Dreadnought [Forgeworld]" hidden="false" id="883e-df82-f8c9-47ca">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="185"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Smoke Launchers" id="ddd5-6875-eb85-b511" hidden="false" type="profile" targetId="180e-ad4b-4df0-81ae"/>
+        <infoLink name="Fleet" id="da9b-99de-44b3-939a" hidden="false" type="profile" targetId="3748-79f1-e937-8650"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="First Arm" id="f494-1202-c0ab-dcc9" hidden="false" defaultSelectionEntryId="9378-0f8d-6800-7f19">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="384a-90ca-8d07-6e4b" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Multi-melta" id="7044-b717-7f1b-92ce" hidden="false" type="profile" targetId="0b59-dfc6-9696-0b99"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbc3-a0d3-1a00-3679"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Heavy Flamer" hidden="false" id="15b3-b5fe-1a3a-3d56" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Twin-linked Heavy Flamer" id="204e-b50b-ead7-aee0" hidden="false" type="profile" targetId="ac52-5bdd-8a29-3bb1"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50d2-d5ef-0ced-fc5f"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Heavy Bolter" hidden="false" id="c14f-7dc6-01d9-add5" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Twin-linked Heavy Bolter" id="5122-70f4-89ac-e2b8" hidden="false" type="profile" targetId="684d-431d-f854-d4fd"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c733-4a34-56dd-97d0"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Autocannon" hidden="false" id="07f7-3044-15e3-86d2" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Twin-linked Autocannon" id="6c21-e1c5-b9c2-9479" hidden="false" targetId="11aa-86cf-4281-eae2" type="profile"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a49-0d56-da01-7f73"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="fc7a-e6c5-1d3a-56ea" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Plasma Cannon" id="6801-d587-43a2-7f13" hidden="false" type="profile" targetId="fe57-d289-2133-fdb2"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a561-2fa7-6b0c-aba0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62e3-1326-23da-12b7"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Kheres Pattern Assault Cannon" hidden="false" id="5362-2a13-3c1b-9184" sortIndex="6">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Kheres Pattern Assault Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="38e4-b726-f997-c5cb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">24&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">6</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">4</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 6, Rending</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a503-df06-f52d-0c30"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Lascannon" hidden="false" id="cb22-fc0b-8a9e-6838" sortIndex="7">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Twin-linked Lascannon" id="ae25-9f65-9073-87de" hidden="false" type="profile" targetId="e50f-e49c-148c-4aee"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56be-3bca-c6be-0731"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dreadnought Close Combat Weapon" hidden="false" id="d8f1-630d-bcc0-3631" sortIndex="9">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="In-Built Weapons" id="d617-dfad-3076-0538" hidden="false" defaultSelectionEntryId="a81e-3405-5c14-5193">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="In-Built Stormbolter" hidden="false" id="2ee9-867d-e9e9-43cf" sortIndex="1">
+                      <infoLinks>
+                        <infoLink name="Storm Bolter" id="f7d5-436a-39f4-d706" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff0b-6148-0c7c-49d4"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d1b-fbd3-0311-eaa4"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="In-Built Heavy Flamer" hidden="false" id="70d8-c0a1-64e7-e4a3" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Heavy Flamer" id="9b44-11d7-718e-7dce" hidden="false" type="profile" targetId="f83b-3e9d-4395-7a68"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba0c-e5d7-8546-7031"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="self" shared="true" id="97fb-d84d-e922-ce07"/>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9434-4bd9-2a18-3a16"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Dreadnought Close Combat Weapon" id="5138-ef7e-cb10-ec40" hidden="false" targetId="72a1-7ddd-b4ae-b945" type="profile"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f72-a0cc-d020-1e9d"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chainfist" hidden="false" id="c48e-4ce4-696d-4bde" sortIndex="10">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="In-Built Weapons" id="403f-7f3e-ff37-22af" hidden="false" defaultSelectionEntryId="a81e-3405-5c14-5193">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="In-Built Stormbolter" hidden="false" id="75b4-9b01-8544-fc6c" sortIndex="1">
+                      <infoLinks>
+                        <infoLink name="Storm Bolter" id="c292-c66b-a14f-588c" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bd8-4a42-6b2f-8057"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1e3-114e-358b-12f5"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="In-Built Heavy Flamer" hidden="false" id="df54-199e-592f-427b" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Heavy Flamer" id="0770-3698-a508-27b5" hidden="false" type="profile" targetId="f83b-3e9d-4395-7a68"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5ba-a7e9-bedd-d561"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="self" shared="true" id="54fa-9ea4-dda7-d344"/>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9159-3c04-395d-e78c"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Chain Fist" id="fa94-fdde-28a9-2a38" hidden="false" targetId="5151-d1aa-1f80-cb94" type="profile"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa16-4d46-ef66-c4e5"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="35ed-db35-56b9-705f"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="5a77-2724-9149-247d"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dreadnought Close Combat Weapon" id="e6f4-04b1-d673-0780" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="In-Built Weapons" id="de68-3ac5-ff17-404f" hidden="false" defaultSelectionEntryId="a81e-3405-5c14-5193">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="In-Built Stormbolter" hidden="false" id="068d-a1a8-3b73-a8d6" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Storm Bolter" id="ebd6-c292-9d87-f6f1" hidden="false" type="profile" targetId="a37b-6942-f8fb-4aee"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc27-18e3-ba65-884a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31de-ecd6-491f-a979"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="In-Built Heavy Flamer" hidden="false" id="f3ac-1619-8eb4-9617" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Heavy Flamer" id="dc2f-e889-b612-7670" hidden="false" type="profile" targetId="f83b-3e9d-4395-7a68"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ad-181f-29ef-eda5"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="self" shared="true" id="726f-4cef-9a13-d8da"/>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9da8-8f38-c94f-e3d8"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c4a-e7e7-ae1f-ec0e"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dreadnought Close Combat Weapon" id="de1a-ef76-9543-3e78" hidden="false" targetId="72a1-7ddd-b4ae-b945" type="profile"/>
+          </infoLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Upgrades" id="130a-846d-9ab3-6750" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="carapace-mounted Cyclone Missile Launcher" hidden="false" id="1839-2b7f-aee2-bf77" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="35"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="191f-6328-5e14-ac40"/>
+              </constraints>
+              <profiles>
+                <profile name="Cyclone missile launcher (Krak)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="864e-69a0-771a-f41c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">48&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">8</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 2</characteristic>
+                    <characteristic typeId="45fd-0f50-e1d0-907c" name="Notes"/>
+                  </characteristics>
+                </profile>
+                <profile name="Cyclone missile launcher (Frag)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="aa02-8c11-ddbe-671d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">48&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">6</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 2, Blast</characteristic>
+                    <characteristic typeId="45fd-0f50-e1d0-907c" name="Notes"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="5a35-a148-e046-f3d9" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="9daa-7906-bdb1-fc52" hidden="false" type="profile" targetId="ec58-94f7-12e5-a9b9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0b8-2968-9a9d-0246"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Searchlights" hidden="false" id="1b9e-d378-0692-451a" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="1"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Searchlight" id="7ddc-e967-1f1d-9782" hidden="false" type="profile" targetId="589c-c16c-2ed7-61f9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa70-b443-a512-ace1"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wolf Tail Talisman" hidden="false" id="46a9-f583-7617-72e5" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Wolf Tail Talisman" id="55fd-02df-14f3-8a6f" hidden="false" type="profile" targetId="a3a6-d8c5-66e4-56b4"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e60b-2cf3-2236-8d8d"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wolftooth Necklace" hidden="false" id="3834-3daf-fa4b-8c92" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Wolftooth Necklace" id="35e5-ca85-2abe-4847" hidden="false" type="profile" targetId="dee4-517f-9d1a-f205"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c1f-5a1c-5786-9e97"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Night Sagas" id="43ca-a5cc-d6b5-2502" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="d965-f0d0-e46f-29e0"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="31b8-970a-7dc8-7158"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Saga of the Black Cull" hidden="false" id="0a81-4028-2584-becd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc86-e3b6-0feb-09f4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abe3-148a-4b56-1007"/>
+              </constraints>
+              <profiles>
+                <profile name="Saga of the Black Cull" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="7009-1d00-c3e5-2f6b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">A thousand-thousand dead can be heaped upon the legend of the fallen warrior. The Contemptor Dreadnought has Furious Charge
+
+Oath: Master of Slaughter. The Dreadnought must destroy an enemy infantry unit in close combat.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Saga of the Forsaken One" hidden="false" id="bfd2-c6c1-c1b6-de5d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12b0-a051-10a2-4c19"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c37-78d8-4fc2-a1ad"/>
+              </constraints>
+              <profiles>
+                <profile name="Saga of the Forsaken One" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="5d15-ac6a-c95e-c1a2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The fallen warrior&apos;s deeds, though great, are dark indeed, and their brothers, though respectful, avoid their shadow. The Contemptor Dreadnought has Counter Attack (treat as LD10) 
+
+
+Oath of the Sundered Brotherhood: The Dreadnought should fight alone and not be joined by or join in close combat with other Space Wolves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Saga of the Iron God" hidden="false" id="c90a-357d-026c-e616">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9997-1388-0dcb-b4db"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe34-e0f2-f302-84bb"/>
+              </constraints>
+              <profiles>
+                <profile name="Saga of the Iron God" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="e4e5-1a10-9d7a-1d1f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The inhabitant of the Dreadnought has grown prideful and seeks out others akin to themselves to cast down. The Contemptor Dreadnought gains +1 on Damage chart results in close combat against enemy walkers
+
+
+Oath of Hubris: All enemy walkers must be destroyed or immobilised by the end of the game</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Walker" id="5be2-5a30-7984-cd35" hidden="false">
+          <description>While other vehicles can only move in the Movement phase, walkers can also run in the Shooting phase and assault in the Assault phase, just as infantry can. 
+
+
+Walkers move in exactly the same way as infantry, so they can move up to 6&quot; in the Movement phase and assault up to 6&quot; in the Assault phase.
+
+
+Difficult terrain affects walkers just as it does infantry. Difficult terrain only counts as dangerous terrain for walkers if it would do so for infantry. If walkers fail a dangerous terrain test, they are immobilised. 
+
+
+Unlike infantry, a walker has a facing, which influences where it can fire (see below) and its Armour Value when fired at.
+
+
+Walkers can move and fire all of their weapons, just like a stationary vehicle. 
+
+
+Alternatively, they can choose to run like infantry, and this prevents them from firing and assaulting that turn, as normal (though they can still trigger their smoke launchers, if they have any). Obviously they cannot run if they are stunned or immobilised.
+
+
+When firing a walker’s weapons, pivot the walker on the spot so that its guns are aimed at the target (assume that all weapons mounted on a walker can swivel 45º, like hull-mounted weapons) and then measure the range from the weapon itself and line of sight from the mounting point of the weapon and along its barrel, as normal for vehicles. This pivoting in the Shooting phase does not count as moving and represents the vastly superior agility of walkers in comparison with other vehicles. Keep in mind however that the walker will probably remain facing in this direction until its next Movement phase, so its facing will determine where its rear armour is going to be when the enemy returns fire!
+
+
+Walkers that are locked in combat cannot be shot at.
+
+
+Walkers assault like infantry models, meaning that they make assault moves and can be locked in combat with enemy units. Walkers can make an assault even if they fired heavy or rapid fire weapons. However, like normal infantry, they can still only assault the unit they fired at.
+
+
+In close combat, walkers fight like infantry models. However, any hits scored against them must roll for armour penetration and damage as for a vehicle. Models hitting a walker in close combat always roll for penetration against its front armour. This is because the walker is not a static target like other vehicles and rampages through the melee, turning to face its enemies. Consequently a walker is quite capable of tearing apart its foe in close combat, while only the specially armed (or monstrously powerful) will have any hope of destroying a walker up close.
+
+
+Grenades and melta bombs can be used against a walker. A model will only manage to score a hit with a grenade against a walker on the roll of 6. However, if a walker is already stunned or immobilised at the start of the Assault phase, the attackers roll to hit based on the normal comparison of WS. Remember that models using grenades against vehicles only make one attack.
+
+
+Immobilised and/or stunned walkers fight in close combat with one less attack than usual (to a minimum of 1), but otherwise attack normally, no matter how many immobilised and stunned results they suffered. 
+
+
+Shaken damage results do not affect the way a walker fights in close combat.
+
+
+Each roll made on the Vehicle Damage table against a walker counts as a single wound for the purposes of working out who won the combat.
+
+
+Defeated walkers do not take Morale checks and are not affected by the No Retreat! rule.
+
+
+Walkers make sweeping advances, pile-in moves and consolidations unless they are stunned or immobilised.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Contemptor Pattern Dreadnought" typeId="acd3-2539-3641-1250" typeName="Walker Vehicle" hidden="false" id="aba3-0d54-6a7b-f5ad" publicationId="2523-c82d-5a2f-e23d" page="24">
+          <characteristics>
+            <characteristic name="WS" typeId="3d9c-8977-9b95-824b">5</characteristic>
+            <characteristic name="BS" typeId="ea47-07be-ab4a-6569">4</characteristic>
+            <characteristic name="STR" typeId="a630-c404-957f-a49f">7</characteristic>
+            <characteristic name="F" typeId="3549-2d9e-3052-b396">13</characteristic>
+            <characteristic name="S" typeId="94fc-8af8-d4d4-7b1a">12</characteristic>
+            <characteristic name="R" typeId="4eca-6e3c-2053-e75a">11</characteristic>
+            <characteristic name="I" typeId="f706-f227-5d93-0fe3">4</characteristic>
+            <characteristic name="A" typeId="12be-9dd2-0dd7-b17a">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Atomantic Shielding" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="6cbb-f15c-c623-ce0c">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Contemptor Dreadnought has an Invulnerable save of 5+ against shooting attacks and explosions, and an Invulnerable save of 6+ against attacks suffered in Close Combat. In addition, if the Contemptor suffers a &apos;Vehicle Explodes&apos; damage result, add +1&quot; to the radius of the blast.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Arjac Rockfist" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="662a-c656-a59c-87c9">
@@ -5855,6 +6274,119 @@
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="3c9c-45e3-0ac1-5f6f" primary="true" name="Heavy Support"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Space Wolves Contemptor Pattern Dreadnought [Forgeworld]" hidden="false" id="4ed5-b0b1-394d-2fdc" type="selectionEntry" targetId="883e-df82-f8c9-47ca">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="ec4c-0d71-17b3-23ef" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="e808-3c19-4ae6-bf41" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="194c-c4eb-1634-6a57" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="9441-c75b-2a6b-de89" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Deathstorm Drop Pod [Forgeworld]" hidden="false" id="f8e8-5cf7-5037-6cdb" type="selectionEntry" targetId="e2f6-8988-ee97-f2e6">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="a5d3-3a9c-1472-e42e" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="56f3-5878-1d40-0c21" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Tempest Squadron [Forgeworld]" hidden="false" id="0da7-152a-36f3-1dd0" type="selectionEntry" targetId="1695-a4d6-4cc0-4b49">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="3960-b50b-d11f-9b3a" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="1f95-8678-793b-57a9" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Helios [Forgeworld]" hidden="false" id="e9d8-9d6f-d68c-af1f" type="selectionEntry" targetId="4eef-ba44-7f45-b91c">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="54d3-5757-bfaa-9b54" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="d5df-e4ed-06c6-8479" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Prometheus [Forgeworld]" hidden="false" id="61fc-0eb7-4314-562f" type="selectionEntry" targetId="a32e-8e6b-abb3-82c3">
+      <categoryLinks>
+        <categoryLink targetId="978c-e18f-8aeb-f4c1" id="93cb-3eb0-9323-e59d" primary="true" name="Elites"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="fca5-d58b-f58c-3930" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Siege Dreadnought [Forgeworld]" hidden="false" id="f95c-d80c-ced1-fd75" type="selectionEntry" targetId="9e44-60e8-404f-a046">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="b172-5672-5df6-34a4" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="71c0-d2dd-1ca8-d385" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Achilles [Forgeworld]" hidden="false" id="9fe9-7366-02be-aeb5" type="selectionEntry" targetId="ea2a-9477-e833-99b8">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="a6f5-40f8-89cb-01d5" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="15e8-888e-c038-20b8" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Caestus Assault Ram [Forgeworld]" hidden="false" id="7df5-d7fe-fa58-b71a" type="selectionEntry" targetId="4b99-7908-8b93-fbd9">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="99ef-bac8-1b0b-ea47" targetId="74fe-37c3-fbbf-849e" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="f838-392b-5471-f3ea" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Lucius Pattern Dreadnought Drop Pod [Forgeworld]" hidden="false" id="834d-c957-9223-863b" type="selectionEntry" targetId="e2d3-eb7a-7687-6ed2">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="e1cf-6f02-b4e2-e49e" targetId="74fe-37c3-fbbf-849e" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="a171-8932-95a0-139d" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <profileTypes>

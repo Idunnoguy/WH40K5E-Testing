@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6360-ab90-4c59-ba46" name="Necrons" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6360-ab90-4c59-ba46" name="Necrons" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Anrakyr the Traveller" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="ffd3-0fd4-8f13-7be2">
       <characteristics>
@@ -2987,6 +2987,11 @@ Nominate a Canoptek Scarab unit within 6&quot; and roll a D6. On a roll of 2-6, 
     <entryLink import="true" name="Canoptek Spyder" hidden="false" id="bcf5-e1f5-9790-f3ed" type="selectionEntry" targetId="9e86-7865-d938-e140">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="69a8-3ffd-4752-cdf8" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="2bdc-677b-d722-58f1" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="b2e2-f2d1-733d-dcb3" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

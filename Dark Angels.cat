@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="17e3-f1c4-0f86-355b" name="Dark Angels" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="17e3-f1c4-0f86-355b" name="Dark Angels" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Attack Bike" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="21f0-1a17-8d0d-f9ee">
       <characteristics>
@@ -5808,6 +5808,66 @@ Independent characters wearing Terminator armour may also be deployed via Deathw
     <entryLink import="true" name="Repulsor" hidden="false" id="3eb3-a31b-08ba-8023" type="selectionEntry" targetId="b556-6668-cc88-ab99">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="4577-18b0-212f-09d5" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Deathstorm Drop Pod [Forgeworld]" hidden="false" id="861f-a884-fac7-81cf" type="selectionEntry" targetId="e2f6-8988-ee97-f2e6">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="cef3-1f9e-4055-c2ac" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Tempest Squadron [Forgeworld]" hidden="false" id="3729-bea3-6682-f3ea" type="selectionEntry" targetId="1695-a4d6-4cc0-4b49">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="27d0-dd65-259e-1095" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaplain Dreadnought [Forgeworld]" hidden="false" id="5a92-e2ea-8204-b1f7" type="selectionEntry" targetId="81d1-ad9a-a68f-2cb5">
+      <categoryLinks>
+        <categoryLink targetId="978c-e18f-8aeb-f4c1" id="e646-739b-e819-c25e" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lucius Pattern Dreadnought Drop Pod [Forgeworld]" hidden="false" id="d513-ccc9-2ead-9426" type="selectionEntry" targetId="e2d3-eb7a-7687-6ed2">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="38d4-1e99-f808-dc1c" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Helios [Forgeworld]" hidden="false" id="e059-5fe0-c06b-9151" type="selectionEntry" targetId="4eef-ba44-7f45-b91c">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="1336-288f-e3a0-4087" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Prometheus [Forgeworld]" hidden="false" id="076f-d180-d8d8-fd9a" type="selectionEntry" targetId="a32e-8e6b-abb3-82c3">
+      <categoryLinks>
+        <categoryLink targetId="978c-e18f-8aeb-f4c1" id="72f5-7f59-6b9d-8ec8" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Contemptor Pattern Dreadnought [Forgeworld]" hidden="false" id="6bcd-fc30-cbfe-ad0e" type="selectionEntry" targetId="8fa2-0381-b774-0626">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="3e72-03e8-0c4b-ddc1" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Contemptor Mortis Pattern Dreadnought [Forgeworld]" hidden="false" id="42ad-0801-2d5f-a838" type="selectionEntry" targetId="7ff2-7688-0892-4e59">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="57e5-6d59-4766-ee0f" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Siege Dreadnought [Forgeworld]" hidden="false" id="dd99-b486-e8bd-3d47" type="selectionEntry" targetId="9e44-60e8-404f-a046">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="6066-ec1c-1314-034f" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Achilles [Forgeworld]" hidden="false" id="4280-3955-8138-e857" type="selectionEntry" targetId="ea2a-9477-e833-99b8">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="f5b9-7c37-b2a3-b5b7" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Caestus Assault Ram [Forgeworld]" hidden="false" id="c8a0-470a-0be7-2d18" type="selectionEntry" targetId="4b99-7908-8b93-fbd9">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="7648-241c-4ef0-a945" targetId="74fe-37c3-fbbf-849e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="0f1c-3a69-d56b-60ca" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="a0c0-cf1b-e729-65ae" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

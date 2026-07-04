@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f9e0-9be9-a007-5d68" name="Dark Eldar" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f9e0-9be9-a007-5d68" name="Dark Eldar" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Aberration" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="f7e0-2760-a88d-e31f">
       <characteristics>
@@ -5905,6 +5905,11 @@ If a Dark Eldar unit is joined by one or more characters with pain tokens, all t
     <entryLink import="true" name="Wracks" hidden="false" id="0aeb-8ced-83c5-3dcd" type="selectionEntry" targetId="b0db-84b6-c02e-712d">
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="8d77-61aa-44b0-86ca" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="0cf3-3527-e94a-d130" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="fe18-499d-95d9-be62" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

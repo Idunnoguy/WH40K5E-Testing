@@ -3581,6 +3581,66 @@ In addition, any Psychic powers targeted against Black Templar units or characte
         <categoryLink targetId="9260-7d57-be5c-bd52" id="8404-01dd-24b5-5406" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Deathstorm Drop Pod [Forgeworld]" hidden="false" id="368c-ed19-8ede-cd7d" type="selectionEntry" targetId="e2f6-8988-ee97-f2e6">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="526f-4910-5bd0-5435" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Tempest Squadron [Forgeworld]" hidden="false" id="9055-f380-950f-088f" type="selectionEntry" targetId="1695-a4d6-4cc0-4b49">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="9a40-9123-536a-6a5a" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaplain Dreadnought [Forgeworld]" hidden="false" id="99af-0d84-3fa8-5e38" type="selectionEntry" targetId="81d1-ad9a-a68f-2cb5">
+      <categoryLinks>
+        <categoryLink targetId="978c-e18f-8aeb-f4c1" id="fa57-158c-5007-630f" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Helios [Forgeworld]" hidden="false" id="ac27-68de-e31d-a896" type="selectionEntry" targetId="4eef-ba44-7f45-b91c">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="be38-65bc-3730-3c58" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Prometheus [Forgeworld]" hidden="false" id="21b1-d0ae-6a6c-4d60" type="selectionEntry" targetId="a32e-8e6b-abb3-82c3">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="43be-5387-00a0-cfe1" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Contemptor Pattern Dreadnought [Forgeworld]" hidden="false" id="8b40-54bb-f033-9066" type="selectionEntry" targetId="8fa2-0381-b774-0626">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="f7f8-7f0e-ef0a-4b3f" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Contemptor Mortis Pattern Dreadnought [Forgeworld]" hidden="false" id="30cb-6d71-cd53-d5f8" type="selectionEntry" targetId="7ff2-7688-0892-4e59">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="e279-8f4c-4d89-08e2" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Siege Dreadnought [Forgeworld]" hidden="false" id="48c6-09ee-08d1-2fcd" type="selectionEntry" targetId="9e44-60e8-404f-a046">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="c510-b749-04d2-6225" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Achilles [Forgeworld]" hidden="false" id="a34b-8d85-9209-c31b" type="selectionEntry" targetId="ea2a-9477-e833-99b8">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="1cec-1632-6136-5eeb" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Caestus Assault Ram [Forgeworld]" hidden="false" id="532c-8a0b-5c4b-c394" type="selectionEntry" targetId="4b99-7908-8b93-fbd9">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="6d45-8f5f-3601-6509" targetId="74fe-37c3-fbbf-849e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lucius Pattern Dreadnought Drop Pod [Forgeworld]" hidden="false" id="89d9-e552-0fee-ec91" type="selectionEntry" targetId="e2d3-eb7a-7687-6ed2">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="7341-7d49-92fb-7e0e" targetId="74fe-37c3-fbbf-849e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="4d8a-30b1-2014-f0d1" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="4b98-0a71-efd4-c08f" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Armoury" id="ef3b-391a-5ec0-5f6f" hidden="false">

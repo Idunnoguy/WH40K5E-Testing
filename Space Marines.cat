@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="470f-53ad-7c60-5bcd" name="Space Marines" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="470f-53ad-7c60-5bcd" name="Space Marines" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="And They Shall Know No Fear" id="73f8-658e-9da5-beba" hidden="false">
       <description>Space Marines automatically pass tests to regroup, and can take such tests even if the squad has been reduced to less than half strength by casualties, though all other criteria apply. Usually troops that regroup cannot move normally and always count as moving whether they do or not, but these restrictions do not apply to models subject to this special rule. If Space Marines are caught by a sweeping advance, they are not destroyed and will instead continue to fight normally. If this happens then the unit is subject to the No Retreat! rule in this round of close combat and might therefore suffer additional casualties.
@@ -10568,6 +10568,66 @@ If the tank suffers a Wrecked or Explodes! result, roll a D6. On a 1 or 2, Chron
     <entryLink import="true" name="Terminator Librarian" hidden="false" id="c73f-1ea2-a259-40fc" type="selectionEntry" targetId="158d-279f-67ca-94b1">
       <categoryLinks>
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="0722-d5fe-5145-0d24" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Contemptor Pattern Dreadnought [Forgeworld]" hidden="false" id="3b03-2479-af7f-652f" type="selectionEntry" targetId="8fa2-0381-b774-0626">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="dafd-fdab-a636-ec27" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="3192-795f-9701-1692" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="4ee6-4d5c-9f01-edb0" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Siege Dreadnought [Forgeworld]" hidden="false" id="3898-fa15-8c5c-ee15" type="selectionEntry" targetId="9e44-60e8-404f-a046">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="2258-1d9c-d549-2f76" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lucius Pattern Dreadnought Drop Pod [Forgeworld]" hidden="false" id="d31b-6474-bdde-b436" type="selectionEntry" targetId="e2d3-eb7a-7687-6ed2">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="61b4-1b5d-e404-3cbe" targetId="74fe-37c3-fbbf-849e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Contemptor Mortis Pattern Dreadnought [Forgeworld]" hidden="false" id="bbc3-dc23-fb1d-d9dc" type="selectionEntry" targetId="7ff2-7688-0892-4e59">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="93ac-7966-7958-9d4a" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Achilles [Forgeworld]" hidden="false" id="d921-5ad4-12f6-4da1" type="selectionEntry" targetId="ea2a-9477-e833-99b8">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="f693-a13b-b433-882b" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Caestus Assault Ram [Forgeworld]" hidden="false" id="5142-747f-cd8e-f315" type="selectionEntry" targetId="4b99-7908-8b93-fbd9">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="183e-42b0-a157-910e" targetId="74fe-37c3-fbbf-849e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Deathstorm Drop Pod [Forgeworld]" hidden="false" id="c159-3a77-d702-f382" type="selectionEntry" targetId="e2f6-8988-ee97-f2e6">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="b194-158a-e558-0bef" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Tempest Squadron [Forgeworld]" hidden="false" id="0616-461a-3997-b3a0" type="selectionEntry" targetId="1695-a4d6-4cc0-4b49">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="c781-8f63-3568-f0bb" targetId="74fe-37c3-fbbf-849e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Helios [Forgeworld]" hidden="false" id="370a-dc86-8717-5fc9" type="selectionEntry" targetId="4eef-ba44-7f45-b91c">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="fcc3-b7fe-0331-1019" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Prometheus [Forgeworld]" hidden="false" id="6a7f-80d0-356a-7ae7" type="selectionEntry" targetId="a32e-8e6b-abb3-82c3">
+      <categoryLinks>
+        <categoryLink targetId="978c-e18f-8aeb-f4c1" id="4d71-595f-c969-65cc" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaplain Dreadnought [Forgeworld]" hidden="false" id="3ee2-5a0a-3224-f12f" type="selectionEntry" targetId="81d1-ad9a-a68f-2cb5">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="505c-7e9e-1c67-0ddc" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

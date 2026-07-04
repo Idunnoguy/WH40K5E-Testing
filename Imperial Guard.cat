@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d670-40a1-2193-c2ce" name="Imperial Guard" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d670-40a1-2193-c2ce" name="Imperial Guard" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Infantry Squad" hidden="false" id="53b6-0c61-c478-74b8">
       <selectionEntryGroups>
@@ -6350,6 +6350,13 @@ If using the Crack Shot rule when firing at a monstrous creature, any hits that 
       <entryLinks>
         <entryLink import="true" name="Camo Netting" hidden="false" id="992b-0cec-c9a6-64aa" type="selectionEntry" targetId="85df-b220-bf8a-f306"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="e709-dc66-5976-28a5" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Psyker Battle Squad" hidden="false" id="15e8-8b2a-1146-5c7d">
       <selectionEntryGroups>
@@ -11956,6 +11963,11 @@ A single Cyclops and its operator may be transported inside a Chimera. They coun
     <entryLink import="true" name="Vendetta Gunship Squadron" hidden="false" id="e0aa-3821-ffd9-3eef" type="selectionEntry" targetId="a01b-097a-2a17-45b1">
       <categoryLinks>
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="0aaf-24a0-d4ed-5e8e" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Show/Hide Options" hidden="false" id="98d7-8493-e23a-4074" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="4a16-0837-b750-83ef" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
