@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="43fc-3e09-4a79-7a71" name="Eldar" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="43fc-3e09-4a79-7a71" name="Eldar" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Autarch" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="48ad-6dc6-755d-8e96">
       <characteristics>
@@ -568,7 +568,7 @@
         <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
       </characteristics>
     </profile>
-    <profile name="Shuriker Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="db20-c0b9-7553-8719">
+    <profile name="Shuriken Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="db20-c0b9-7553-8719">
       <characteristics>
         <characteristic name="Range" typeId="9b9e-0c24-e409-a801">24&quot;</characteristic>
         <characteristic name="Str." typeId="1ebc-896c-43de-904a">6</characteristic>
@@ -716,7 +716,7 @@
         <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">The bearer gains a 4+ Invulnerable save.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Spiritseet" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="4eba-d802-81e0-644e">
+    <profile name="Spiritseer" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="4eba-d802-81e0-644e">
       <characteristics>
         <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Any Wraithlord or Wraithguard unit with a model within 12&quot; of a Spiritseer need not test for Wraithsight.</characteristic>
       </characteristics>
@@ -1141,6 +1141,21 @@
     <profile name="Cynosure" typeId="56e3-7b0a-703a-e89d" typeName="Exarch Power" hidden="false" id="6516-76bb-c657-e7ab">
       <characteristics>
         <characteristic name="Description" typeId="30bc-cf7e-dc4a-3be1">The Exarch is adept at precision targeting using the Ghostlight. The squad may re-roll a failed rolled To Hit when using the Ghostlight.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Aerial Assault" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="3a06-1d4c-4d48-aa70">
+      <characteristics>
+        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">A vehicle with the Aerial Assault rule that moves at cruising speed may fire all of its weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chasing Shadows" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="25c3-3442-8f3d-1e5c">
+      <characteristics>
+        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Nightwing/Phoenix counts as being equipped with an Eldar Titan holo-field.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Eldar Titan holo-field" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="06e3-1f6b-6ac9-1196">
+      <characteristics>
+        <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">As long as the vehicle moved in the previous turn, it gains a 4+ Invulnerable save against attacks.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -5044,14 +5059,8 @@
         <infoLink name="Skimmer" id="d5cf-f9e0-99ce-9837" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
         <infoLink name="Fast" id="1c66-6648-b95c-e67a" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
         <infoLink name="Star Engines" id="7f9c-2d55-5017-3935" hidden="false" type="profile" targetId="6d44-86d2-abdd-929e"/>
+        <infoLink name="Aerial Assault" id="1498-6387-a271-5117" hidden="false" type="profile" targetId="3a06-1d4c-4d48-aa70"/>
       </infoLinks>
-      <profiles>
-        <profile name="Aerial Assault" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="58cd-ed21-be79-f22d">
-          <characteristics>
-            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">A vehicle with the Aerial Assault rule that moves at cruising speed may fire all of its weapons.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -5537,6 +5546,208 @@ Draw a line of sight and measure the distance for this attack from any single m
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Nightwing Interceptor [Forgeworld]" hidden="false" id="19d5-68a8-2537-88a0" publicationId="2523-c82d-5a2f-e23d" page="58">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="145"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Shuriker Cannon" id="5b75-c3ca-ba1e-7110" hidden="false" type="profile" targetId="db20-c0b9-7553-8719"/>
+        <infoLink name="Bright Lance" id="cee7-9c16-ded9-6a50" hidden="false" type="profile" targetId="bfd9-6ef3-6072-c0ba"/>
+        <infoLink name="Bright Lance" id="42cb-a141-63bb-6688" hidden="false" type="profile" targetId="bfd9-6ef3-6072-c0ba"/>
+        <infoLink name="Shuriker Cannon" id="e526-6fbc-5a70-b623" hidden="false" type="profile" targetId="db20-c0b9-7553-8719"/>
+        <infoLink name="Aerial Assault" id="9367-fae2-51b0-3bb7" hidden="false" type="profile" targetId="3a06-1d4c-4d48-aa70"/>
+        <infoLink name="Supersonic" id="0d8f-a4ad-6d0e-b216" hidden="false" type="profile" targetId="8ce7-2992-3e44-1a11"/>
+        <infoLink name="Chasing Shadows" id="97fd-a07e-4292-aff9" hidden="false" type="profile" targetId="25c3-3442-8f3d-1e5c"/>
+        <infoLink name="Deep Strike" id="9fc1-34cf-8c27-fa6d" hidden="false" type="profile" targetId="a4d9-aab7-6c66-e4da"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Nightwing" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="7451-a232-fcdd-0a0c">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">10</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">10</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="eae4-17b3-f96e-c40a" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Game Type" hidden="false" id="cd36-32fd-1991-5440">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Apocalypse" hidden="false" id="2a54-7772-95ec-05e0" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Flyers" id="a0df-f93c-57ca-21a1" hidden="false" type="rule" targetId="10d7-d1fe-942f-e51a"/>
+                <infoLink name="Hover Mode" id="88a2-7fb4-9c51-cc5e" hidden="false" type="rule" targetId="f76b-bf0f-b8b0-74c5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84fb-4f3f-1515-7942"/>
+              </constraints>
+              <profiles>
+                <profile name="Impossible Manoeuvres" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="bf74-83df-4373-b2ab">
+                  <characteristics>
+                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">In games of Apocalypse the Nightwing can move a minimum of 18&quot; rather than the usual 36&quot; required for Flyers.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Non-Apocalypse" hidden="false" id="bd41-4590-d82b-8ea2" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Skimmer" id="90b4-0587-7ffe-1b65" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+                <infoLink name="Fast" id="425b-2867-485a-8dac" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a96-ebab-de5d-df06"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f11c-63f3-9355-21bd"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0976-df03-48ab-1967"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Phoenix Bomber [Forgeworld]" hidden="false" id="7fc0-040e-e5d3-ee79" publicationId="2523-c82d-5a2f-e23d" page="58">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="225"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon 2" id="ab3a-a2f3-6cad-8c48" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pulse Laser" hidden="false" id="0fa0-2e2e-a1e4-d24b" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Pulse Laser" id="d7c4-6c85-67c4-b938" hidden="false" type="profile" targetId="86a2-ced0-6683-8523"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Bright Lances" hidden="false" id="02ca-32cc-1b3d-810c" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Twin-linked Bright Lances" id="9074-569b-f6d5-e14c" hidden="false" type="profile" targetId="5ac9-7506-88c4-16ad"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Starcannons" hidden="false" id="0cd2-e156-cf4e-d338" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Twin-linked Starcannons" id="5693-563c-f428-53df" hidden="false" type="profile" targetId="73a2-b0f3-b031-6ec7"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c06f-155f-b170-540a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cfc-e4ee-e1ba-8309"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Missiles" id="ed3b-7b67-cf30-4147" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Phoenix Missile Launchers" hidden="false" id="2ed0-1f76-61c9-37c2" sortIndex="1">
+              <profiles>
+                <profile name="Phoenix Missile Launchers" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="d0cf-8a08-8daa-8ace">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">48&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 3</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nightfire Missile Launchers" hidden="false" id="107f-a5be-317f-4505" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Nightfire Missile Launchers" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="b49e-e499-655f-001a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b9e-0c24-e409-a801">48&quot;</characteristic>
+                    <characteristic name="Str." typeId="1ebc-896c-43de-904a">4</characteristic>
+                    <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
+                    <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 3, 3&quot; Blast, Ignores Cover, Pinning</characteristic>
+                    <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="83d7-88cc-e464-706d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c30f-666e-c5eb-1bb2"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Aerial Assault" id="17fa-cfe2-1bf8-4a59" hidden="false" type="profile" targetId="3a06-1d4c-4d48-aa70"/>
+        <infoLink name="Supersonic" id="4633-04fb-dcfb-bf7d" hidden="false" type="profile" targetId="8ce7-2992-3e44-1a11"/>
+        <infoLink name="Chasing Shadows" id="f179-067d-f93a-bcf4" hidden="false" type="profile" targetId="25c3-3442-8f3d-1e5c"/>
+        <infoLink name="Deep Strike" id="4ee2-c87c-10d2-1645" hidden="false" type="profile" targetId="a4d9-aab7-6c66-e4da"/>
+        <infoLink name="Shuriken Cannon" id="93d7-57da-571e-db99" hidden="false" type="profile" targetId="db20-c0b9-7553-8719">
+          <modifiers>
+            <modifier type="set" value="AA Mount" field="45fd-0f50-e1d0-907c"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shuriken Cannon" id="5c11-45c6-67bd-02ee" hidden="false" type="profile" targetId="db20-c0b9-7553-8719">
+          <modifiers>
+            <modifier type="set" value="AA Mount" field="45fd-0f50-e1d0-907c"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Phoenix" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="29a0-3c60-636e-469c">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">10</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">10</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="4d6a-c867-ca90-1015" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Game Type" hidden="false" id="14d4-9832-3857-2e15">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Apocalypse" hidden="false" id="1d9c-81ca-1c45-810f" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Flyers" id="1b02-0a50-363a-753f" hidden="false" type="rule" targetId="10d7-d1fe-942f-e51a"/>
+                <infoLink name="Hover Mode" id="314a-ebfe-d76c-19d2" hidden="false" type="rule" targetId="f76b-bf0f-b8b0-74c5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acce-32eb-74ce-f76f"/>
+              </constraints>
+              <profiles>
+                <profile name="Impossible Manoeuvres" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="9980-6014-69f7-4b81">
+                  <characteristics>
+                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">In games of Apocalypse the Nightwing can move a minimum of 18&quot; rather than the usual 36&quot; required for Flyers.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Non-Apocalypse" hidden="false" id="b632-201d-150e-e3f9" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Skimmer" id="6aa1-be98-545d-4c3f" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+                <infoLink name="Fast" id="a72f-a67c-ffc3-f7c6" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b6a-befa-3f92-3654"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa3d-dc47-4e58-6780"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bae8-1561-e0da-9873"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <infoLinks>
     <infoLink targetId="a523-0c5b-eb97-f0a0" id="eb88-22d2-76d6-ec55" type="rule" name="Jetbike" hidden="false"/>
@@ -5739,12 +5950,12 @@ Draw a line of sight and measure the distance for this attack from any single m
         <categoryLink targetId="9260-7d57-be5c-bd52" id="86ad-f32e-c8b4-ad33" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Wraithseer [UNFINISHED] [Forgeworld]" hidden="false" id="948c-6327-d46c-04d6" type="selectionEntry" targetId="c646-e208-b573-678c">
+    <entryLink import="true" name="Wraithseer [Forgeworld]" hidden="false" id="948c-6327-d46c-04d6" type="selectionEntry" targetId="c646-e208-b573-678c">
       <categoryLinks>
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="4c91-e616-2903-bbc5" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Hornet Squadron" hidden="false" id="52dc-77e6-4fba-f0c3" type="selectionEntry" targetId="a7ea-7280-39eb-a63e">
+    <entryLink import="true" name="Hornet Squadron [Forgeworld]" hidden="false" id="52dc-77e6-4fba-f0c3" type="selectionEntry" targetId="a7ea-7280-39eb-a63e">
       <categoryLinks>
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="7296-7d97-4bd3-29e2" primary="true" name="Fast Attack"/>
       </categoryLinks>
@@ -5767,6 +5978,16 @@ Draw a line of sight and measure the distance for this attack from any single m
     <entryLink import="true" name="Irillyth [Forgeworld]" hidden="false" id="ab7e-b7d7-ff29-b404" type="selectionEntry" targetId="a280-fee7-4206-a412">
       <categoryLinks>
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="a993-ef3c-4e72-3074" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Nightwing Interceptor [Forgeworld]" hidden="false" id="0516-a9c2-a1a5-bef7" type="selectionEntry" targetId="19d5-68a8-2537-88a0">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="d18a-a385-b0c0-126e" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Phoenix Bomber [Forgeworld]" hidden="false" id="ad5d-dc93-8578-c46a" type="selectionEntry" targetId="7fc0-040e-e5d3-ee79">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="d19b-1be3-1fa2-7519" targetId="9260-7d57-be5c-bd52" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
