@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6360-ab90-4c59-ba46" name="Necrons" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6360-ab90-4c59-ba46" name="Necrons" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Anrakyr the Traveller" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="ffd3-0fd4-8f13-7be2">
       <characteristics>
@@ -2843,6 +2843,59 @@ Nominate a Canoptek Scarab unit within 6&quot; and roll a D6. On a roll of 2-6, 
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tomb Stalker [Forgeworld]" hidden="false" id="00b8-7c2b-d725-9c0b" publicationId="2523-c82d-5a2f-e23d" page="90">
+      <infoLinks>
+        <infoLink name="Monstrous Creature" id="08d7-afbf-ab19-49bb" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+        <infoLink name="Fearless" id="9b95-2799-8b67-f79d" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
+        <infoLink name="Gauss Flayer" id="421d-95be-bd3f-991f" hidden="false" type="profile" targetId="139b-46a3-bf85-e711"/>
+        <infoLink name="Gauss Flayer" id="a3d9-9abe-e831-e87c" hidden="false" type="profile" targetId="139b-46a3-bf85-e711"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Tomb Stalker" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="3894-f649-6adc-cf43">
+          <characteristics>
+            <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">4</characteristic>
+            <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">4</characteristic>
+            <characteristic name="S" typeId="09af-e927-0c3c-9d88">6</characteristic>
+            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">7</characteristic>
+            <characteristic name="W" typeId="4a81-ac45-a71c-c71e">5</characteristic>
+            <characteristic name="I" typeId="8517-a46c-d6df-9c75">4</characteristic>
+            <characteristic name="A" typeId="a535-0722-3bc1-4d3c">4</characteristic>
+            <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">10</characteristic>
+            <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sense Cluster" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="c7db-a7a4-1a4e-bc15">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Tomb Stalkers have the Night Vision universal special rule and may make charge moves without line of sight.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Brutal Assault" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="96f8-f426-1c80-720a">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Tomb Stalker itself is a weapon; a mass of bladed limbs and razor-sharp armour plates. It gains +2 attacks on a turn in which it assaults as opposed to the usual +1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="War Construct" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="75cb-649e-c5b5-09ba">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Tomb Stalker is a huge mass of shifting pseudometal, with little vulnerability except to the massive use of force. Attacks that wound on a flat D6 score without reference to their target&apos;s Toughness only wound the Tomb Stalker on a 6 (as opposed to a 4+, 2+, etc, as would normally be the case for the attack).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Phase Tunnelling" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="630b-735c-887b-f36a">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Tomb Stalker is extraordinarily fast, and carries in-built phase field projectors allowing it to pass easily through inert matter, boring its way through rock and stone, and effortlessly passing through debris and rough terrain as it moves. As a result it has the Fleet, Deep Strike, Move Through Cover and Hit and Run universal special rules</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="6017-2062-4870-8faa" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="205"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Imotekh The Stormlord" hidden="false" id="946b-5347-db62-2bc3" type="selectionEntry" targetId="f113-adfe-faf5-9b5d">
@@ -2928,7 +2981,11 @@ Nominate a Canoptek Scarab unit within 6&quot; and roll a D6. On a roll of 2-6, 
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="7033-6b2f-c43d-e637" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Triarch Praetorians" hidden="false" id="15b1-2b5e-facf-3348" type="selectionEntry" targetId="f0cc-722a-5c64-7fbd"/>
+    <entryLink import="true" name="Triarch Praetorians" hidden="false" id="15b1-2b5e-facf-3348" type="selectionEntry" targetId="f0cc-722a-5c64-7fbd">
+      <categoryLinks>
+        <categoryLink targetId="978c-e18f-8aeb-f4c1" id="daf0-032e-6f11-cb08" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="C&apos;tan Shard" hidden="false" id="fd03-3481-1d6c-46e2" type="selectionEntry" targetId="5a73-8391-ea3e-a310">
       <categoryLinks>
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="5289-27b7-09cd-f79b" primary="true" name="Elites"/>
@@ -2992,6 +3049,11 @@ Nominate a Canoptek Scarab unit within 6&quot; and roll a D6. On a roll of 2-6, 
     <entryLink import="true" name="Show/Hide Options" hidden="false" id="2bdc-677b-d722-58f1" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="b2e2-f2d1-733d-dcb3" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tomb Stalker [Forgeworld]" hidden="false" id="656d-4ed4-4918-ce6d" type="selectionEntry" targetId="00b8-7c2b-d725-9c0b">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="4a70-f72c-c53d-71a2" targetId="9260-7d57-be5c-bd52" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

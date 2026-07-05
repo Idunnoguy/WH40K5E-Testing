@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f9e0-9be9-a007-5d68" name="Dark Eldar" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f9e0-9be9-a007-5d68" name="Dark Eldar" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Aberration" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="f7e0-2760-a88d-e31f">
       <characteristics>
@@ -2123,6 +2123,12 @@ If a Dark Eldar unit is joined by one or more characters with pain tokens, all t
             <entryLink import="true" name="Venom" hidden="false" id="12bb-2c78-38d1-575a" type="selectionEntry" targetId="b117-93d3-01f8-74cb">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7104-3e84-6a60-0cc7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Tantalus [Forgeworld]" hidden="false" id="79b7-8a32-2521-8d89" type="selectionEntry" targetId="05aa-347c-84c8-3fd5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccda-b354-6971-1322"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="802e-50fb-13d1-fe21"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4382,7 +4388,7 @@ If a Dark Eldar unit is joined by one or more characters with pain tokens, all t
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Wych Combat Expert" hidden="false" id="b595-e501-5366-b2e6" defaultAmount="5">
+            <selectionEntry type="model" import="true" name="Wych Combat Expert" hidden="false" id="b595-e501-5366-b2e6">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
               </costs>
@@ -5726,6 +5732,390 @@ If a Dark Eldar unit is joined by one or more characters with pain tokens, all t
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reaper [Forgeworld]" hidden="false" id="0d95-423d-5af1-0427" publicationId="2523-c82d-5a2f-e23d" page="94">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="135"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Ravager" id="f439-6950-9547-e4f3" hidden="false" type="profile" targetId="f0cc-5102-6339-710d"/>
+        <infoLink name="Skimmer" id="0c8a-f4fc-9fff-1fab" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+        <infoLink name="Open-topped" id="c9e6-fad0-cfb2-765e" hidden="false" type="rule" targetId="21d9-2669-1dba-9fb2"/>
+        <infoLink name="Fast" id="b06c-1216-e054-5dee" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
+        <infoLink name="Night Vision" id="86a6-6868-a921-d0bb" hidden="false" type="profile" targetId="2c92-8245-2e67-3bd5"/>
+        <infoLink name="Aerial Assault" id="7fca-8395-890c-75ed" hidden="false" type="profile" targetId="e6ec-4037-ca20-c096"/>
+        <infoLink name="Enhanced Aethersails" id="f379-223b-09c9-e0dc" hidden="false" type="profile" targetId="74ef-0200-0c7d-c281"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="May take any of the following" id="79a4-cea8-a065-61fd" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shock Prow" hidden="false" id="e6e2-55c6-0eb3-afb7" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Shock Prow" id="e34e-9325-c337-1b0d" hidden="false" type="profile" targetId="eefe-1285-d6e3-985a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbb0-e735-8b80-b69f"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Torment Grenade Launchers" hidden="false" id="f230-50c1-b225-26fc" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Torment Grenade Launchers" id="582f-f70f-87b1-b4e3" hidden="false" type="profile" targetId="156f-4eb3-ef7b-0c00"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7818-c3a9-933b-d92d"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Retrofire jets" hidden="false" id="5221-e233-01b5-43ea" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Retrofire Jets" id="0d98-2458-d0d5-7bb1" hidden="false" type="profile" targetId="5d3f-a966-a149-6041"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73a3-536b-3d57-5650"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chain-snares" hidden="false" id="c504-fff8-dba1-5924" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Chain-snares" id="6f2e-0290-f0ec-e596" hidden="false" type="profile" targetId="9e1b-245f-0c76-fa3b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21a9-2c0b-810b-5e91"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grisly Trophies" hidden="false" id="cbf0-12b7-223d-1534" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Grisly Trophies" id="f9c2-5c5b-7381-6d42" hidden="false" type="profile" targetId="e2f4-f4fa-f1cf-4030"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5bc-bb35-1e5b-1c30"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Envenomed Blades" hidden="false" id="15c2-20da-4db1-ae06" sortIndex="6">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Envenomed Blades" id="7d41-70f2-8c76-dce0" hidden="false" type="profile" targetId="95c0-0f07-62d5-62d1"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6da1-bddc-68da-fb81"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Night Shields" hidden="false" id="85d3-08bf-ea6c-db97" sortIndex="7">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Night Shields" id="6723-5449-4079-d096" hidden="false" type="profile" targetId="e43a-0849-b99b-e049"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e93-fc1a-75f0-7010"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flickerfield" hidden="false" id="5496-965f-a452-66db" sortIndex="8">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Flickerfield" id="e7a6-deb4-4ace-5165" hidden="false" type="profile" targetId="ca07-1006-3a42-21b9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="957c-f973-6cf8-3acf"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Flickerfield" hidden="false" id="2e72-731b-11db-244c">
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flickerfield" id="97e9-c594-1b99-3311" hidden="false" type="profile" targetId="ca07-1006-3a42-21b9"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b36e-614f-9558-38d5"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="371f-b2d6-ee58-7c72" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Storm Vortex Projecter (Blast)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="e6be-4b50-2f56-38b7">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">24&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">4</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, Haywire, Pinning, 5&quot; Blast</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Storm Vortex Projecter (Beam)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="8487-18fe-343e-0d56">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">7</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, Haywire, Kill-Shock</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Haywire" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="c4dd-684c-23e0-8afd">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">If the Storm Vortex hits a vehicle, including any vehicle caught under its template in the case of the Blast fire mode, resolve its effects as normal, then roll a further D6. On a 2-4, the vehicle suffersa glancing hit. On a 5-6 it suffers a penetrating hit. On the roll of 1, nothing happens.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kill-Shock" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="32bf-d090-c6fb-4f1b">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The concentrated beam greatly enhances the Storm Vortex&apos;s power, so that when the beam strikes a vehicle it takes D3 haywire rolls (as shown previously) rather than the usual one. Additionally, against targets with a Toughness score, it inflicts Instant Death on a To Wound roll of a 5+, regardless of the target&apos;s Toughness.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tantalus [Forgeworld]" hidden="false" id="05aa-347c-84c8-3fd5" page="96" publicationId="2523-c82d-5a2f-e23d">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="215"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Skimmer" id="7b6b-139b-7ca5-cbf7" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+        <infoLink name="Open-topped" id="6445-9f09-f88f-e9dd" hidden="false" type="rule" targetId="21d9-2669-1dba-9fb2"/>
+        <infoLink name="Fast" id="05c6-96b5-93d2-813e" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
+        <infoLink name="Night Vision" id="72b9-c89d-d4e9-d730" hidden="false" type="profile" targetId="2c92-8245-2e67-3bd5"/>
+        <infoLink name="Tank" id="f852-558a-d0eb-0a70" hidden="false" type="rule" targetId="3475-46b4-28e6-8fb0"/>
+        <infoLink name="Flickerfield" id="119f-6336-2cf8-39bc" hidden="false" type="profile" targetId="ca07-1006-3a42-21b9"/>
+        <infoLink name="Enhanced Aethersails" id="69fd-aeb7-3169-ae2e" hidden="false" type="profile" targetId="74ef-0200-0c7d-c281"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Take any of the following" id="0661-f8db-15a5-7a68" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shock Prow" hidden="false" id="2aaf-5dbc-2996-5432" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Shock Prow" id="7453-da77-fe0e-c04a" hidden="false" type="profile" targetId="eefe-1285-d6e3-985a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="988e-dc0b-e281-a71c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Torment Grenade Launchers" hidden="false" id="a87a-fb5b-f0f4-7984" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Torment Grenade Launchers" id="d47d-70c2-c427-5a3e" hidden="false" type="profile" targetId="156f-4eb3-ef7b-0c00"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e6c-a0fb-eec4-6b04"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Retrofire Jets" hidden="false" id="15b3-53ed-e10a-29ec" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Retrofire Jets" id="0948-693d-16f6-b9db" hidden="false" type="profile" targetId="5d3f-a966-a149-6041"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6013-d62f-6a23-10e7"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grisly Trophies" hidden="false" id="fed5-3e99-4a53-143f" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Grisly Trophies" id="d78e-58af-e42b-1c9a" hidden="false" type="profile" targetId="e2f4-f4fa-f1cf-4030"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86cf-f5ad-a2a9-0e55"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Night Shields" hidden="false" id="50da-9d9a-9bbc-690a" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Night Shields" id="bcee-3cd7-421f-7fc9" hidden="false" type="profile" targetId="e43a-0849-b99b-e049"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56f0-6118-b852-7117"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Tantalus" typeId="9a37-e4d2-11fe-9e81" typeName="Transport" hidden="false" id="7abf-51ac-d2e8-e923">
+          <characteristics>
+            <characteristic name="Capacity" typeId="7cdf-4c80-a83d-200c">16 Models</characteristic>
+            <characteristic name="Access Points" typeId="6e42-3bd5-70a6-724f"/>
+            <characteristic name="Fire Points" typeId="aa94-ae0c-98e7-5923"/>
+          </characteristics>
+        </profile>
+        <profile name="Tantalus" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="2ed7-541c-d79f-a372">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">12</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">12</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scythevanes" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="fda8-990d-6495-4610">
+          <characteristics>
+            <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">The Tantalus&apos; hull is fitted with huge blades charged with molecular dissonance fields which gather power when the skimmer moves at speed, screeching with force, slicing through the hulls of enemy vehicles and rendering troops into unrecognisable crimson shreds. When moving Flat Out, a single enemy unit or vehicle that the Tantalus passes over during its movement may be attacked Against targets with a Toughness score this attack inflicts D6 Str 7 AP 2 hits, distributed as shooting attacks. Against vehicles a single hit is automatically inflicted and the Tantalus gains an additional +D6 armour penetration and attacks the armour facing that the Tantalus approached from.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pulse-Disintegrators" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="8475-237f-c189-6be2">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 6</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Pulse-Disintegrators" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="6d53-0eb0-18c2-6a37">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">2</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 6</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="7afa-4ac4-2344-90f8" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Raven Strike Fighter [Forgeworld]" hidden="false" id="3f02-2b51-8929-654a" publicationId="2523-c82d-5a2f-e23d" page="98">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="125"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Game Type" hidden="false" id="c817-948f-daa5-d217">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Apocalypse" hidden="false" id="0355-0a9e-b8c6-1617" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Flyers" id="77db-b3fe-2096-b6aa" hidden="false" type="rule" targetId="10d7-d1fe-942f-e51a"/>
+                <infoLink name="Hover Mode" id="05c6-ca9b-d335-c9cc" hidden="false" type="rule" targetId="f76b-bf0f-b8b0-74c5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2ab-438c-fc34-be35"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Non-Apocalypse" hidden="false" id="2937-df2c-2ef9-aba0" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Skimmer" id="a0f3-c93f-e6cc-48a4" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+                <infoLink name="Fast" id="8095-b394-75dd-eb78" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7020-5839-de48-0758"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a3e-d77b-bb68-e945"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ddd-c983-a75a-60f8"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="4353-2230-d752-781b" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Raven" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="7a8d-37bb-8e98-d991">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">10</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">10</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sky Assassin" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="559f-22a4-51af-ad3e">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">When entering play via Deep Strike, if it does so within 12&quot; of an enemy Skimmer or Flyer, its player may re-roll the Scatter dice to determine where it arrives.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Splinterstorm Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="eb1e-c25e-851b-87db">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">X</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">5</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 10, Poisoned (4+)</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c">Tail Mounted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="740b-8ac1-0247-bebc" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Night Shields" hidden="false" id="dbdd-d04f-714e-1ad2">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Night Shields" id="f6ea-3c1f-0245-e4f6" hidden="false" type="profile" targetId="e43a-0849-b99b-e049"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0a2-f61c-225b-57b8"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flickerfield" hidden="false" id="6b2e-e183-77a4-c440">
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Flickerfield" id="09bb-90a7-df26-4936" hidden="false" type="profile" targetId="ca07-1006-3a42-21b9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ac5-f0a8-b1db-4330"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Supersonic" id="f273-cbd7-0965-aec9" hidden="false" type="profile" targetId="8ce7-2992-3e44-1a11"/>
+        <infoLink name="Night Vision" id="8f21-2c0e-de54-e67c" hidden="false" type="profile" targetId="2c92-8245-2e67-3bd5"/>
+        <infoLink name="Deep Strike" id="0d6d-433b-ed6b-9111" hidden="false" type="profile" targetId="a4d9-aab7-6c66-e4da"/>
+        <infoLink name="Aerial Assault" id="029f-c1ba-9e93-1c4c" hidden="false" type="profile" targetId="e6ec-4037-ca20-c096"/>
+        <infoLink name="Dark Lance" id="e309-6337-795b-e338" hidden="false" type="profile" targetId="d8af-a924-76f1-6e34">
+          <modifiers>
+            <modifier type="set" value="Heavy 1, Lance, Twin-Linked" field="1524-30c8-5da7-66ff"/>
+            <modifier type="set" value="Wing Mounted w/ AA Mount" field="45fd-0f50-e1d0-907c"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Asdrubael Vect" hidden="false" id="f016-64de-17bf-b15a" type="selectionEntry" targetId="586d-932e-90f6-ed16">
@@ -5910,6 +6300,21 @@ If a Dark Eldar unit is joined by one or more characters with pain tokens, all t
     <entryLink import="true" name="Show/Hide Options" hidden="false" id="0cf3-3527-e94a-d130" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="fe18-499d-95d9-be62" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Raven Strike Fighter [Forgeworld]" hidden="false" id="040e-637a-c2da-24eb" type="selectionEntry" targetId="3f02-2b51-8929-654a">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="527e-1d58-2dbb-5556" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Reaper [Forgeworld]" hidden="false" id="ed75-a2d7-2dc8-7087" type="selectionEntry" targetId="0d95-423d-5af1-0427">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="9b24-c0e7-3e01-6df6" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tantalus [Forgeworld]" hidden="false" id="ac31-8094-721a-991f" type="selectionEntry" targetId="05aa-347c-84c8-3fd5">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="47a9-574b-c287-299e" targetId="9260-7d57-be5c-bd52" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
