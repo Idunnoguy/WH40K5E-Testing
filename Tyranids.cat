@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="fb81-2fd6-1a4c-f64f" name="Tyranids" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="fb81-2fd6-1a4c-f64f" name="Tyranids" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Biovore" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="5c69-a5c8-e9be-8840">
       <characteristics>
@@ -1654,7 +1654,6 @@ If a Spore Mine suffers a wound, touches an enemy model, impassable terrain, or 
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="5c7b-2b43-814d-4973-min"/>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="5c7b-2b43-814d-4973-max"/>
           </constraints>
         </selectionEntryGroup>
