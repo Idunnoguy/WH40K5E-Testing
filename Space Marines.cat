@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="470f-53ad-7c60-5bcd" name="Space Marines" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="470f-53ad-7c60-5bcd" name="Space Marines" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="And They Shall Know No Fear" id="73f8-658e-9da5-beba" hidden="false">
       <description>Space Marines automatically pass tests to regroup, and can take such tests even if the squad has been reduced to less than half strength by casualties, though all other criteria apply. Usually troops that regroup cannot move normally and always count as moving whether they do or not, but these restrictions do not apply to models subject to this special rule. If Space Marines are caught by a sweeping advance, they are not destroyed and will instead continue to fight normally. If this happens then the unit is subject to the No Retreat! rule in this round of close combat and might therefore suffer additional casualties.
@@ -2283,7 +2283,7 @@ Units which include Servitors are still subject to this rule, providing that the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7716-a064-ff34-4009"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Impulsor" hidden="false" id="5ae1-459e-8052-372b" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
+            <entryLink import="true" name="Impulsor [Homebrew]" hidden="false" id="5ae1-459e-8052-372b" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="ca98-e46c-1c2b-e16d"/>
@@ -4031,7 +4031,7 @@ Therefore, a Land Raider that has moved at combat speed can fire two weapons, an
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ce-17ae-1a4c-15da"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Impulsor" hidden="false" id="0ff8-42cc-00ca-5b60" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
+            <entryLink import="true" name="Impulsor [Homebrew]" hidden="false" id="0ff8-42cc-00ca-5b60" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9801-9f3d-a12b-fc99"/>
@@ -5845,7 +5845,7 @@ Walkers make sweeping advances, pile-in moves and consolidations unless they ar
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dde6-a832-c6e4-54b7"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Impulsor" hidden="false" id="84b3-df7a-4175-2384" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
+            <entryLink import="true" name="Impulsor [Homebrew]" hidden="false" id="84b3-df7a-4175-2384" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="7643-fe39-5de9-98c2"/>
@@ -8560,7 +8560,7 @@ If the tank suffers a Wrecked or Explodes! result, roll a D6. On a 1 or 2, Chron
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="073d-0824-65ea-53bd"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Impulsor" hidden="false" id="105b-9089-8b50-226f" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
+            <entryLink import="true" name="Impulsor [Homebrew]" hidden="false" id="105b-9089-8b50-226f" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="f58f-f08d-56de-e1cc"/>
@@ -10011,7 +10011,7 @@ If the tank suffers a Wrecked or Explodes! result, roll a D6. On a 1 or 2, Chron
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0dd-8fdd-f5d7-c865"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Impulsor" hidden="false" id="f10c-eefb-49c3-99fe" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
+            <entryLink import="true" name="Impulsor [Homebrew]" hidden="false" id="f10c-eefb-49c3-99fe" type="selectionEntry" targetId="029f-8e03-0080-1cf7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="1782-32da-5b6c-bf5a"/>
@@ -10307,12 +10307,12 @@ If the tank suffers a Wrecked or Explodes! result, roll a D6. On a 1 or 2, Chron
     </profile>
   </sharedProfiles>
   <entryLinks>
-    <entryLink targetId="b8fb-3d05-1547-38bc" id="7707-028a-3fb0-2d3f" type="selectionEntry" name="Gladiator" hidden="false">
+    <entryLink targetId="b8fb-3d05-1547-38bc" id="7707-028a-3fb0-2d3f" type="selectionEntry" name="Gladiator [Homebrew]" hidden="false">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="d19d-b22e-f0e2-6e83" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink targetId="b556-6668-cc88-ab99" id="12c8-fc39-6c0c-d986" type="selectionEntry" name="Repulsor" hidden="false">
+    <entryLink targetId="b556-6668-cc88-ab99" id="12c8-fc39-6c0c-d986" type="selectionEntry" name="Repulsor [Homebrew]" hidden="false">
       <categoryLinks>
         <categoryLink targetId="9260-7d57-be5c-bd52" id="e725-38da-3e58-3a28" primary="true" name="Heavy Support"/>
       </categoryLinks>
@@ -10436,7 +10436,7 @@ If the tank suffers a Wrecked or Explodes! result, roll a D6. On a 1 or 2, Chron
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="763c-abc7-2c76-d147" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Attack Bike Squad" hidden="false" id="b92a-5522-17d6-ea7b" type="selectionEntry" targetId="b998-d706-044f-7ce1">
+    <entryLink import="true" name="Assault Squad" hidden="false" id="b92a-5522-17d6-ea7b" type="selectionEntry" targetId="8365-9a39-aa62-f2b6">
       <categoryLinks>
         <categoryLink targetId="74fe-37c3-fbbf-849e" id="71b7-1b9e-c9c9-3de2" primary="true" name="Fast Attack"/>
       </categoryLinks>
@@ -10628,6 +10628,28 @@ If the tank suffers a Wrecked or Explodes! result, roll a D6. On a 1 or 2, Chron
     <entryLink import="true" name="Chaplain Dreadnought [Forgeworld]" hidden="false" id="3ee2-5a0a-3224-f12f" type="selectionEntry" targetId="81d1-ad9a-a68f-2cb5">
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="505c-7e9e-1c67-0ddc" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Assault Squad" hidden="false" id="bf70-d283-2bf0-6d64" type="selectionEntry" targetId="8365-9a39-aa62-f2b6">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="4003-2a44-d93f-0af3" primary="true" name="Troops"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="98fb-5b53-6f9c-b1a2" shared="true" includeChildSelections="true" childName="Boarding Action Attacker" sortIndex="1" includeChildForces="false"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9691-193d-3a90-59e1" shared="true" includeChildSelections="true" childName="Boarding Action Defender" sortIndex="2" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Attack Bike Squad" hidden="false" id="2f04-bea1-5b99-4c4a" type="selectionEntry" targetId="b998-d706-044f-7ce1">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="6f39-4274-1cb4-f925" targetId="74fe-37c3-fbbf-849e" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

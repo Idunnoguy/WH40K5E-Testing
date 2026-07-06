@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9c90-407d-0876-14fb" name="Warhammer 40,000 5e" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-9c90-407d-0876-14fb" name="Warhammer 40,000 5e" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="Troops" id="default-category"/>
     <categoryEntry name="HQ" id="ac8d-efba-1884-d3ad" hidden="false"/>
@@ -50,27 +50,23 @@
         <categoryLink name="Configuration" hidden="false" id="d5de-ee57-ad4b-e4b7" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Planetstrike Attacker" id="674e-bca5-05b5-04b4" hidden="false">
+    <forceEntry name="Hit and Fade Defender" id="674e-bca5-05b5-04b4" hidden="false" publicationId="9cd2-cba9-d6a6-21fc" page="51">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="1c25-a918-2c0a-89d4" targetId="ac8d-efba-1884-d3ad">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b609-280e-49ae-b277"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="92bd-586e-234a-c321"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="92bd-586e-234a-c321"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Troops" hidden="false" id="d24d-44bf-60a2-fcfc" targetId="default-category">
           <constraints>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b8e2-0268-794e-6412"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="b8e2-0268-794e-6412"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="e350-b28d-bb22-d5f9"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elites" hidden="false" id="b325-4f07-620f-2f51" targetId="978c-e18f-8aeb-f4c1">
           <constraints>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5bbe-4b6a-dca9-ce57"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Fast Attack" hidden="false" id="4691-cb13-81ab-855e" targetId="74fe-37c3-fbbf-849e">
-          <constraints>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6b5a-4dbc-9258-4edb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bbe-4b6a-dca9-ce57"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Heavy Support" hidden="false" id="a09d-8746-bfd0-1dfd" targetId="9260-7d57-be5c-bd52">
@@ -80,6 +76,7 @@
         </categoryLink>
         <categoryLink name="Dedicated Transport" hidden="false" id="3ef1-83d9-7f88-57f7" targetId="168b-a772-94f7-83f5"/>
         <categoryLink name="Unique" hidden="false" id="a724-f495-0912-598e" targetId="1f0d-7d41-7ef9-ce4a"/>
+        <categoryLink name="Configuration" hidden="false" id="5985-79b4-347b-54f3" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Planetstrike Defender" id="d1e4-66de-8a14-1f58" hidden="false">
@@ -113,6 +110,144 @@
         </categoryLink>
         <categoryLink name="Dedicated Transport" hidden="false" id="27c2-ab60-7ecb-e426" targetId="168b-a772-94f7-83f5"/>
         <categoryLink name="Unique" hidden="false" id="63d2-696d-636e-aca1" targetId="1f0d-7d41-7ef9-ce4a"/>
+        <categoryLink name="Configuration" hidden="false" id="2a40-0c5e-655d-441b" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Boarding Action Attacker" id="98fb-5b53-6f9c-b1a2" hidden="false" publicationId="f2d5-dc64-2b0e-8745" page="147">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="8206-0e83-94a7-f262" targetId="ac8d-efba-1884-d3ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57a9-bc93-15b2-55fc"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1917-ff03-4056-c5f0"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="fa86-b7b5-e262-cbfb" targetId="default-category">
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="bbeb-d143-a4bd-980c"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="1a83-3add-2b9f-e3c2" targetId="978c-e18f-8aeb-f4c1">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9721-15b8-761c-01f4"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d053-6f94-52e9-f213"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="333a-49ca-f27a-612b" targetId="74fe-37c3-fbbf-849e">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5de3-6c2e-44e2-9280"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="39e6-7134-73bc-ca94" targetId="9260-7d57-be5c-bd52">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e39b-dde7-da01-ecb8"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Dedicated Transport" hidden="false" id="87d2-914c-4188-8d35" targetId="168b-a772-94f7-83f5"/>
+        <categoryLink name="Unique" hidden="false" id="0081-076a-fa02-eec1" targetId="1f0d-7d41-7ef9-ce4a"/>
+        <categoryLink name="Configuration" hidden="false" id="0dd5-2063-458f-05b8" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Boarding Actions Limitations" id="2c63-da0f-58ad-ca7f" hidden="false" type="profile" targetId="5ed2-8158-4783-2735"/>
+      </infoLinks>
+    </forceEntry>
+    <forceEntry name="Boarding Action Defender" id="9691-193d-3a90-59e1" hidden="false" publicationId="f2d5-dc64-2b0e-8745" page="147">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="e314-cda6-b2df-a852" targetId="ac8d-efba-1884-d3ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a996-55a7-e63e-bd56"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="222a-d275-0092-dde5"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="fb64-f920-a1da-7006" targetId="default-category">
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="0e39-22c9-bebc-1c24"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ac4-3290-4e2a-ff86"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="8b09-41c9-85d7-f95d" targetId="978c-e18f-8aeb-f4c1">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5601-42a7-3bc6-8ad7"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="7c7e-0ccd-0a24-1448" targetId="74fe-37c3-fbbf-849e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f995-4db3-8279-7ac4"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="8852-134d-a954-ab77" targetId="9260-7d57-be5c-bd52">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5272-3d36-5791-55a5"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Dedicated Transport" hidden="false" id="f59e-2a2d-f4a0-028c" targetId="168b-a772-94f7-83f5"/>
+        <categoryLink name="Unique" hidden="false" id="e5b1-01d5-e2a2-81f8" targetId="1f0d-7d41-7ef9-ce4a"/>
+        <categoryLink name="Configuration" hidden="false" id="c44e-231c-5449-6541" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Boarding Actions Limitations" id="2b74-e096-88ff-f9fc" hidden="false" type="profile" targetId="5ed2-8158-4783-2735"/>
+      </infoLinks>
+    </forceEntry>
+    <forceEntry name="Hit and Fade Attacker" id="6a6d-afcd-5695-1f78" hidden="false" publicationId="9cd2-cba9-d6a6-21fc" page="51">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="db16-4f2c-b05f-917a" targetId="ac8d-efba-1884-d3ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c440-a4ee-2849-e031"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fb9e-ff7b-569f-627f"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="6fe0-8988-63c8-72d1" targetId="default-category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="33e2-bb7b-ab28-a383"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="2119-e320-62ef-3935" targetId="978c-e18f-8aeb-f4c1">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="350b-af49-062d-2445"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5f90-7210-69a2-db9b"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="e852-16da-ae64-0831" targetId="74fe-37c3-fbbf-849e">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c446-a5d5-9c5f-28df"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2065-278c-1b20-134e"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Dedicated Transport" hidden="false" id="eb00-4a7b-0a47-68b9" targetId="168b-a772-94f7-83f5"/>
+        <categoryLink name="Unique" hidden="false" id="e8f4-1080-261b-0895" targetId="1f0d-7d41-7ef9-ce4a"/>
+        <categoryLink name="Configuration" hidden="false" id="f20b-56cf-e2a9-7e39" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Planetstrike Attacker" id="4512-2aab-728a-9e1d" hidden="false">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="1885-0893-7a80-d601" targetId="ac8d-efba-1884-d3ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5596-45ce-7cec-7237"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4d80-a19d-711f-87be"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="e439-1398-0a20-2add" targetId="default-category">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6bf0-836f-5a60-c155"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="3577-8a89-c2e2-484e" targetId="978c-e18f-8aeb-f4c1">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="30bd-a7db-2c03-391f"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="86e5-c430-1f5b-5566" targetId="74fe-37c3-fbbf-849e">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a23e-9b7e-ea5b-967d"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="af8c-5af1-698f-4a4e" targetId="9260-7d57-be5c-bd52">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c3a4-d5c5-e05e-c5f8"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Dedicated Transport" hidden="false" id="5b73-65e2-1979-1bbf" targetId="168b-a772-94f7-83f5"/>
+        <categoryLink name="Unique" hidden="false" id="0b9f-7a6b-2c57-9bcf" targetId="1f0d-7d41-7ef9-ce4a"/>
+        <categoryLink name="Configuration" hidden="false" id="2787-b41d-15b3-2953" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -874,6 +1009,8 @@ Needless to say, if a flying transport is destroyed, all transported troops are 
     <publication name="Codex: Tyranids" id="7263-1a06-5469-04ab" hidden="false"/>
     <publication name="Imperial Armour Apocalypse II" id="a40b-b5fc-98e8-cbdd" hidden="false"/>
     <publication name="Warhammer 40,000 4e Apocalypse" id="4455-7744-7b2f-5287" hidden="false"/>
+    <publication name="Imperial Armour 9: The Badab War Part One" id="f2d5-dc64-2b0e-8745" hidden="false"/>
+    <publication name="Warhammer 40,000 4e Cities of Death" id="9cd2-cba9-d6a6-21fc" hidden="false"/>
   </publications>
   <sharedProfiles>
     <profile name="Plasma Gun" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="29c3-2b26-b62c-779c">
@@ -1962,7 +2099,7 @@ If a walker is armed with two or more close combat weapons, it gains one bonus 
     </profile>
     <profile name="Conversion Beamer" typeId="456a-26d9-cb27-bd5c" typeName="Wargear" hidden="false" id="aaec-111a-3a42-12ef">
       <characteristics>
-        <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">A shot from a conversion beamer has a different profile depending on how far the target is from the firer. When firing the conversion beamer, measure the distance to the target and place the blast template. Once the final location of a conversion beamer&apos;s template has been placed (after scatter) measure to the centre of the blast marker and consult the chart below to determine the effect. </characteristic>
+        <characteristic name="Description" typeId="9e5e-2cfd-7c93-749a">A shot from a conversion beamer has a different profile depending on how far the target is from the firer. When firing the conversion beamer, measure the distance to the target and place the blast template. Once the final location of a conversion beamer&apos;s template has been placed (after scatter) measure to the centre of the blast marker and consult the chart below to determine the effect.</characteristic>
       </characteristics>
     </profile>
     <profile name="Conversion Beamer (Point-blank)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="20fc-9e67-ede7-6b6f">
@@ -2234,6 +2371,23 @@ Each player then rolls a D6 and adds their model&apos;s leadership value to the 
 
 
 Note that all weapons that are described as pintle-mounted also automatically have the AA mount special rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Boarding Actions Limitations" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="5ed2-8158-4783-2735">
+      <characteristics>
+        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Forces selected for fighting in a boarding action should be chosen from their codex as normal with the following exceptions: 
+
+
+Units may not select dedicated transport options. 
+
+
+Vehicles except Walkers and Artillery mounted on no larger than a 60mm base&quot; may not be chosen. 
+
+
+In a Codex Space Marine army, assault squads without jump packs count as Troops choices for boarding assault missions. 
+
+
+&quot;Note: The terrain may still confine your use of these models, so caveat emptor!</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -4978,8 +5132,8 @@ Walkers make sweeping advances, pile-in moves and consolidations unless they ar
                     <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9d3c-cf16-ada1-e6f4"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Graviton Gun" hidden="false" id="e3bd-47a1-b6fb-a7b0" type="selectionEntry" targetId="0ace-97f3-7c52-05e8" sortIndex="4"/>
-                    <entryLink import="true" name="Plasma Blaster" hidden="false" id="9e6c-e129-2769-03cf" type="selectionEntry" targetId="5b24-f63a-5d7a-772b" sortIndex="3"/>
+                    <entryLink import="true" name="In-Built Graviton Gun" hidden="false" id="e3bd-47a1-b6fb-a7b0" type="selectionEntry" targetId="0ace-97f3-7c52-05e8" sortIndex="4"/>
+                    <entryLink import="true" name="In-Built Plasma Blaster" hidden="false" id="9e6c-e129-2769-03cf" type="selectionEntry" targetId="5b24-f63a-5d7a-772b" sortIndex="3"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>

@@ -5737,7 +5737,6 @@ If a Dark Eldar unit is joined by one or more characters with pain tokens, all t
         <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="135"/>
       </costs>
       <infoLinks>
-        <infoLink name="Ravager" id="f439-6950-9547-e4f3" hidden="false" type="profile" targetId="f0cc-5102-6339-710d"/>
         <infoLink name="Skimmer" id="0c8a-f4fc-9fff-1fab" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
         <infoLink name="Open-topped" id="c9e6-fad0-cfb2-765e" hidden="false" type="rule" targetId="21d9-2669-1dba-9fb2"/>
         <infoLink name="Fast" id="b06c-1216-e054-5dee" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
@@ -5886,6 +5885,14 @@ If a Dark Eldar unit is joined by one or more characters with pain tokens, all t
         <profile name="Kill-Shock" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="32bf-d090-c6fb-4f1b">
           <characteristics>
             <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The concentrated beam greatly enhances the Storm Vortex&apos;s power, so that when the beam strikes a vehicle it takes D3 haywire rolls (as shown previously) rather than the usual one. Additionally, against targets with a Toughness score, it inflicts Instant Death on a To Wound roll of a 5+, regardless of the target&apos;s Toughness.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Reaper" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="f784-1db4-5bc5-2911">
+          <characteristics>
+            <characteristic name="BS" typeId="b539-c71b-9239-8da0">4</characteristic>
+            <characteristic name="F" typeId="84f1-6495-b3c8-6025">11</characteristic>
+            <characteristic name="S" typeId="38b6-8429-f0fd-11cb">11</characteristic>
+            <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
           </characteristics>
         </profile>
       </profiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="fb81-2fd6-1a4c-f64f" name="Tyranids" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="fb81-2fd6-1a4c-f64f" name="Tyranids" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Biovore" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="5c69-a5c8-e9be-8840">
       <characteristics>
@@ -1115,7 +1115,7 @@ If a Spore Mine suffers a wound, touches an enemy model, impassable terrain, or 
       <selectionEntryGroups>
         <selectionEntryGroup name="Loadout" id="6ef9-55c3-0d71-dd43" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Scything Talons" hidden="false" id="48e5-8444-54d9-13f2" defaultAmount="2">
+            <selectionEntry type="upgrade" import="true" name="Scything Talons" hidden="false" id="48e5-8444-54d9-13f2" defaultAmount="1">
               <infoLinks>
                 <infoLink name="Scything Talons" id="97ea-96dd-9191-1dc0" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
               </infoLinks>
@@ -2145,7 +2145,7 @@ Should a Tervigon be slain, every Termagant brood, spawned or otherwise, within 
       <selectionEntryGroups>
         <selectionEntryGroup name="Take one of the following" id="e53c-7ccd-e7e0-8cba" hidden="false" defaultSelectionEntryId="badf-2590-248a-533d">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Cluster Spines" hidden="false" id="badf-2590-248a-533d">
+            <selectionEntry type="upgrade" import="true" name="Cluster Spines" hidden="false" id="badf-2590-248a-533d" sortIndex="1">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
               </costs>
@@ -2153,7 +2153,7 @@ Should a Tervigon be slain, every Termagant brood, spawned or otherwise, within 
                 <infoLink name="Cluster Spines" id="6ff3-99d3-0566-7ec4" hidden="false" type="profile" targetId="45f6-a36b-9494-e369"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Stinger Salvo" hidden="false" id="7618-230b-42d1-94ce">
+            <selectionEntry type="upgrade" import="true" name="Stinger Salvo" hidden="false" id="7618-230b-42d1-94ce" sortIndex="2">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
               </costs>
@@ -2161,7 +2161,7 @@ Should a Tervigon be slain, every Termagant brood, spawned or otherwise, within 
                 <infoLink name="Stinger Salvo" id="9e62-d0ec-aff7-65ed" hidden="false" type="profile" targetId="624c-10a6-80bd-fd9f"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Twin-linked Deathspitter" hidden="false" id="13ec-7db9-2cf3-c79d">
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Deathspitter" hidden="false" id="13ec-7db9-2cf3-c79d" sortIndex="3">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
               </costs>
@@ -2169,7 +2169,7 @@ Should a Tervigon be slain, every Termagant brood, spawned or otherwise, within 
                 <infoLink name="Twin-linked Deathspitters" id="1a58-b355-355c-42f7" hidden="false" type="profile" targetId="00e2-7771-a8dd-5bf8"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Barbed Strangler" hidden="false" id="9beb-6eda-c068-bfdd">
+            <selectionEntry type="upgrade" import="true" name="Barbed Strangler" hidden="false" id="9beb-6eda-c068-bfdd" sortIndex="4">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
               </costs>
@@ -2177,7 +2177,7 @@ Should a Tervigon be slain, every Termagant brood, spawned or otherwise, within 
                 <infoLink name="Barbed Strangler" id="5189-b8ba-5a97-9a5f" hidden="false" type="profile" targetId="d3b6-6b49-23b8-30fd"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Venom Cannon" hidden="false" id="f347-5b84-27ad-4c9a">
+            <selectionEntry type="upgrade" import="true" name="Venom Cannon" hidden="false" id="f347-5b84-27ad-4c9a" sortIndex="5">
               <costs>
                 <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
               </costs>
@@ -2187,7 +2187,6 @@ Should a Tervigon be slain, every Termagant brood, spawned or otherwise, within 
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="567e-7886-d8e8-84bd-min"/>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="567e-7886-d8e8-84bd-max"/>
           </constraints>
         </selectionEntryGroup>
@@ -2786,24 +2785,24 @@ Protective Carapace: +1 to Toughness</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Termagant Brood" hidden="false" id="4fed-36d0-39a8-e477">
       <selectionEntryGroups>
-        <selectionEntryGroup name="For Every Termagant Brood included in your army, you can include one Tervigon as a Troop choice." id="9689-b1fd-626a-c2e3" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Tervigon" hidden="false" id="4df7-1bff-2145-f3a6" type="selectionEntry" targetId="0f36-b514-b951-ac09">
-              <categoryLinks>
-                <categoryLink targetId="default-category" id="fd93-6fed-d697-67cd" primary="true" name="Troops"/>
-              </categoryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6bb-ca7b-0f80-2d90"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="If the brood consists of 20 models or less, you may take" id="600f-904b-3579-3d76" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Mycetic Spore" hidden="false" id="f759-850e-4509-71cd" type="selectionEntry" targetId="c059-7987-8ef4-3a9c">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3926-d0d0-6bc0-4de4"/>
               </constraints>
+              <modifiers>
+                <modifier type="add" value="{this} is not allowed" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="greaterThan" value="20" field="selections" scope="4fed-36d0-39a8-e477" childId="model" shared="true" childName="model" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="c059-7987-8ef4-3a9c" shared="true" childName="Mycetic Spore" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -2928,6 +2927,18 @@ Protective Carapace: +1 to Toughness</characteristic>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a8a-025c-e505-46cc"/>
               </constraints>
+              <modifiers>
+                <modifier type="add" value="{this} is not allowed" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="greaterThan" value="20" field="selections" scope="6d28-bcd1-f038-921b" childId="model" shared="true" childName="model" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="c059-7987-8ef4-3a9c" shared="true" childName="Mycetic Spore" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3684,6 +3695,18 @@ Protective Carapace: +1 to Toughness</characteristic>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9236-27bf-b65f-4e43"/>
               </constraints>
+              <modifiers>
+                <modifier type="add" value="{this} is not allowed" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="greaterThan" value="1" field="selections" scope="72b2-b527-e277-7cfc" childId="model" shared="true" childName="model" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="c059-7987-8ef4-3a9c" shared="true" childName="Mycetic Spore" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5349,6 +5372,26 @@ Place the Large blast template directly over the spot the Mawloc is emerging fro
           </conditions>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Tervigon" hidden="false" id="d0d5-f430-0d7b-575b" type="selectionEntry" targetId="0f36-b514-b951-ac09" publicationId="7263-1a06-5469-04ab" page="87">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="693c-ac43-fca0-f92a" primary="true" name="Troops"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" shared="true" childName="Termagant Brood" includeChildSelections="true" includeChildForces="false" childId="b639-ffe6-63b2-f07c"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="39c9-74b0-a803-55b7">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="b639-ffe6-63b2-f07c" shared="true" roundUp="false" childName="Termagant Brood" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="39c9-74b0-a803-55b7"/>
+      </constraints>
     </entryLink>
   </entryLinks>
 </catalogue>
