@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0eb2-8d77-d6e9-5714" name="Sisters of Battle" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0eb2-8d77-d6e9-5714" name="Sisters of Battle" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Condemnor Boltgun (Stake)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="49df-6f91-aae0-a618">
       <characteristics>
@@ -1597,6 +1597,25 @@ For example, if a Canoness joins a unit of Celestians then you would require two
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="602b-8003-5bf1-3d5a" includeChildSelections="false"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Jump Pack &amp; Hit and Run Special Rule" hidden="false" id="0f44-3598-78ac-d328">
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="25"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Jump Pack" id="1c00-3e40-1d83-edea" hidden="false" targetId="9fdf-bc3e-5c20-fe0c" type="profile"/>
+            <infoLink name="Hit and Run" id="ab8c-9401-14b9-981e" hidden="false" type="profile" targetId="17a2-9db7-3461-361c"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7572-9c6f-d058-59ce"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a238-5c05-5a6d-6726" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -4475,7 +4494,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Inquisitorial Henchmen Warband" hidden="false" id="9725-c84d-c4bf-86aa" type="selectionEntry" targetId="1949-907e-ae67-81ee">
+        <entryLink import="true" name="Inquisitorial Henchmen Warband [Homebrew]" hidden="false" id="9725-c84d-c4bf-86aa" type="selectionEntry" targetId="1949-907e-ae67-81ee">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e61e-6221-c8c9-3a23"/>
           </constraints>
@@ -4929,12 +4948,12 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="0273-a661-3499-2272" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Seraphim" hidden="false" id="0ee6-abf5-9f5a-05a1" type="selectionEntry" targetId="85f2-9a39-e267-d67a">
+    <entryLink import="true" name="Seraphim Squad" hidden="false" id="0ee6-abf5-9f5a-05a1" type="selectionEntry" targetId="85f2-9a39-e267-d67a">
       <categoryLinks>
         <categoryLink name="Fast Attack" hidden="false" id="29a9-46ea-0183-8347" targetId="74fe-37c3-fbbf-849e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Battle Sisters" hidden="false" id="31a9-56ab-06e1-d15e" type="selectionEntry" targetId="3fee-c1cf-36e6-a20d">
+    <entryLink import="true" name="Battle Sister Squad" hidden="false" id="31a9-56ab-06e1-d15e" type="selectionEntry" targetId="3fee-c1cf-36e6-a20d">
       <categoryLinks>
         <categoryLink targetId="default-category" id="188b-6550-87e8-4b61" primary="true" name="Troops"/>
       </categoryLinks>
@@ -4944,7 +4963,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <categoryLink targetId="ac8d-efba-1884-d3ad" id="abb2-aa88-78c1-da26" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Celestians" hidden="false" id="4c65-56e8-febf-618c" type="selectionEntry" targetId="1d02-1690-bdf7-4670">
+    <entryLink import="true" name="Celestian Squad" hidden="false" id="4c65-56e8-febf-618c" type="selectionEntry" targetId="1d02-1690-bdf7-4670">
       <categoryLinks>
         <categoryLink targetId="978c-e18f-8aeb-f4c1" id="5c8c-b159-365d-c4ac" primary="true" name="Elites"/>
       </categoryLinks>
@@ -4964,7 +4983,7 @@ For example, if a Canoness joins a unit of Celestians then you would require two
         <categoryLink name="HQ" hidden="false" id="efda-7bd0-53e1-ab49" targetId="ac8d-efba-1884-d3ad" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Ecclesiarchy Priests" hidden="false" id="02c3-0e09-9aa0-6917" type="selectionEntry" targetId="5746-0a78-12c6-a6ca">
+    <entryLink import="true" name="Ecclesiarchy Priests [UNFINISHED]" hidden="false" id="02c3-0e09-9aa0-6917" type="selectionEntry" targetId="5746-0a78-12c6-a6ca">
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="5e17-0e19-60bf-aa87" targetId="978c-e18f-8aeb-f4c1" primary="true"/>
       </categoryLinks>
