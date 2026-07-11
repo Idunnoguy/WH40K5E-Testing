@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="372d-cc35-485d-bd8c" name="Chaos Daemons" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="372d-cc35-485d-bd8c" name="Chaos Daemons" gameSystemId="sys-9c90-407d-0876-14fb" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Beast of Nurgle" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="4df3-011c-360d-4be8">
       <characteristics>
@@ -2349,6 +2349,7 @@ If the test is failed, the unit must immediately fire all its weapons (no holdin
         <infoLink name="Fleet" id="9f02-094e-d972-16f9" hidden="false" type="profile" targetId="3748-79f1-e937-8650"/>
         <infoLink name="Dreadnought Close Combat Weapon" id="bf40-8a4c-a3e9-8056" hidden="false" type="profile" targetId="72a1-7ddd-b4ae-b945"/>
         <infoLink name="Dreadnought Close Combat Weapon" id="e42c-5fe5-b7a3-43c1" hidden="false" type="profile" targetId="72a1-7ddd-b4ae-b945"/>
+        <infoLink name="Daemonic" id="ba80-8662-e95a-6101" hidden="false" type="profile" targetId="d1c1-c3a8-e8ea-ed3a"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Daemon" hidden="false" id="efe8-351a-e18c-3ddd" type="selectionEntryGroup" targetId="0adb-8c2e-bb6b-0b48"/>
@@ -2730,6 +2731,193 @@ If the test is failed, the unit must immediately fire all its weapons (no holdin
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mamon, Daemon Prince of Nurgle [Forgeworld]" hidden="false" id="26df-70a5-f4d1-64a2">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="185"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Monstrous Creature" id="d55d-df71-2700-4311" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+        <infoLink name="Feel No Pain" id="89cf-bb90-cf0f-49ec" hidden="false" type="profile" targetId="d22d-ca74-1014-8212"/>
+        <infoLink name="Slow and Purposeful" id="cec1-c55b-9263-a9dd" hidden="false" type="profile" targetId="4e36-f773-3571-6ed4"/>
+        <infoLink name="Noxious Touch" id="b8e6-8623-dd9f-abae" hidden="false" type="profile" targetId="b581-c7fc-5dad-d510"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Daemon" hidden="false" id="54eb-bd69-1fe4-23b4" type="selectionEntryGroup" targetId="0adb-8c2e-bb6b-0b48"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="34d1-376f-0e61-0645" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Mamon" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="a9b0-2d8e-4a21-8bd1">
+          <characteristics>
+            <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">7</characteristic>
+            <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">5</characteristic>
+            <characteristic name="S" typeId="09af-e927-0c3c-9d88">6</characteristic>
+            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">7</characteristic>
+            <characteristic name="W" typeId="4a81-ac45-a71c-c71e">5</characteristic>
+            <characteristic name="I" typeId="8517-a46c-d6df-9c75">5</characteristic>
+            <characteristic name="A" typeId="a535-0722-3bc1-4d3c">4</characteristic>
+            <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">10</characteristic>
+            <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">5+ Invulnerable</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Contagion Spray" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="8581-8457-4390-8f4b">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">Template</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">1</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 1, Poisoned (3+)</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baad-a64b-a24c-34b9"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Uraka &apos;The Warfiend&apos;, Daemon Prince of Khorne [Forgeworld]" hidden="false" id="edd5-7f62-1240-3434">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="170"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Monstrous Creature" id="b518-b9fd-959b-f36b" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Daemon" hidden="false" id="11d4-bc3c-160a-a684" type="selectionEntryGroup" targetId="0adb-8c2e-bb6b-0b48"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="4f99-5bf6-b164-744b" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Uraka" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="5b1a-f487-fe55-3f31">
+          <characteristics>
+            <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">7</characteristic>
+            <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">5</characteristic>
+            <characteristic name="S" typeId="09af-e927-0c3c-9d88">7</characteristic>
+            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">5</characteristic>
+            <characteristic name="W" typeId="4a81-ac45-a71c-c71e">4</characteristic>
+            <characteristic name="I" typeId="8517-a46c-d6df-9c75">6</characteristic>
+            <characteristic name="A" typeId="a535-0722-3bc1-4d3c">5</characteristic>
+            <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">10</characteristic>
+            <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">3+ </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Executioner&apos;s Axe" typeId="1d88-1369-f0ed-b39c" typeName="Melee Weapons" hidden="false" id="a827-0904-32b7-968f">
+          <characteristics>
+            <characteristic name="Ability" typeId="2113-98a2-4376-a94c">All of Uraka&apos;s attacks have the Instant Death special rule in addition to being Monstrous Creature attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blessings of the Blood God" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="b74d-2713-fa93-7997">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Uraka has a 2+ Invulnerable save against wounds caused by psychic powers or force weapons.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63da-2218-f799-2b10"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gorefeaster [Forgeworld]" hidden="false" id="96d0-a4d5-cafd-9e76">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="160"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Monstrous Creature" id="d96a-60fe-5d74-2523" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+        <infoLink name="Fearless" id="53af-eacc-62c0-364f" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
+        <infoLink name="Fleet" id="6531-09f9-0fd4-a5d2" hidden="false" type="profile" targetId="3748-79f1-e937-8650"/>
+        <infoLink name="Close-Combat Weapon" id="5d17-35c5-4540-71ce" hidden="false" type="profile" targetId="662b-09f1-bd5b-b334"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Daemon" hidden="false" id="abed-b074-14b5-219a" type="selectionEntryGroup" targetId="0adb-8c2e-bb6b-0b48"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="9110-0def-3f60-4e36" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Gorefeaster" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="af32-fa78-b588-366f">
+          <characteristics>
+            <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">5</characteristic>
+            <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">-</characteristic>
+            <characteristic name="S" typeId="09af-e927-0c3c-9d88">8</characteristic>
+            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">6</characteristic>
+            <characteristic name="W" typeId="4a81-ac45-a71c-c71e">4</characteristic>
+            <characteristic name="I" typeId="8517-a46c-d6df-9c75">4</characteristic>
+            <characteristic name="A" typeId="a535-0722-3bc1-4d3c">4</characteristic>
+            <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">5</characteristic>
+            <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">5+ Invulnerable</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Transport" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="b157-fd23-25ff-f97b">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">A Spined Chaos Beast may not ride in a transport vehicle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Jibberjaw [Forgeworld]" hidden="false" id="f85e-5c16-dca4-cb05">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="150"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Monstrous Creature" id="fff4-1be8-fb03-325f" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+        <infoLink name="Fearless" id="1a05-003c-228f-8a09" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
+        <infoLink name="Feel No Pain" id="b6fc-e1a6-86c5-13f1" hidden="false" type="profile" targetId="d22d-ca74-1014-8212"/>
+        <infoLink name="Close-Combat Weapon" id="5328-93c9-be8c-a0af" hidden="false" type="profile" targetId="662b-09f1-bd5b-b334"/>
+        <infoLink name="Slow and Purposeful" id="cc1d-850b-c677-52ba" hidden="false" type="profile" targetId="4e36-f773-3571-6ed4"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Daemon" hidden="false" id="38c2-172a-5361-e75a" type="selectionEntryGroup" targetId="0adb-8c2e-bb6b-0b48"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="d63d-4aa4-4ceb-baa2" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Jibberjaw" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="32f9-c356-1bbe-c43e">
+          <characteristics>
+            <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">4</characteristic>
+            <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">-</characteristic>
+            <characteristic name="S" typeId="09af-e927-0c3c-9d88">6</characteristic>
+            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">6</characteristic>
+            <characteristic name="W" typeId="4a81-ac45-a71c-c71e">6</characteristic>
+            <characteristic name="I" typeId="8517-a46c-d6df-9c75">2</characteristic>
+            <characteristic name="A" typeId="a535-0722-3bc1-4d3c">D6+2</characteristic>
+            <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">10</characteristic>
+            <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Transport" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="c6f1-12f7-f27f-69c4">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">A Spined Chaos Beast may not ride in a transport vehicle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Poisoned Weapons (3+)" typeId="1d88-1369-f0ed-b39c" typeName="Melee Weapons" hidden="false" id="8863-c104-10c2-3b6b">
+          <characteristics>
+            <characteristic name="Ability" typeId="2113-98a2-4376-a94c">Poisoned Weapons (3+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mindless" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="c042-da18-9553-b236">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">A unit of Chaos Spawn always move as far as they can towards the closest enemy. They must always try to assault the closest enemy. In close combat each spawn has D6 attacks - roll every time they are about to attack. Units of Chaos spawn never count as scoring units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Ku&apos;gath, The Plaguefather" hidden="false" id="0866-b822-b179-67a8" type="selectionEntry" targetId="473f-098f-09ac-d246">
@@ -2850,6 +3038,46 @@ If the test is failed, the unit must immediately fire all its weapons (no holdin
     <entryLink import="true" name="Show/Hide Options" hidden="false" id="d55e-f6e2-3e69-2cb2" type="selectionEntry" targetId="e8ef-836a-a9d1-901d">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="9851-bbba-8bbf-9e69" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Blood Slaughterer [Forgeworld]" hidden="false" id="a2a9-573c-1af2-3c7a" type="selectionEntry" targetId="1066-247b-d18d-5d17">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="2657-2c9b-6d19-f1fc" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Blight Drone [Forgeworld]" hidden="false" id="07cb-de1c-bc59-28df" type="selectionEntry" targetId="74dc-625b-5ba0-aa14">
+      <categoryLinks>
+        <categoryLink targetId="74fe-37c3-fbbf-849e" id="40b5-acd1-28d5-8027" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Spined Chaos Beast [Forgeworld]" hidden="false" id="aed2-d45a-4a3c-905e" type="selectionEntry" targetId="317d-b782-ab84-a654">
+      <categoryLinks>
+        <categoryLink targetId="9260-7d57-be5c-bd52" id="3d80-f9da-d094-17c2" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Uraka &apos;The Warfiend&apos;, Daemon Prince of Khorne [Forgeworld]" hidden="false" id="7d02-483f-5b2f-eca2" type="selectionEntry" targetId="edd5-7f62-1240-3434">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="6566-f0de-9d70-f94f" targetId="ac8d-efba-1884-d3ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Plague Hulk of Nurgle [Forgeworld]" hidden="false" id="0aee-add4-765b-c1cc" type="selectionEntry" targetId="2acd-7319-5d46-27a0">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="c3dc-f99b-c30e-1c91" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mamon, Daemon Prince of Nurgle [Forgeworld]" hidden="false" id="8293-f6af-bd50-8730" type="selectionEntry" targetId="26df-70a5-f4d1-64a2">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="d634-9a19-4e76-0fd6" targetId="ac8d-efba-1884-d3ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Gorefeaster [Forgeworld]" hidden="false" id="8feb-2865-a1ae-cb51" type="selectionEntry" targetId="96d0-a4d5-cafd-9e76">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="dcfd-65a2-0bc8-a23e" targetId="9260-7d57-be5c-bd52" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Jibberjaw [Forgeworld]" hidden="false" id="5bd3-bd6d-1cdc-b5f4" type="selectionEntry" targetId="f85e-5c16-dca4-cb05">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="36a7-b1ee-4240-792e" targetId="9260-7d57-be5c-bd52" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

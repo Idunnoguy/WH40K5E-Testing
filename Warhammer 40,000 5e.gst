@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9c90-407d-0876-14fb" name="Warhammer 40,000 5e" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-9c90-407d-0876-14fb" name="Warhammer 40,000 5e" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="Troops" id="default-category"/>
     <categoryEntry name="HQ" id="ac8d-efba-1884-d3ad" hidden="false"/>
@@ -2388,6 +2388,20 @@ In a Codex Space Marine army, assault squads without jump packs count as Troops 
 
 
 &quot;Note: The terrain may still confine your use of these models, so caveat emptor!</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Daemonic" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="d1c1-c3a8-e8ea-ed3a">
+      <characteristics>
+        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">A Daemonic Vehicle ignores all &apos;Shaken&apos; and &apos;Stunned&apos; vehicle damage results inflicted against them.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reaper Autocannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="08cb-0156-78e8-b9c4">
+      <characteristics>
+        <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+        <characteristic name="Str." typeId="1ebc-896c-43de-904a">7</characteristic>
+        <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">4</characteristic>
+        <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Heavy 2, Twin-linked</characteristic>
+        <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -6729,6 +6743,364 @@ Walkers make sweeping advances, pile-in moves and consolidations unless they ar
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="20d5-d9b8-ae69-bcab" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Blood Slaughterer [Forgeworld]" hidden="false" id="1066-247b-d18d-5d17" publicationId="a40b-b5fc-98e8-cbdd" page="32">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Blood Slaughterer" hidden="false" id="9dd0-7268-b8b2-99d5" collective="true">
+          <profiles>
+            <profile name="Blood Slaughterer" typeId="acd3-2539-3641-1250" typeName="Walker Vehicle" hidden="false" id="552a-7c50-cf87-4110">
+              <characteristics>
+                <characteristic name="WS" typeId="3d9c-8977-9b95-824b">5</characteristic>
+                <characteristic name="BS" typeId="ea47-07be-ab4a-6569">1</characteristic>
+                <characteristic name="STR" typeId="a630-c404-957f-a49f">6 (10)</characteristic>
+                <characteristic name="F" typeId="3549-2d9e-3052-b396">13</characteristic>
+                <characteristic name="S" typeId="94fc-8af8-d4d4-7b1a">12</characteristic>
+                <characteristic name="R" typeId="4eca-6e3c-2053-e75a">10</characteristic>
+                <characteristic name="I" typeId="f706-f227-5d93-0fe3">4</characteristic>
+                <characteristic name="A" typeId="12be-9dd2-0dd7-b17a">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Fury of Khorne" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="881d-da55-01da-37b2">
+              <characteristics>
+                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">When charging into an assault, a Blood Slaughterer gains an additional +D3 attacks instead of the usual +1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="58be-d540-289a-13f9"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="964f-8394-35c1-0118"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Loadout" id="0c6c-b824-adda-4a79" hidden="false" defaultSelectionEntryId="f84d-1328-99cb-5a66">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Dreadnought Close Combat Weapons" hidden="false" id="f84d-1328-99cb-5a66" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Dreadnought Close Combat Weapon" id="77a7-d0c5-4dca-fb80" hidden="false" type="profile" targetId="72a1-7ddd-b4ae-b945"/>
+                    <infoLink name="Dreadnought Close Combat Weapon" id="d03f-8f05-0e7c-b236" hidden="false" type="profile" targetId="72a1-7ddd-b4ae-b945"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Note" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="d70e-486e-b6c9-4bf5">
+                      <characteristics>
+                        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Bonus from two CCW is included in profile</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Impaler &amp; Dreadnought Close Combat Weapons" hidden="false" id="9de1-fe6d-9964-7fe2" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Dreadnought Close Combat Weapon" id="34ff-2971-33ae-c86d" hidden="false" type="profile" targetId="72a1-7ddd-b4ae-b945"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Impaler" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="2682-b86f-e694-91a4">
+                      <characteristics>
+                        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Using the Impaler counts as a shooting attack which hits on a 4+. If the harpoon strikes a successful Penetrating hit against a vehicle, or an unsaved wounding hit against a monstrous creature which survives its attack, then the daemonically empowered chain snaps back and the victim is abruptly dragged toward the Blood Slaughterer. Measure a straight line between the Blood Slaughterer and its target and move the victim 2D6&quot; towards the Blood Slaughterer. If the target model moves into base contact with the Blood Slaughterer, the Blood Slaughterer then counts as having assaulted it (gaining D3 extra attacks).</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="A note on dragging models" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="00d6-2063-5f73-b406">
+                      <characteristics>
+                        <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Models may not be dragged though impassable terrain, monstrous creatures, vehicles or gaps they wouldn&apos;t be able to fit through, - in these cases the dragged target stops 1&quot; away from the obstruction. Other terrain factors and infantry models in the way are ignored. Infantry can be repositioned if needs be once the dragged target comes to rest by their owning player to allow room for the Slaughterer, with the proviso that units already locked in combat must stay locked in combat. Buildings, Super Heavy Vehicles or Gargantuan Creatures cannot be dragged about by the Impaler!</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="5"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34c0-5c59-c8fd-dfb7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cf2-d78e-c492-1d92"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="130"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Rage" id="83df-22c6-ca76-af9e" hidden="false" type="profile" targetId="4548-d7d5-3a03-36c2"/>
+            <infoLink name="Fleet" id="6d0d-265f-e4b8-9458" hidden="false" type="profile" targetId="3748-79f1-e937-8650"/>
+            <infoLink name="Daemonic" id="9738-0e27-f150-e34f" hidden="false" type="profile" targetId="d1c1-c3a8-e8ea-ed3a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="c32d-59b7-7064-427d" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Blight Drone [Forgeworld]" hidden="false" id="74dc-625b-5ba0-aa14" publicationId="a40b-b5fc-98e8-cbdd" page="32">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Blight Drone" hidden="false" id="4380-5610-7929-969e" collective="true">
+          <profiles>
+            <profile name="Blight Drone" typeId="0092-3322-1b28-b657" typeName="Vehicle" hidden="false" id="0cd7-374e-cb57-bf06">
+              <characteristics>
+                <characteristic name="BS" typeId="b539-c71b-9239-8da0">2</characteristic>
+                <characteristic name="F" typeId="84f1-6495-b3c8-6025">12</characteristic>
+                <characteristic name="S" typeId="38b6-8429-f0fd-11cb">11</characteristic>
+                <characteristic name="R" typeId="10a0-8c50-f9d5-466b">10</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mawcannon" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="8ab9-1be1-24bb-50e4">
+              <characteristics>
+                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The noisome mawcannon has two firing modes, only one of which can be used in a Shooting phase; declare which one you are using before firing it.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mawcannon (Vomit)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="480e-02b2-dec5-b02c">
+              <characteristics>
+                <characteristic name="Range" typeId="9b9e-0c24-e409-a801">Template</characteristic>
+                <characteristic name="Str." typeId="1ebc-896c-43de-904a">6</characteristic>
+                <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">4</characteristic>
+                <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 1</characteristic>
+                <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+              </characteristics>
+            </profile>
+            <profile name="Mawcannon (Phlegm)" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="45d1-c744-1edc-162d">
+              <characteristics>
+                <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+                <characteristic name="Str." typeId="1ebc-896c-43de-904a">8</characteristic>
+                <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+                <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 1, 5&quot; Blast</characteristic>
+                <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+              </characteristics>
+            </profile>
+            <profile name="Explosion of Pus" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="acdb-739f-a5bf-984e">
+              <characteristics>
+                <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Treat all &apos;Destroyed -Wrecked&apos; results on the Vehicle Damage table as &apos;Destroyed -Explodes&apos; instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="128e-208c-236d-b711"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28bd-bc96-087f-9650"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="125"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Daemonic" id="ff2a-9435-daf8-ee5f" hidden="false" type="profile" targetId="d1c1-c3a8-e8ea-ed3a"/>
+            <infoLink name="Reaper Autocannon" id="8340-37a0-48e2-de07" hidden="false" type="profile" targetId="08cb-0156-78e8-b9c4"/>
+            <infoLink name="Fast" id="29f9-be04-8bf6-dc58" hidden="false" type="rule" targetId="4d59-8511-a8e5-1f62"/>
+            <infoLink name="Skimmer" id="7174-87cc-bd13-d8c4" hidden="false" type="rule" targetId="5768-8357-f0e3-1484"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="0098-c28d-1fe8-cfad" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Plague Hulk of Nurgle [Forgeworld]" hidden="false" id="2acd-7319-5d46-27a0">
+      <infoLinks>
+        <infoLink name="Walker" id="00bf-30b4-abec-f05b" hidden="false" type="rule" targetId="fea1-2c4a-c33c-5600"/>
+        <infoLink name="Dreadnought Close Combat Weapon" id="cd74-4d6f-5867-78fa" hidden="false" type="profile" targetId="72a1-7ddd-b4ae-b945"/>
+        <infoLink name="Dreadnought Close Combat Weapon" id="6c2a-6eb9-f283-c547" hidden="false" type="profile" targetId="72a1-7ddd-b4ae-b945"/>
+        <infoLink name="Daemonic" id="49a8-c9cd-3f6e-cdfc" hidden="false" type="profile" targetId="d1c1-c3a8-e8ea-ed3a"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="205"/>
+      </costs>
+      <profiles>
+        <profile name="Plague Hulk" typeId="acd3-2539-3641-1250" typeName="Walker Vehicle" hidden="false" id="ffc4-c465-ec23-f733">
+          <characteristics>
+            <characteristic name="WS" typeId="3d9c-8977-9b95-824b">3</characteristic>
+            <characteristic name="BS" typeId="ea47-07be-ab4a-6569">2</characteristic>
+            <characteristic name="STR" typeId="a630-c404-957f-a49f">7 (10)</characteristic>
+            <characteristic name="F" typeId="3549-2d9e-3052-b396">13</characteristic>
+            <characteristic name="S" typeId="94fc-8af8-d4d4-7b1a">13</characteristic>
+            <characteristic name="R" typeId="4eca-6e3c-2053-e75a">11</characteristic>
+            <characteristic name="I" typeId="f706-f227-5d93-0fe3">2</characteristic>
+            <characteristic name="A" typeId="12be-9dd2-0dd7-b17a">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rancid Vomit" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="2c07-17fc-4b68-2f4b">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">Template</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">5</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Assault 1, Poisoned (3+)</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Rot Cannon" typeId="8e6f-7553-28c5-95a0" typeName="Weapons" hidden="false" id="4dd1-11a8-4d5e-fd20">
+          <characteristics>
+            <characteristic name="Range" typeId="9b9e-0c24-e409-a801">36&quot;</characteristic>
+            <characteristic name="Str." typeId="1ebc-896c-43de-904a">6</characteristic>
+            <characteristic name="AP" typeId="730c-47dc-fdad-3c8b">3</characteristic>
+            <characteristic name="Type" typeId="1524-30c8-5da7-66ff">Ordnance 1, 5&quot; Blast, Rending</characteristic>
+            <characteristic name="Notes" typeId="45fd-0f50-e1d0-907c"/>
+          </characteristics>
+        </profile>
+        <profile name="Note" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="13b3-4973-ec29-eb12">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">Bonus from two CCW is included in profile</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Necrotic Fume" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="dab9-a08f-15e6-9f84">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">As a result of these necrotic fumes, Plague Hulks count as being equipped with both Assault and Defensive grenades (see the Warhammer 40,000 rulebook) and gain a Cover save of 5+ against shooting attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="a468-5460-bdd7-132c" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Plague Ogryns [Forgeworld]" hidden="false" id="7ddb-4748-88db-1f19" publicationId="a40b-b5fc-98e8-cbdd" page="32">
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Plague Ogryns" hidden="false" id="3071-3eb9-cb1a-c6aa" collective="true">
+          <profiles>
+            <profile name="Plague Ogryn" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="0ebf-435f-cb19-8606">
+              <characteristics>
+                <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">4</characteristic>
+                <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">2</characteristic>
+                <characteristic name="S" typeId="09af-e927-0c3c-9d88">6</characteristic>
+                <characteristic name="T" typeId="ff29-f8b2-5b20-b686">5</characteristic>
+                <characteristic name="W" typeId="4a81-ac45-a71c-c71e">3</characteristic>
+                <characteristic name="I" typeId="8517-a46c-d6df-9c75">3</characteristic>
+                <characteristic name="A" typeId="a535-0722-3bc1-4d3c">D6</characteristic>
+                <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">8</characteristic>
+                <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">5+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Noxious Touch" typeId="1d88-1369-f0ed-b39c" typeName="Melee Weapons" hidden="false" id="70cf-83a9-77d2-e06f">
+              <characteristics>
+                <characteristic name="Ability" typeId="2113-98a2-4376-a94c">Poisoned Attacks, 2+, roll a D6 each Assault phase to determine the Plague Ogryn&apos;s basic number of attacks</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="57e9-a90f-ba27-06ea"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="abdd-1580-e41b-dca4"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="50"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Fearless" id="ee1f-dd74-fbbc-82bd" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
+            <infoLink name="Feel No Pain" id="9a2f-7fd3-d057-ce3e" hidden="false" type="profile" targetId="d22d-ca74-1014-8212"/>
+            <infoLink name="Slow and Purposeful" id="876c-1214-f0b0-1fb0" hidden="false" type="profile" targetId="4e36-f773-3571-6ed4"/>
+            <infoLink name="Close-Combat Weapon" id="4ab9-35d4-b85e-b624" hidden="false" type="profile" targetId="662b-09f1-bd5b-b334"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="b19b-e00a-d273-f9fb" includeChildSelections="true" childName="Show Forgeworld"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Spined Chaos Beast [Forgeworld]" hidden="false" id="317d-b782-ab84-a654">
+      <infoLinks>
+        <infoLink name="Monstrous Creature" id="f4ae-8d42-04d6-2e3d" hidden="false" type="rule" targetId="6b1b-944b-162c-6851"/>
+        <infoLink name="Fearless" id="51e8-c904-ee3b-ab06" hidden="false" type="profile" targetId="1380-eda3-7a3b-055c"/>
+        <infoLink name="Close-Combat Weapon" id="b3da-d58b-e956-ca08" hidden="false" type="profile" targetId="662b-09f1-bd5b-b334"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="140"/>
+      </costs>
+      <profiles>
+        <profile name="Spined Chaos Beast" typeId="0967-823d-dd82-4e47" typeName="Unit" hidden="false" id="9fa2-4d38-f01f-85d0">
+          <characteristics>
+            <characteristic name="WS" typeId="15b1-a34a-6e7c-332e">5</characteristic>
+            <characteristic name="BS" typeId="63a5-4be2-9cc0-7723">1</characteristic>
+            <characteristic name="S" typeId="09af-e927-0c3c-9d88">7</characteristic>
+            <characteristic name="T" typeId="ff29-f8b2-5b20-b686">6</characteristic>
+            <characteristic name="W" typeId="4a81-ac45-a71c-c71e">4</characteristic>
+            <characteristic name="I" typeId="8517-a46c-d6df-9c75">4</characteristic>
+            <characteristic name="A" typeId="a535-0722-3bc1-4d3c">3</characteristic>
+            <characteristic name="Ld" typeId="ddd5-77eb-4cc8-9eab">5</characteristic>
+            <characteristic name="Sv" typeId="c1e7-f1bd-8acd-7595">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Transport" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="b537-e670-a587-c216">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">A Spined Chaos Beast may not ride in a transport vehicle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Daemonic Aura" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="844c-9e05-0a59-58bc">
+          <characteristics>
+            <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Spined Chaos Beast is a Daemon bound into beast flesh, and it is treated as a Daemon for the purposes of any special rules and effects. It also has a 5+ Invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Marks of Chaos" id="9ab8-06f5-f5b8-3ce0" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mark of Khorne" hidden="false" id="3d32-5bbd-15ae-195b" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Rage" id="80bd-7c6a-5a58-7b5c" hidden="false" type="profile" targetId="4548-d7d5-3a03-36c2"/>
+                <infoLink name="Furious Charge" id="3841-3c21-2032-ae96" hidden="false" type="profile" targetId="8f63-946f-5992-31e0"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mark of Slaanesh" hidden="false" id="10b5-f673-2c69-9bd5" sortIndex="2">
+              <profiles>
+                <profile name="Mark of Slaanesh" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="9434-621e-7f95-256a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Beast gains +1 Initiative</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mark of Nurgle" hidden="false" id="3545-68fd-7f33-0952" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Feel No Pain" id="35ec-60df-dd41-6bfc" hidden="false" type="profile" targetId="d22d-ca74-1014-8212"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mark of Tzeentch" hidden="false" id="887a-32b9-43b1-529a" sortIndex="4">
+              <profiles>
+                <profile name="Mark of Tzeentch" typeId="ccb3-7790-3139-7975" typeName="Abilities" hidden="false" id="dc5f-367f-3342-cd4c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="e24a-6018-20cf-d76c">The Beast&apos;s Invulnerable save increases to 4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="6f18-a8fc-2c5b-9517" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8798-9085-0797-0ca7"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="ffb5-655b-9721-de5f" shared="true" id="5a48-e80a-49a0-2050" includeChildSelections="true" childName="Show Forgeworld"/>
           </conditions>
         </modifier>
       </modifiers>
